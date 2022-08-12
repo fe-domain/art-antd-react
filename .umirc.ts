@@ -1,0 +1,34 @@
+import { defineConfig } from 'dumi';
+
+export default defineConfig({
+  title: 'art-antd-react',
+  favicon: '/icons/logo.ico',
+  logo: '/icons/logo.png',
+  outputPath: 'docs-dist',
+  base: '/components/detail-present',
+  exportStatic: {}, // 将所有路由输出为 HTML 目录结构，以免刷新页面时 404
+  mode: 'site',
+  // more config: https://d.umijs.org/config
+  mfsu: {},
+  navs: [
+    {
+      title: 'components',
+      path: '/components',
+    },
+    {
+      title: 'hooks',
+      path: '/hooks',
+    },
+    {
+      title: 'Gitee',
+      path: 'https://gitee.com/quankehao/art-antd-react',
+    },
+    {
+      title: 'GitHub',
+      path: 'https://github.com/Kehao33/art-antd-react',
+    },
+  ],
+  alias: {
+    'art-antd-react': require('path').resolve('src', 'index.ts'),
+  },
+});
