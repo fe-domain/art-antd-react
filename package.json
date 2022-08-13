@@ -1,6 +1,6 @@
 {
   "name": "art-antd-react",
-  "version": "1.8.2",
+  "version": "1.8.3",
   "scripts": {
     "start": "dumi dev",
     "docs:build": "dumi build",
