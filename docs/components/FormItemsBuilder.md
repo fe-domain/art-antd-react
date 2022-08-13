@@ -38,8 +38,8 @@ FormItemsBuilder 的目的是使用配置化的思想来帮助我们快速的生
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
 | key | 唯一标识，用来做 map 时的 key，不存在则 name, name 不存在时则为 index | React.Key | - |
-| formItemProps | 同 antd 的 [Form.Item API](https://ant-design.gitee.io/components/form-cn/#Form.Item) | FormItemProps | - |
-| itemColProps | 同 antd 的 [ColProps](https://ant-design.gitee.io/components/grid-cn/#Col) , 定义当前的 col 布局 | ColProps | - |
+| formItemProps | 同 antd 的 [Form.Item API](https://ant-design.gitee.io/components/form-cn/#Form.Item) | [FormItemProps](https://ant-design.gitee.io/components/form-cn/#Form.Item) | - |
+| itemColProps | 同 antd 的 [ColProps](https://ant-design.gitee.io/components/grid-cn/#Col) , 定义当前的 col 布局 | [ColProps](https://ant-design.gitee.io/components/grid-cn/#Col) | - |
 | renderType | 标识 Form.Item 的 Children 应该为 哪个组件 | [见如下 RenderType 声明](/components/form-items-builder#rendertype) | - |
 | formItemChildProps | 每一项对应的 Form.Item 的 children 的 Props，如 Input 的 onChange 等属性 | - | - |
 | formItemChildProps | renderType 为 CustomItemChildren 的时候 渲染的 Form.Item 的 children 元素 | React.ReactElement | - |
@@ -104,4 +104,4 @@ const RenderType = {
 };
 ```
 
-特殊说明： FormItemsBuilder 的每一个 表单项 都有 Col 包裹，这是为了适配灵活的 布局; RenderRecord 定义 renderType 是因为使用枚举 的时候 ts 提示不够智能，故暂时采用此方法
+特殊说明： FormItemsBuilder 的每一个 表单项 都有 Col 包裹，这是为了适配灵活的 布局; RenderRecord 定义 renderType 后边会改进定义，使得 ts 提示更智能（但是不会影响之前发布的版本）

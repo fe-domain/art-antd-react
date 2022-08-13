@@ -33,9 +33,9 @@ nav:
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
-| form | modal 框中的 form 表单实例，可选 | `FormInstance` | - |
-| colProps | 定义每一列的布局,同 antd [ColProps](https://ant-design.gitee.io/components/grid-cn/#Col) | ColProps | - |
-| rowProps | 定义行的布局, 同 antd [RowProps](https://ant-design.gitee.io/components/grid-cn/#Row) | RowProps | - |
+| form | modal 框中的 form 表单实例，可选 | | formItemsConfig | 搜索表单项的配置 | [FormItemsConfig API](/components/form-items-builder#formitemconfig-api)[] | - |
+| colProps | 定义每一列的布局,同 antd [ColProps](https://ant-design.gitee.io/components/grid-cn/#Col) | [ColProps](https://ant-design.gitee.io/components/grid-cn/#Col) | - |
+| rowProps | 定义行的布局, 同 antd [RowProps](https://ant-design.gitee.io/components/grid-cn/#Row) | [RowProps](https://ant-design.gitee.io/components/grid-cn/#Row) | - |
 | formItemsConfig | modal 框中表单项配置 | ` FormItemConfig[]` | - |
 | formatSubmitValue | 表单提交需要对表单数据进行格式化后放入 serviceFn 请求中，如果没有传递则不对表单数据进行格式化 | `(formValue: Value) => unknown` | - |
 | serviceFn | 表单提交需要调用的函数，会默认将当前表单的数据作为入参放入该方法中 | ` RequestService<Value, Res>` | - |

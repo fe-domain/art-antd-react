@@ -24,15 +24,15 @@ FormGenerator 的目的是使用配置化的思想来帮助我们快速的生成
 说明，FormGerator 的所有 API/props 继承自 antd [Form](https://ant-design.gitee.io/components/form-cn/), 故除以下的props外，其他的Form props 均可直接透传给 FormGenrator
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
-| colProps | 定义每一列的布局,同 antd [ColProps](https://ant-design.gitee.io/components/grid-cn/#Col) | ColProps| -|
-| rowProps | 定义行的布局, 同 antd [RowProps](https://ant-design.gitee.io/components/grid-cn/#Row) | RowProps | - |
-| submitBtnProps | 定义提交按钮的配置, 同 antd [ButtonProps](https://ant-design.gitee.io/components/button-cn/#API) | ButtonProps | - |
-| restBtnProps | 定义重置按钮的配置, 同 antd [ButtonProps](https://ant-design.gitee.io/components/button-cn/#API) | ButtonProps | - |
+| colProps | 定义每一列的布局,同 antd [ColProps](https://ant-design.gitee.io/components/grid-cn/#Col) | [ColProps](https://ant-design.gitee.io/components/grid-cn/#Col)| -|
+| rowProps | 定义行的布局, 同 antd [RowProps](https://ant-design.gitee.io/components/grid-cn/#Row) | [RowProps](https://ant-design.gitee.io/components/grid-cn/#Row) | - |
+| submitBtnProps | 定义提交按钮的配置, 同 antd [ButtonProps](https://ant-design.gitee.io/components/button-cn/#API) | [ButtonProps](https://ant-design.gitee.io/components/button-cn/#API) | - |
+| restBtnProps | 定义重置按钮的配置, 同 antd [ButtonProps](https://ant-design.gitee.io/components/button-cn/#API) | [ButtonProps](https://ant-design.gitee.io/components/button-cn/#API) | - |
 | showExpend | 是否展示收缩功能 | boolean | true|
 | showSubmit | 是否展示提交功能| boolean | true|
 | showRest | 是否展示重置功能 | boolean | true|
 | actionBar | 自定义操作功能 | React.ReactNode|-|
-| formItemmsConfig | formItems 的配置,查看[FormItemsBuilder API]()| FormItemConfig[]|-|
+| formItemmsConfig | formItems 的配置,查看[FormItemsBuilder API](/components/form-items-builder#formitemconfig-api)| FormItemConfig[]|-|
 | foldNumber | 收起的时候展示多少个表单项|number|2|
 |flodNode | 收起的描述 | React.ReactNode | '收起'|
 |unfoldNode | 展开的描述| React.ReactNode| '展开'|
@@ -40,4 +40,4 @@ FormGenerator 的目的是使用配置化的思想来帮助我们快速的生成
 |submitNode| 提交的描述 | React.ReactNode | '提交'|
 |fold | 是否收缩 | boolean | false|
 | onRest | 点击充值后的操作 | ()=> void|-|
-| actionColProps | 操作栏的的 col 布局， 和 antd 的 Col API 相同，优先级高于 colProps,同 antd [ColProps](https://ant-design.gitee.io/components/grid-cn/#Col) | ColProps| -|
+| actionColProps | 操作栏的的 col 布局， 和 antd 的 Col API 相同，优先级高于 colProps,同 antd [ColProps](https://ant-design.gitee.io/components/grid-cn/#Col) |[ColProps](https://ant-design.gitee.io/components/grid-cn/#Col)| -|
