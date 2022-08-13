@@ -30,6 +30,11 @@
   "files": [
     "dist"
   ],
+  "sideEffects": [
+    "dist/",
+    "es/**/style/",
+    ".less"
+  ],
   "module": "dist/esm/index.js",
   "typings": "dist/esm/index.d.ts",
   "gitHooks": {
