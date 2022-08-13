@@ -1,3 +1,25 @@
+import "antd/es/col/style";
+import _Col from "antd/es/col";
+import "antd/es/form/style";
+import _Form from "antd/es/form";
+import "antd/es/slider/style";
+import _Slider from "antd/es/slider";
+import "antd/es/date-picker/style";
+import _DatePicker from "antd/es/date-picker";
+import "antd/es/time-picker/style";
+import _TimePicker from "antd/es/time-picker";
+import "antd/es/switch/style";
+import _Switch from "antd/es/switch";
+import "antd/es/radio/style";
+import _Radio from "antd/es/radio";
+import "antd/es/select/style";
+import _Select from "antd/es/select";
+import "antd/es/checkbox/style";
+import _Checkbox from "antd/es/checkbox";
+import "antd/es/input-number/style";
+import _InputNumber from "antd/es/input-number";
+import "antd/es/input/style";
+import _Input from "antd/es/input";
 var _excluded = ["key", "itemTitle", "itemColProps", "formItemProps"];
 
 function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
@@ -10,7 +32,6 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-import { Form, Input, InputNumber, Checkbox, Select, Radio, Switch, Slider, TimePicker, DatePicker, Col } from 'antd';
 import React from 'react';
 import { jsx as _jsx } from "react/jsx-runtime";
 import { jsxs as _jsxs } from "react/jsx-runtime";
@@ -62,44 +83,44 @@ export var renderFormItemChild = function renderFormItemChild(formItemConfig) {
       }
 
     case RenderType.Input:
-      return /*#__PURE__*/_jsx(Input, _objectSpread({}, formItemChildProps));
+      return /*#__PURE__*/_jsx(_Input, _objectSpread({}, formItemChildProps));
 
     case RenderType.InputNumber:
-      return /*#__PURE__*/_jsx(InputNumber, _objectSpread({}, formItemChildProps));
+      return /*#__PURE__*/_jsx(_InputNumber, _objectSpread({}, formItemChildProps));
 
     case RenderType.Checkbox:
-      return /*#__PURE__*/_jsx(Checkbox, _objectSpread({}, formItemChildProps));
+      return /*#__PURE__*/_jsx(_Checkbox, _objectSpread({}, formItemChildProps));
 
     case RenderType.CheckboxGroup:
-      return /*#__PURE__*/_jsx(Checkbox.Group, _objectSpread({}, formItemChildProps));
+      return /*#__PURE__*/_jsx(_Checkbox.Group, _objectSpread({}, formItemChildProps));
 
     case RenderType.Select:
-      return /*#__PURE__*/_jsx(Select, _objectSpread({}, formItemChildProps));
+      return /*#__PURE__*/_jsx(_Select, _objectSpread({}, formItemChildProps));
 
     case RenderType.Radio:
-      return /*#__PURE__*/_jsx(Radio, _objectSpread({}, formItemChildProps));
+      return /*#__PURE__*/_jsx(_Radio, _objectSpread({}, formItemChildProps));
 
     case RenderType.RadioGroup:
-      return /*#__PURE__*/_jsx(Radio.Group, _objectSpread({}, formItemChildProps));
+      return /*#__PURE__*/_jsx(_Radio.Group, _objectSpread({}, formItemChildProps));
 
     case RenderType.Switch:
-      return /*#__PURE__*/_jsx(Switch, _objectSpread({}, formItemChildProps));
+      return /*#__PURE__*/_jsx(_Switch, _objectSpread({}, formItemChildProps));
 
     case RenderType.TimePicker:
-      return /*#__PURE__*/_jsx(TimePicker, _objectSpread({}, formItemChildProps));
+      return /*#__PURE__*/_jsx(_TimePicker, _objectSpread({}, formItemChildProps));
 
     case RenderType.TimeRangePicker:
-      return /*#__PURE__*/_jsx(TimePicker.RangePicker, _objectSpread({}, formItemChildProps));
+      return /*#__PURE__*/_jsx(_TimePicker.RangePicker, _objectSpread({}, formItemChildProps));
       break;
 
     case RenderType.DatePicker:
-      return /*#__PURE__*/_jsx(DatePicker, _objectSpread({}, formItemChildProps));
+      return /*#__PURE__*/_jsx(_DatePicker, _objectSpread({}, formItemChildProps));
 
     case RenderType.DateRangePicker:
-      return /*#__PURE__*/_jsx(DatePicker.RangePicker, _objectSpread({}, formItemChildProps));
+      return /*#__PURE__*/_jsx(_DatePicker.RangePicker, _objectSpread({}, formItemChildProps));
 
     case RenderType.Slider:
-      return /*#__PURE__*/_jsx(Slider, _objectSpread({}, formItemChildProps));
+      return /*#__PURE__*/_jsx(_Slider, _objectSpread({}, formItemChildProps));
 
     default:
       throw new TypeError('没有该渲染类型，请通过renderType为RenderType.CustomItemChildren来配置自定义渲染');
@@ -118,8 +139,8 @@ export var FormItemsBuilder = function FormItemsBuilder(_ref) {
           formItemProps = _ref2.formItemProps,
           rest = _objectWithoutProperties(_ref2, _excluded);
 
-      return /*#__PURE__*/_jsxs(Col, _objectSpread(_objectSpread({}, itemColProps || colProps || {}), {}, {
-        children: [itemTitle, /*#__PURE__*/_jsx(Form.Item, _objectSpread(_objectSpread({}, formItemProps), {}, {
+      return /*#__PURE__*/_jsxs(_Col, _objectSpread(_objectSpread({}, itemColProps || colProps || {}), {}, {
+        children: [itemTitle, /*#__PURE__*/_jsx(_Form.Item, _objectSpread(_objectSpread({}, formItemProps), {}, {
           children: renderFormItemChild(_objectSpread({}, rest))
         }))]
       }), key || (formItemProps === null || formItemProps === void 0 ? void 0 : (_formItemProps$name = formItemProps.name) === null || _formItemProps$name === void 0 ? void 0 : _formItemProps$name.toString()) || index);

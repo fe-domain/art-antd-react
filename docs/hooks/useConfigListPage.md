@@ -3,7 +3,10 @@ nav:
   title: useConfigListPage
   path: /hooks
 ---
-## useConfigListPage 列表页配置 hooks
+
+## useConfigListPage
+
+列表页配置
 
 使得列表页面配置化操作，自动处理 loading、模板化列表页面，配置即可生成页面
 

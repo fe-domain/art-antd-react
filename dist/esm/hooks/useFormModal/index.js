@@ -1,3 +1,9 @@
+import "antd/es/modal/style";
+import _Modal from "antd/es/modal";
+import "antd/es/message/style";
+import _message from "antd/es/message";
+import "antd/es/form/style";
+import _Form from "antd/es/form";
 var _excluded = ["form", "colProps", "rowProps", "formItemsConfig", "serviceFn", "formatSubmitValue", "onSuccess", "onError", "onCancel"];
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
@@ -22,7 +28,6 @@ function _objectWithoutProperties(source, excluded) { if (source == null) return
 
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
-import { Form, message, Modal } from 'antd';
 import React, { useMemo } from 'react';
 import { FormGenerator } from "../../FormGenerator";
 import { useRequest } from "../useRequest";
@@ -39,7 +44,7 @@ export var useFormModal = function useFormModal(_ref) {
       onCancel = _ref.onCancel,
       restModalProps = _objectWithoutProperties(_ref, _excluded);
 
-  var _Form$useForm = Form.useForm(form),
+  var _Form$useForm = _Form.useForm(form),
       _Form$useForm2 = _slicedToArray(_Form$useForm, 1),
       formInstance = _Form$useForm2[0];
 
@@ -49,7 +54,8 @@ export var useFormModal = function useFormModal(_ref) {
       if (_onSuccess) {
         _onSuccess(data);
       } else {
-        message.success('操作成功'); // 成功后调用 取消操作
+        _message.success('操作成功'); // 成功后调用 取消操作
+
 
         onCancel === null || onCancel === void 0 ? void 0 : onCancel();
       }
@@ -58,7 +64,7 @@ export var useFormModal = function useFormModal(_ref) {
       if (_onError) {
         _onError(error);
       } else {
-        message.error('操作失败');
+        _message.error('操作失败');
       }
     }
   }),
@@ -74,7 +80,7 @@ export var useFormModal = function useFormModal(_ref) {
   };
 
   var formModal = useMemo(function () {
-    return /*#__PURE__*/_jsx(Modal, _objectSpread(_objectSpread({
+    return /*#__PURE__*/_jsx(_Modal, _objectSpread(_objectSpread({
       onCancel: handleCancel,
       onOk: function onOk() {
         return formInstance.submit();

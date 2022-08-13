@@ -1,3 +1,11 @@
+import "antd/es/space/style";
+import _Space from "antd/es/space";
+import "antd/es/button/style";
+import _Button from "antd/es/button";
+import "antd/es/message/style";
+import _message from "antd/es/message";
+import "antd/es/tag/style";
+import _Tag from "antd/es/tag";
 var _excluded = ["formItemChildProps"];
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
@@ -10,7 +18,6 @@ function _objectWithoutProperties(source, excluded) { if (source == null) return
 
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
-import { Button, message, Space, Tag } from 'antd';
 import React, { useRef } from 'react';
 import { RenderType, useConfigListPage } from 'art-antd-react'; // 这里的请求和累心可以来自于你的项目
 
@@ -42,7 +49,7 @@ var Demo1 = function Demo1() {
     title: 'BestFirend',
     dataIndex: 'bestFirend',
     render: function render(bestFirend) {
-      return /*#__PURE__*/_jsx(Tag, {
+      return /*#__PURE__*/_jsx(_Tag, {
         color: "success",
         children: (bestFirend === null || bestFirend === void 0 ? void 0 : bestFirend.name) || '-'
       });
@@ -51,16 +58,17 @@ var Demo1 = function Demo1() {
     title: 'Action',
     key: 'action',
     render: function render() {
-      return /*#__PURE__*/_jsx(Space, {
+      return /*#__PURE__*/_jsx(_Space, {
         size: "middle",
         children: ['delete', '详情', '其他操作'].map(function (act) {
-          return /*#__PURE__*/_jsx(Button, {
+          return /*#__PURE__*/_jsx(_Button, {
             type: "link",
             onClick: function onClick() {
               console.log("you click add ".concat(act));
 
               if ('delete' === act) {
-                message.success('删除成功，然后重新请求数据');
+                _message.success('删除成功，然后重新请求数据');
+
                 managerRef.current.queryList({
                   请求的参数: 12
                 });

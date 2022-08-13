@@ -1,3 +1,10 @@
+import "antd/es/space/style";
+import _Space from "antd/es/space";
+import "antd/es/table/style";
+import _Table from "antd/es/table";
+import "antd/es/card/style";
+import _Card from "antd/es/card";
+
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
@@ -5,7 +12,6 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 import React from 'react';
-import { Card, Space, Table } from 'antd';
 import { FormGenerator } from "../FormGenerator";
 import { jsx as _jsx } from "react/jsx-runtime";
 import { jsxs as _jsxs } from "react/jsx-runtime";
@@ -36,11 +42,11 @@ export var ListTemplate = function ListTemplate(_ref) {
     }
   }, tableCardProps);
 
-  return /*#__PURE__*/_jsxs(Space, _objectSpread(_objectSpread({}, wrapConfig), {}, {
-    children: [/*#__PURE__*/_jsx(Card, _objectSpread(_objectSpread({}, searchCardProps || {}), {}, {
+  return /*#__PURE__*/_jsxs(_Space, _objectSpread(_objectSpread({}, wrapConfig), {}, {
+    children: [/*#__PURE__*/_jsx(_Card, _objectSpread(_objectSpread({}, searchCardProps || {}), {}, {
       children: /*#__PURE__*/_jsx(FormGenerator, _objectSpread({}, searchConfig))
-    })), /*#__PURE__*/_jsx(Card, _objectSpread(_objectSpread({}, tableCardConfig), {}, {
-      children: /*#__PURE__*/_jsx(Table, _objectSpread({}, tableProps))
+    })), /*#__PURE__*/_jsx(_Card, _objectSpread(_objectSpread({}, tableCardConfig), {}, {
+      children: /*#__PURE__*/_jsx(_Table, _objectSpread({}, tableProps))
     }))]
   }));
 };

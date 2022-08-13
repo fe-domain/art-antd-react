@@ -1,4 +1,3 @@
-import 'antd/dist/antd.css';
 export * from './FormItemsBuilder';
 export * from './FormGenerator';
 export * from './DetailPresent';

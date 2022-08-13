@@ -1,3 +1,11 @@
+import "antd/es/space/style";
+import _Space from "antd/es/space";
+import "antd/es/button/style";
+import _Button from "antd/es/button";
+import "antd/es/input/style";
+import _Input from "antd/es/input";
+import "antd/es/form/style";
+import _Form from "antd/es/form";
 var _excluded = ["key", "name"],
     _excluded2 = ["formItemChildProps", "formItemProps"];
 
@@ -23,7 +31,6 @@ function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Sy
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
-import { Button, Form, Input, Space } from 'antd';
 import React from 'react';
 import { FormGenerator, RenderType } from 'art-antd-react';
 import { jsx as _jsx } from "react/jsx-runtime";
@@ -31,7 +38,7 @@ import { jsxs as _jsxs } from "react/jsx-runtime";
 import { Fragment as _Fragment } from "react/jsx-runtime";
 
 var Demo2 = function Demo2() {
-  var _Form$useForm = Form.useForm(),
+  var _Form$useForm = _Form.useForm(),
       _Form$useForm2 = _slicedToArray(_Form$useForm, 1),
       form = _Form$useForm2[0];
 
@@ -81,7 +88,7 @@ var Demo2 = function Demo2() {
     formItemProps: {
       label: 'label8'
     },
-    customItemChildren: /*#__PURE__*/_jsx(Form.List, {
+    customItemChildren: /*#__PURE__*/_jsx(_Form.List, {
       name: "label8",
       children: function children(fields, _ref) {
         var add = _ref.add,
@@ -92,22 +99,22 @@ var Demo2 = function Demo2() {
                 name = _ref2.name,
                 restField = _objectWithoutProperties(_ref2, _excluded);
 
-            return /*#__PURE__*/_jsxs(Space, {
+            return /*#__PURE__*/_jsxs(_Space, {
               style: {
                 display: 'flex',
                 marginBottom: 8
               },
               align: "baseline",
-              children: [/*#__PURE__*/_jsx(Form.Item, _objectSpread(_objectSpread({}, restField), {}, {
+              children: [/*#__PURE__*/_jsx(_Form.Item, _objectSpread(_objectSpread({}, restField), {}, {
                 name: [name, 'first'],
                 rules: [{
                   required: true,
                   message: 'Missing first name'
                 }],
-                children: /*#__PURE__*/_jsx(Input, {
+                children: /*#__PURE__*/_jsx(_Input, {
                   placeholder: "First Name"
                 })
-              })), /*#__PURE__*/_jsx(Button, {
+              })), /*#__PURE__*/_jsx(_Button, {
                 type: "link",
                 onClick: function onClick() {
                   return remove(name);
@@ -115,8 +122,8 @@ var Demo2 = function Demo2() {
                 children: "\u5220\u9664"
               })]
             }, key);
-          }), /*#__PURE__*/_jsx(Form.Item, {
-            children: /*#__PURE__*/_jsx(Button, {
+          }), /*#__PURE__*/_jsx(_Form.Item, {
+            children: /*#__PURE__*/_jsx(_Button, {
               type: "dashed",
               onClick: function onClick() {
                 return add();
@@ -207,7 +214,7 @@ var Demo2 = function Demo2() {
     actionColProps: {
       span: 24
     },
-    actionBar: /*#__PURE__*/_jsx(Button, {
+    actionBar: /*#__PURE__*/_jsx(_Button, {
       type: "primary",
       onClick: function onClick() {
         return form.submit();

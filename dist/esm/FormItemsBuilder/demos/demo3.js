@@ -1,3 +1,15 @@
+import "antd/es/col/style";
+import _Col from "antd/es/col";
+import "antd/es/row/style";
+import _Row from "antd/es/row";
+import "antd/es/space/style";
+import _Space from "antd/es/space";
+import "antd/es/button/style";
+import _Button from "antd/es/button";
+import "antd/es/input/style";
+import _Input from "antd/es/input";
+import "antd/es/form/style";
+import _Form from "antd/es/form";
 var _excluded = ["formItemProps"];
 
 function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
@@ -22,7 +34,6 @@ function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Sy
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
-import { Button, Col, Form, Input, Row, Space } from 'antd';
 import React from 'react';
 import { FormItemsBuilder, RenderType } from 'art-antd-react';
 import { jsx as _jsx } from "react/jsx-runtime";
@@ -30,7 +41,7 @@ import { jsxs as _jsxs } from "react/jsx-runtime";
 import { Fragment as _Fragment } from "react/jsx-runtime";
 
 var Demo3 = function Demo3() {
-  var _Form$useForm = Form.useForm(),
+  var _Form$useForm = _Form.useForm(),
       _Form$useForm2 = _slicedToArray(_Form$useForm, 1),
       form = _Form$useForm2[0];
 
@@ -111,27 +122,27 @@ var Demo3 = function Demo3() {
     formItemProps: {
       label: 'label4'
     },
-    customItemChildren: /*#__PURE__*/_jsx(Form.List, {
+    customItemChildren: /*#__PURE__*/_jsx(_Form.List, {
       name: "sights",
       children: function children(fields, _ref) {
         var add = _ref.add,
             remove = _ref.remove;
         return /*#__PURE__*/_jsxs(_Fragment, {
           children: [fields.map(function (field) {
-            return /*#__PURE__*/_jsxs(Space, {
+            return /*#__PURE__*/_jsxs(_Space, {
               align: "baseline",
               style: {
                 marginRight: 10
               },
-              children: [/*#__PURE__*/_jsx(Form.Item, _objectSpread(_objectSpread({}, field), {}, {
+              children: [/*#__PURE__*/_jsx(_Form.Item, _objectSpread(_objectSpread({}, field), {}, {
                 label: "Price",
                 name: [field.name, 'price'],
                 rules: [{
                   required: true,
                   message: '价格不能为空'
                 }],
-                children: /*#__PURE__*/_jsx(Input, {})
-              })), /*#__PURE__*/_jsx(Button, {
+                children: /*#__PURE__*/_jsx(_Input, {})
+              })), /*#__PURE__*/_jsx(_Button, {
                 onClick: function onClick() {
                   return remove(field.name);
                 },
@@ -140,8 +151,8 @@ var Demo3 = function Demo3() {
                 children: "\u79FB\u9664"
               })]
             }, field.key);
-          }), /*#__PURE__*/_jsx(Form.Item, {
-            children: /*#__PURE__*/_jsx(Button, {
+          }), /*#__PURE__*/_jsx(_Form.Item, {
+            children: /*#__PURE__*/_jsx(_Button, {
               type: "dashed",
               onClick: function onClick() {
                 return add();
@@ -168,12 +179,12 @@ var Demo3 = function Demo3() {
       }, formItemProps)
     });
   });
-  return /*#__PURE__*/_jsxs(Form, {
+  return /*#__PURE__*/_jsxs(_Form, {
     form: form,
     onFinish: function onFinish(value) {
       console.log('demo3 values: ', value);
     },
-    children: [/*#__PURE__*/_jsx(Row, {
+    children: [/*#__PURE__*/_jsx(_Row, {
       gutter: 16,
       children: /*#__PURE__*/_jsx(FormItemsBuilder, {
         colProps: {
@@ -181,9 +192,9 @@ var Demo3 = function Demo3() {
         },
         formItemsConfig: group1FormItems
       })
-    }), /*#__PURE__*/_jsx(Col, {
+    }), /*#__PURE__*/_jsx(_Col, {
       span: 6,
-      children: /*#__PURE__*/_jsx(Button, {
+      children: /*#__PURE__*/_jsx(_Button, {
         type: "primary",
         htmlType: "submit",
         children: "\u63D0\u4EA4"

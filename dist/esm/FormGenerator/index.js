@@ -1,3 +1,13 @@
+import "antd/es/row/style";
+import _Row from "antd/es/row";
+import "antd/es/col/style";
+import _Col from "antd/es/col";
+import "antd/es/space/style";
+import _Space from "antd/es/space";
+import "antd/es/button/style";
+import _Button from "antd/es/button";
+import "antd/es/form/style";
+import _Form from "antd/es/form";
 var _excluded = ["form", "colProps", "rowProps", "showExpend", "showSubmit", "showRest", "actionBar", "formItemsConfig", "foldNumber", "actionColProps", "foldNode", "unfoldNode", "restNode", "submitNode", "fold", "onReset", "onValuesChange", "submitBtnProps", "resetBtnProps"];
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
@@ -22,7 +32,6 @@ function _objectWithoutProperties(source, excluded) { if (source == null) return
 
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
-import { Form, Row, Col, Button, Space } from 'antd';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { FormItemsBuilder } from "../FormItemsBuilder";
 import { jsx as _jsx } from "react/jsx-runtime";
@@ -55,7 +64,7 @@ export var FormGenerator = function FormGenerator(_ref) {
       resetBtnProps = _ref.resetBtnProps,
       restFormConfig = _objectWithoutProperties(_ref, _excluded);
 
-  var _Form$useForm = Form.useForm(form),
+  var _Form$useForm = _Form.useForm(form),
       _Form$useForm2 = _slicedToArray(_Form$useForm, 1),
       formInstance = _Form$useForm2[0];
 
@@ -89,22 +98,22 @@ export var FormGenerator = function FormGenerator(_ref) {
   var formItems = useMemo(function () {
     return expand ? formItemsConfig : formItemsConfig.slice(0, foldNumber);
   }, [foldNumber, formItemsConfig, expand]);
-  return /*#__PURE__*/_jsx(Form, _objectSpread(_objectSpread({
+  return /*#__PURE__*/_jsx(_Form, _objectSpread(_objectSpread({
     form: formInstance,
     onValuesChange: handleValuesChange
   }, restFormConfig), {}, {
-    children: /*#__PURE__*/_jsxs(Row, _objectSpread(_objectSpread({}, rowProps || {}), {}, {
+    children: /*#__PURE__*/_jsxs(_Row, _objectSpread(_objectSpread({}, rowProps || {}), {}, {
       children: [/*#__PURE__*/_jsx(FormItemsBuilder, {
         formItemsConfig: formItems,
         colProps: colProps || {}
-      }), /*#__PURE__*/_jsx(Col, _objectSpread(_objectSpread({}, actionColProps || colProps || {}), {}, {
-        children: actionBar || (showExpend || showRest || showSubmit) && /*#__PURE__*/_jsxs(Space, {
-          children: [showSubmit && /*#__PURE__*/_jsx(Button, _objectSpread(_objectSpread({
+      }), /*#__PURE__*/_jsx(_Col, _objectSpread(_objectSpread({}, actionColProps || colProps || {}), {}, {
+        children: actionBar || (showExpend || showRest || showSubmit) && /*#__PURE__*/_jsxs(_Space, {
+          children: [showSubmit && /*#__PURE__*/_jsx(_Button, _objectSpread(_objectSpread({
             type: "primary",
             htmlType: "submit"
           }, submitBtnProps || {}), {}, {
             children: submitNode
-          })), showRest && /*#__PURE__*/_jsx(Button, _objectSpread(_objectSpread({
+          })), showRest && /*#__PURE__*/_jsx(_Button, _objectSpread(_objectSpread({
             onClick: handleReset
           }, resetBtnProps || {}), {}, {
             children: restNode

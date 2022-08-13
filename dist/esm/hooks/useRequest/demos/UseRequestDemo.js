@@ -1,4 +1,7 @@
-import { Button, message } from 'antd';
+import "antd/es/button/style";
+import _Button from "antd/es/button";
+import "antd/es/message/style";
+import _message from "antd/es/message";
 import React from 'react';
 import { useRequest } from 'art-antd-react'; // getData 来自于你的请求服务函数
 
@@ -11,7 +14,7 @@ var RequestHookDemo = function RequestHookDemo() {
     lazy: true,
     // lazy 为 true 的时候需要手动去调用 lazyService(xx)
     onError: function onError(e) {
-      message.error((e === null || e === void 0 ? void 0 : e.message) || '请求出错');
+      _message.error((e === null || e === void 0 ? void 0 : e.message) || '请求出错');
     }
   }),
       data = _useRequest.data,
@@ -23,7 +26,7 @@ var RequestHookDemo = function RequestHookDemo() {
   }
 
   return /*#__PURE__*/_jsxs("section", {
-    children: [/*#__PURE__*/_jsx(Button, {
+    children: [/*#__PURE__*/_jsx(_Button, {
       onClick: function onClick() {
         return lazyService();
       },

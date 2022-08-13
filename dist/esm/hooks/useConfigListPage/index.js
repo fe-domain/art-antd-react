@@ -1,3 +1,5 @@
+import "antd/es/message/style";
+import _message from "antd/es/message";
 var _excluded = ["loading", "data", "lazyService"];
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
@@ -10,7 +12,6 @@ function _objectWithoutProperties(source, excluded) { if (source == null) return
 
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
-import { message } from 'antd';
 import React from 'react';
 import { useMemo } from 'react';
 import { ListTemplate } from "../../ListTemplate";
@@ -41,7 +42,7 @@ export var useConfigListPage = function useConfigListPage(_ref) {
       if (_onError) {
         _onError(error);
       } else {
-        message.error('请求列表数据出错');
+        _message.error('请求列表数据出错');
       }
     },
     formaResult: formaResult

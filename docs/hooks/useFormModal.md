@@ -3,7 +3,10 @@ nav:
   title: useFormModal
   path: /hooks
 ---
-## useFormModal 配置化表单弹框
+
+## useFormModal
+
+配置化表单弹框
 
 将 antd 的表单 和 弹框 进行封装，提交的时候自动 loading 完成之后 交由使用者决定是否关闭弹框通过配置化即可解决表单 modal 的情况。
 

@@ -1,3 +1,5 @@
+import "antd/es/descriptions/style";
+import _Descriptions from "antd/es/descriptions";
 var _excluded = ["detail", "placeholder", "keyMapLabel", "keyMapItemProps"];
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
@@ -10,7 +12,6 @@ function _objectWithoutProperties(source, excluded) { if (source == null) return
 
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
-import { Descriptions } from 'antd';
 import React, { useMemo } from 'react';
 import { Fragment as _Fragment } from "react/jsx-runtime";
 import { jsx as _jsx } from "react/jsx-runtime";
@@ -26,7 +27,7 @@ export var DetailPresent = function DetailPresent(_ref) {
       return detail && Object.prototype.hasOwnProperty.call(detail, key);
     });
   }, []);
-  return /*#__PURE__*/_jsx(Descriptions, _objectSpread(_objectSpread({}, descriptionProps), {}, {
+  return /*#__PURE__*/_jsx(_Descriptions, _objectSpread(_objectSpread({}, descriptionProps), {}, {
     children: keys.map(function (key) {
       var _detail$key;
 
@@ -34,7 +35,7 @@ export var DetailPresent = function DetailPresent(_ref) {
         label: keyMapLabel[key]
       });
 
-      return keyMapLabel[key] && /*#__PURE__*/_jsx(Descriptions.Item, _objectSpread(_objectSpread({}, itemConfig), {}, {
+      return keyMapLabel[key] && /*#__PURE__*/_jsx(_Descriptions.Item, _objectSpread(_objectSpread({}, itemConfig), {}, {
         children: /*#__PURE__*/_jsx(_Fragment, {
           children: (_detail$key = detail[key]) !== null && _detail$key !== void 0 ? _detail$key : placeholder
         })

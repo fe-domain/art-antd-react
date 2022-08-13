@@ -1,3 +1,5 @@
+import "antd/es/form/style";
+import _Form from "antd/es/form";
 var _excluded = ["formItemChildProps"];
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
@@ -22,13 +24,12 @@ function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Sy
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
-import { Form } from 'antd';
 import React from 'react';
 import { RenderType, FormGenerator } from 'art-antd-react';
 import { jsx as _jsx } from "react/jsx-runtime";
 
 var Demo1 = function Demo1() {
-  var _Form$useForm = Form.useForm(),
+  var _Form$useForm = _Form.useForm(),
       _Form$useForm2 = _slicedToArray(_Form$useForm, 1),
       form = _Form$useForm2[0];
 

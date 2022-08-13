@@ -1,3 +1,12 @@
+import "antd/es/row/style";
+import _Row from "antd/es/row";
+import "antd/es/col/style";
+import _Col from "antd/es/col";
+import "antd/es/button/style";
+import _Button from "antd/es/button";
+import "antd/es/form/style";
+import _Form from "antd/es/form";
+
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -10,14 +19,13 @@ function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Sy
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
-import { Button, Col, Form, Row } from 'antd';
 import React from 'react';
 import { FormItemsBuilder, RenderType } from 'art-antd-react';
 import { jsx as _jsx } from "react/jsx-runtime";
 import { jsxs as _jsxs } from "react/jsx-runtime";
 
 var Demo1 = function Demo1() {
-  var _Form$useForm = Form.useForm(),
+  var _Form$useForm = _Form.useForm(),
       _Form$useForm2 = _slicedToArray(_Form$useForm, 1),
       form = _Form$useForm2[0];
 
@@ -65,21 +73,21 @@ var Demo1 = function Demo1() {
 
     }
   }];
-  return /*#__PURE__*/_jsx(Form, {
+  return /*#__PURE__*/_jsx(_Form, {
     form: form,
     onFinish: function onFinish(value) {
       console.log('demo1 values: ', value);
     },
-    children: /*#__PURE__*/_jsxs(Row, {
+    children: /*#__PURE__*/_jsxs(_Row, {
       gutter: 18,
       children: [/*#__PURE__*/_jsx(FormItemsBuilder, {
         colProps: {
           span: 6
         },
         formItemsConfig: formItemsConfig
-      }), /*#__PURE__*/_jsx(Col, {
+      }), /*#__PURE__*/_jsx(_Col, {
         span: 6,
-        children: /*#__PURE__*/_jsx(Button, {
+        children: /*#__PURE__*/_jsx(_Button, {
           type: "primary",
           htmlType: "submit",
           children: "\u63D0\u4EA4"

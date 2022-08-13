@@ -1,3 +1,11 @@
+import "antd/es/message/style";
+import _message from "antd/es/message";
+import "antd/es/space/style";
+import _Space from "antd/es/space";
+import "antd/es/button/style";
+import _Button from "antd/es/button";
+import "antd/es/tag/style";
+import _Tag from "antd/es/tag";
 var _excluded = ["formItemChildProps"];
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
@@ -10,7 +18,6 @@ function _objectWithoutProperties(source, excluded) { if (source == null) return
 
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
-import { Button, message, Space, Tag } from 'antd';
 import React from 'react';
 import { ListTemplate, useRequest, RenderType } from 'art-antd-react';
 import { getData } from "../../mock";
@@ -39,7 +46,7 @@ var Demo1 = function Demo1() {
     title: 'BestFirend',
     dataIndex: 'bestFirend',
     render: function render(bestFirend) {
-      return /*#__PURE__*/_jsx(Tag, {
+      return /*#__PURE__*/_jsx(_Tag, {
         color: "success",
         children: (bestFirend === null || bestFirend === void 0 ? void 0 : bestFirend.name) || '-'
       });
@@ -48,10 +55,10 @@ var Demo1 = function Demo1() {
     title: 'Action',
     key: 'action',
     render: function render() {
-      return /*#__PURE__*/_jsx(Space, {
+      return /*#__PURE__*/_jsx(_Space, {
         size: "middle",
         children: ['删除', '详情', '其他操作'].map(function (act) {
-          return /*#__PURE__*/_jsx(Button, {
+          return /*#__PURE__*/_jsx(_Button, {
             type: "link",
             onClick: function onClick() {
               console.log("you click add ".concat(act));
@@ -89,7 +96,7 @@ var Demo1 = function Demo1() {
 
   var _useRequest = useRequest(getData, {
     onError: function onError(e) {
-      message.error((e === null || e === void 0 ? void 0 : e.message) || '请求出错');
+      _message.error((e === null || e === void 0 ? void 0 : e.message) || '请求出错');
     }
   }),
       dataSource = _useRequest.data,
@@ -117,7 +124,7 @@ var Demo1 = function Demo1() {
     ,
     tableCardProps: {
       title: '列表数据',
-      extra: /*#__PURE__*/_jsx(Button, {
+      extra: /*#__PURE__*/_jsx(_Button, {
         type: "primary",
         onClick: function onClick() {
           console.log('you click add btn');

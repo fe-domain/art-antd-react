@@ -49,6 +49,12 @@ github:
 npm i art-antd-react
 # or
 yarn add art-antd-react
+
+# 安装 antd 并 引入样式
+yarn add antd
+
+# 在入口文件
+import 'antd/dist/antd.css'
 ```
 
 # FormItemsBuilder 表单项构建器

@@ -5,6 +5,8 @@ export default defineConfig({
   favicon: '/icons/logo.ico',
   logo: '/icons/logo.png',
   outputPath: 'dist',
+  webpack5: {},
+  dynamicImport: {},
   extraBabelPlugins: [
     [
       'babel-plugin-import',

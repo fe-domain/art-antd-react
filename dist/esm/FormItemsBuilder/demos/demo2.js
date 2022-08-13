@@ -1,3 +1,14 @@
+import "antd/es/col/style";
+import _Col from "antd/es/col";
+import "antd/es/button/style";
+import _Button from "antd/es/button";
+import "antd/es/card/style";
+import _Card from "antd/es/card";
+import "antd/es/row/style";
+import _Row from "antd/es/row";
+import "antd/es/form/style";
+import _Form from "antd/es/form";
+
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -10,14 +21,13 @@ function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Sy
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
-import { Button, Card, Col, Form, Row } from 'antd';
 import React from 'react';
 import { FormItemsBuilder, RenderType } from 'art-antd-react';
 import { jsx as _jsx } from "react/jsx-runtime";
 import { jsxs as _jsxs } from "react/jsx-runtime";
 
 var Demo2 = function Demo2() {
-  var _Form$useForm = Form.useForm(),
+  var _Form$useForm = _Form.useForm(),
       _Form$useForm2 = _slicedToArray(_Form$useForm, 1),
       form = _Form$useForm2[0];
 
@@ -137,7 +147,7 @@ var Demo2 = function Demo2() {
     title: 'group2',
     itemsConfig: group2FormItems
   }];
-  return /*#__PURE__*/_jsxs(Form, {
+  return /*#__PURE__*/_jsxs(_Form, {
     form: form,
     onFinish: function onFinish(value) {
       console.log('demo2 values: ', value);
@@ -145,12 +155,12 @@ var Demo2 = function Demo2() {
     children: [groupFormItems.map(function (_ref) {
       var title = _ref.title,
           itemsConfig = _ref.itemsConfig;
-      return /*#__PURE__*/_jsx(Card, {
+      return /*#__PURE__*/_jsx(_Card, {
         title: title,
         style: {
           margin: 16
         },
-        children: /*#__PURE__*/_jsx(Row, {
+        children: /*#__PURE__*/_jsx(_Row, {
           gutter: 16,
           children: /*#__PURE__*/_jsx(FormItemsBuilder, {
             colProps: {
@@ -160,10 +170,10 @@ var Demo2 = function Demo2() {
           })
         })
       }, title);
-    }), /*#__PURE__*/_jsx(Col, {
+    }), /*#__PURE__*/_jsx(_Col, {
       span: 6,
       push: 1,
-      children: /*#__PURE__*/_jsx(Button, {
+      children: /*#__PURE__*/_jsx(_Button, {
         type: "primary",
         htmlType: "submit",
         children: "\u63D0\u4EA4"
