@@ -1,13 +1,13 @@
 (self['webpackChunkart_antd_react'] = self['webpackChunkart_antd_react'] || []).push([
   [50],
   {
-    32582: function (e, r, t) {
+    64382: function (e, r, t) {
       'use strict';
       t.r(r);
-      var a = t(52663),
-        o = t(67294),
-        n = t(64496),
-        l = () => {
+      var o = t(52663),
+        a = t(67294),
+        l = t(64496),
+        n = () => {
           var e = {
               user: '\u5f20\u826f',
               age: '88',
@@ -24,21 +24,21 @@
               hobby: '\u7231\u597d',
               friend: '\u670b\u53cb',
             };
-          return o.createElement(n.Li, {
+          return a.createElement(l.Li, {
             title: '\u8c0b\u5723\u4fe1\u606f',
-            detail: (0, a.Z)((0, a.Z)({}, e), {}, { friend: e.friend.user }),
+            detail: (0, o.Z)((0, o.Z)({}, e), {}, { friend: e.friend.user }),
             keyMapLabel: r,
           });
         };
-      r['default'] = l;
+      r['default'] = n;
     },
-    46182: function (e, r, t) {
+    47798: function (e, r, t) {
       'use strict';
       t.r(r);
-      var a = t(52663),
-        o = t(67294),
-        n = t(64496),
-        l = () => {
+      var o = t(52663),
+        a = t(67294),
+        l = t(64496),
+        n = () => {
           var e = {
               user: '\u5f20\u826f',
               age: '88',
@@ -60,15 +60,15 @@
               friend: '\u670b\u53cb',
               other: '\u5176\u4ed6',
             };
-          return o.createElement(n.Li, {
+          return a.createElement(l.Li, {
             title: '\u8c0b\u5723\u4fe1\u606f',
-            detail: (0, a.Z)(
-              (0, a.Z)({}, e),
+            detail: (0, o.Z)(
+              (0, o.Z)({}, e),
               {},
               {
                 friend: e.friend.user,
                 hobby: e.hobby.join('\u3001'),
-                sketch: o.createElement(
+                sketch: a.createElement(
                   'a',
                   {
                     target: '_blank',
@@ -84,21 +84,21 @@
             keyMapItemProps: { sketch: { labelStyle: { color: '#f00' }, span: 3 } },
           });
         };
-      r['default'] = l;
+      r['default'] = n;
     },
-    34641: function (e, r, t) {
+    25044: function (e, r, t) {
       'use strict';
       t.r(r);
-      var a = t(52663),
-        o = t(3911),
-        n = (t(67604), t(64687)),
-        l = t(38573),
+      var o = t(52663),
+        a = t(3911),
+        l = (t(67604), t(64687)),
+        n = t(38573),
         s = t(67294),
         m = t(64496),
         i = ['formItemChildProps'],
         c = () => {
-          var e = n.Z.useForm(),
-            r = (0, l.Z)(e, 1),
+          var e = l.Z.useForm(),
+            r = (0, n.Z)(e, 1),
             t = r[0],
             c = Array(11)
               .fill({})
@@ -109,11 +109,11 @@
               }))
               .map((e) => {
                 var r = e.formItemChildProps,
-                  t = (0, o.Z)(e, i);
-                return (0, a.Z)(
-                  (0, a.Z)({}, t),
+                  t = (0, a.Z)(e, i);
+                return (0, o.Z)(
+                  (0, o.Z)({}, t),
                   {},
-                  { formItemChildProps: (0, a.Z)({ style: { width: '100%' } }, r) },
+                  { formItemChildProps: (0, o.Z)({ style: { width: '100%' } }, r) },
                 );
               });
           return s.createElement(m.if, {
@@ -132,19 +132,154 @@
         };
       r['default'] = c;
     },
-    19665: function (e, r, t) {
+    18353: function (e, r, t) {
+      'use strict';
+      t.r(r);
+      var o = t(52663),
+        a = (t(25324), t(45733)),
+        l = (t(13753), t(48429)),
+        n = t(13378),
+        s = (t(68137), t(76563)),
+        m = t(3911),
+        i = (t(67604), t(64687)),
+        c = t(38573),
+        p = t(67294),
+        d = t(64496),
+        u = ['key', 'name'],
+        f = ['formItemChildProps', 'formItemProps'],
+        h = () => {
+          var e = i.Z.useForm(),
+            r = (0, c.Z)(e, 1),
+            t = r[0],
+            h = [
+              { label: 'mock1', value: 'mock1' },
+              { label: 'mock2', value: 'mock2' },
+            ],
+            b = [
+              {
+                renderType: d.y2.Switch,
+                itemColProps: { span: 4 },
+                formItemProps: { valuePropName: 'checked', name: 'label5', label: 'label5' },
+              },
+              {
+                renderType: d.y2.RadioGroup,
+                itemColProps: { span: 10 },
+                formItemProps: { name: 'label7', label: 'label7', wrapperCol: { span: 24 } },
+                formItemChildProps: { style: { width: '100%' }, options: h },
+              },
+              {
+                renderType: d.y2.CustomItemChildren,
+                itemColProps: { span: 24 },
+                formItemProps: { label: 'label8' },
+                customItemChildren: p.createElement(i.Z.List, { name: 'label8' }, (e, r) => {
+                  var t = r.add,
+                    o = r.remove;
+                  return p.createElement(
+                    p.Fragment,
+                    null,
+                    e.map((e) => {
+                      var r = e.key,
+                        t = e.name,
+                        c = (0, m.Z)(e, u);
+                      return p.createElement(
+                        a.Z,
+                        { key: r, style: { display: 'flex', marginBottom: 8 }, align: 'baseline' },
+                        p.createElement(
+                          i.Z.Item,
+                          (0, n.Z)({}, c, {
+                            name: [t, 'first'],
+                            rules: [{ required: !0, message: 'Missing first name' }],
+                          }),
+                          p.createElement(s.Z, { placeholder: 'First Name' }),
+                        ),
+                        p.createElement(l.Z, { type: 'link', onClick: () => o(t) }, '\u5220\u9664'),
+                      );
+                    }),
+                    p.createElement(
+                      i.Z.Item,
+                      null,
+                      p.createElement(l.Z, { type: 'dashed', onClick: () => t() }, '+ Add field'),
+                    ),
+                  );
+                }),
+              },
+              {
+                renderType: d.y2.Input,
+                key: '1',
+                formItemProps: { name: 'label1', label: 'label1' },
+                formItemChildProps: { placeholder: '\u8bf7\u8f93\u5165\u540d\u5b57' },
+              },
+              {
+                renderType: d.y2.Select,
+                formItemProps: { name: 'label2', label: 'label2' },
+                formItemChildProps: { placeholder: '\u8bf7\u9009\u62e9', options: h },
+              },
+              {
+                renderType: d.y2.Slider,
+                key: '3',
+                formItemProps: { name: 'label3', label: 'label3' },
+              },
+              {
+                renderType: d.y2.TimeRangePicker,
+                key: '4',
+                itemColProps: { span: 24 },
+                formItemProps: { name: 'label4', label: 'label4' },
+                formItemChildProps: {
+                  onChange: (e) => {
+                    console.log('v', e);
+                  },
+                },
+              },
+            ].map((e) => {
+              var r = e.formItemChildProps,
+                t = e.formItemProps,
+                a = (0, m.Z)(e, f);
+              return (0, o.Z)(
+                (0, o.Z)({}, a),
+                {},
+                {
+                  formItemProps: (0, o.Z)((0, o.Z)({}, t), {}, { wrapperCol: { span: 24 } }),
+                  formItemChildProps: (0, o.Z)(
+                    (0, o.Z)({}, r || {}),
+                    {},
+                    { style: { width: '100%' } },
+                  ),
+                },
+              );
+            });
+          return p.createElement(d.if, {
+            form: t,
+            showSubmit: !0,
+            onFinish: (e) => {
+              console.log('Formgenerator demo2 values: ', e);
+            },
+            colProps: { span: 8 },
+            rowProps: { gutter: 20 },
+            showExpend: !0,
+            formItemsConfig: b,
+            actionColProps: { span: 24 },
+            actionBar: p.createElement(
+              l.Z,
+              { type: 'primary', onClick: () => t.submit() },
+              '\u4fdd\u5b58',
+            ),
+          });
+        };
+      r['default'] = h;
+    },
+    29061: function (e, r, t) {
       'use strict';
       t.r(r);
       t(5317);
-      var a = t(87555),
-        o = (t(52222), t(65507)),
-        n = (t(13753), t(48429)),
-        l = (t(67604), t(64687)),
+      var o = t(87555),
+        a = (t(52222), t(65507)),
+        l = (t(13753), t(48429)),
+        n = (t(67604), t(64687)),
         s = t(38573),
         m = t(67294),
         i = t(64496),
         c = () => {
-          var e = l.Z.useForm(),
+          var e = n.Z.useForm(),
             r = (0, s.Z)(e, 1),
             t = r[0],
             c = [
@@ -152,7 +287,7 @@
               { label: 'mock2', value: 'mock2' },
               { label: 'mock3', value: 'mock3' },
             ],
-            u = [
+            p = [
               {
                 renderType: i.y2.Input,
                 formItemProps: { name: 'name', label: '\u59d3\u540d' },
@@ -173,7 +308,7 @@
               },
             ];
           return m.createElement(
-            l.Z,
+            n.Z,
             {
               form: t,
               onFinish: (e) => {
@@ -181,36 +316,36 @@
               },
             },
             m.createElement(
-              a.Z,
+              o.Z,
               { gutter: 18 },
-              m.createElement(i.xh, { colProps: { span: 6 }, formItemsConfig: u }),
+              m.createElement(i.xh, { colProps: { span: 6 }, formItemsConfig: p }),
               m.createElement(
-                o.Z,
+                a.Z,
                 { span: 6 },
-                m.createElement(n.Z, { type: 'primary', htmlType: 'submit' }, '\u63d0\u4ea4'),
+                m.createElement(l.Z, { type: 'primary', htmlType: 'submit' }, '\u63d0\u4ea4'),
               ),
             ),
           );
         };
       r['default'] = c;
     },
-    66053: function (e, r, t) {
+    13526: function (e, r, t) {
       'use strict';
       t.r(r);
       t(52222);
-      var a = t(65507),
-        o = (t(13753), t(48429)),
-        n = (t(64527), t(72067)),
-        l = (t(5317), t(87555)),
+      var o = t(65507),
+        a = (t(13753), t(48429)),
+        l = (t(64527), t(72067)),
+        n = (t(5317), t(87555)),
         s = (t(67604), t(64687)),
         m = t(38573),
         i = t(67294),
         c = t(64496),
-        u = () => {
+        p = () => {
           var e = s.Z.useForm(),
             r = (0, m.Z)(e, 1),
             t = r[0],
-            u = [
+            p = [
               { label: 'mock1', value: 'mock1' },
               { label: 'mock2', value: 'mock2' },
             ],
@@ -225,7 +360,7 @@
                 renderType: c.y2.Select,
                 key: '2',
                 formItemProps: { name: 'label2', label: 'label2' },
-                formItemChildProps: { placeholder: '\u8bf7\u9009\u62e9', options: u },
+                formItemChildProps: { placeholder: '\u8bf7\u9009\u62e9', options: p },
               },
               {
                 renderType: c.y2.Slider,
@@ -246,17 +381,17 @@
                 },
               },
             ],
-            p = [
+            u = [
               {
                 renderType: c.y2.CheckboxGroup,
                 formItemProps: { name: 'label6', label: 'label6' },
-                formItemChildProps: { options: u },
+                formItemChildProps: { options: p },
               },
               {
                 renderType: c.y2.RadioGroup,
                 itemColProps: { span: 10 },
                 formItemProps: { name: 'label7', label: 'label7', wrapperCol: { span: 24 } },
-                formItemChildProps: { style: { width: '100%' }, options: u },
+                formItemChildProps: { style: { width: '100%' }, options: p },
               },
               {
                 renderType: c.y2.CustomItemChildren,
@@ -271,7 +406,7 @@
             ],
             f = [
               { title: 'group1', itemsConfig: d },
-              { title: 'group2', itemsConfig: p },
+              { title: 'group2', itemsConfig: u },
             ];
           return i.createElement(
             s.Z,
@@ -285,43 +420,43 @@
               var r = e.title,
                 t = e.itemsConfig;
               return i.createElement(
-                n.Z,
+                l.Z,
                 { title: r, key: r, style: { margin: 16 } },
                 i.createElement(
-                  l.Z,
+                  n.Z,
                   { gutter: 16 },
                   i.createElement(c.xh, { colProps: { span: 8 }, formItemsConfig: t }),
                 ),
               );
             }),
             i.createElement(
-              a.Z,
+              o.Z,
               { span: 6, push: 1 },
-              i.createElement(o.Z, { type: 'primary', htmlType: 'submit' }, '\u63d0\u4ea4'),
+              i.createElement(a.Z, { type: 'primary', htmlType: 'submit' }, '\u63d0\u4ea4'),
             ),
           );
         };
-      r['default'] = u;
+      r['default'] = p;
     },
-    33927: function (e, r, t) {
+    62530: function (e, r, t) {
       'use strict';
       t.r(r);
       t(52222);
-      var a = t(65507),
-        o = (t(5317), t(87555)),
-        n = t(52663),
-        l = t(3911),
+      var o = t(65507),
+        a = (t(5317), t(87555)),
+        l = t(52663),
+        n = t(3911),
         s = (t(25324), t(45733)),
         m = (t(13753), t(48429)),
         i = t(13378),
         c = (t(68137), t(76563)),
-        u = (t(67604), t(64687)),
+        p = (t(67604), t(64687)),
         d = t(38573),
-        p = t(67294),
+        u = t(67294),
         f = t(64496),
         h = ['formItemProps'],
         b = () => {
-          var e = u.Z.useForm(),
+          var e = p.Z.useForm(),
             r = (0, d.Z)(e, 1),
             t = r[0],
             b = [
@@ -332,17 +467,17 @@
               {
                 renderType: f.y2.Input,
                 key: '1',
-                itemTitle: p.createElement(
+                itemTitle: u.createElement(
                   'div',
                   null,
                   'itemTitle \u4e00\u822c\u653e\u5728label\u524d\u52a0\u4ee5\u8bf4\u660e',
                 ),
                 formItemProps: {
                   name: 'label1',
-                  label: p.createElement('div', null, 'label1'),
+                  label: u.createElement('div', null, 'label1'),
                   colon: !0,
                   dependencies: ['label2'],
-                  extra: p.createElement('div', null, '\u989d\u5916\u7684\u4fe1\u606f'),
+                  extra: u.createElement('div', null, '\u989d\u5916\u7684\u4fe1\u606f'),
                   tooltip: 'demo3',
                   rules: [{ required: !0, message: '\u4e0d\u80fd\u4e3a\u7a7a' }],
                 },
@@ -371,18 +506,18 @@
                 key: 'CustomItemChildren',
                 itemColProps: { span: 24 },
                 formItemProps: { label: 'label4' },
-                customItemChildren: p.createElement(u.Z.List, { name: 'sights' }, (e, r) => {
+                customItemChildren: u.createElement(p.Z.List, { name: 'sights' }, (e, r) => {
                   var t = r.add,
-                    a = r.remove;
-                  return p.createElement(
-                    p.Fragment,
+                    o = r.remove;
+                  return u.createElement(
+                    u.Fragment,
                     null,
                     e.map((e) =>
-                      p.createElement(
+                      u.createElement(
                         s.Z,
                         { key: e.key, align: 'baseline', style: { marginRight: 10 } },
-                        p.createElement(
-                          u.Z.Item,
+                        u.createElement(
+                          p.Z.Item,
                           (0, i.Z)({}, e, {
                             label: 'Price',
                             name: [e.name, 'price'],
@@ -390,19 +525,19 @@
                               { required: !0, message: '\u4ef7\u683c\u4e0d\u80fd\u4e3a\u7a7a' },
                             ],
                           }),
-                          p.createElement(c.Z, null),
+                          u.createElement(c.Z, null),
                         ),
-                        p.createElement(
+                        u.createElement(
                           m.Z,
-                          { onClick: () => a(e.name), type: 'primary', danger: !0 },
+                          { onClick: () => o(e.name), type: 'primary', danger: !0 },
                           '\u79fb\u9664',
                         ),
                       ),
                     ),
-                    p.createElement(
-                      u.Z.Item,
+                    u.createElement(
+                      p.Z.Item,
                       null,
-                      p.createElement(
+                      u.createElement(
                         m.Z,
                         { type: 'dashed', onClick: () => t(), block: !0 },
                         '\u65b0\u589e\u9879',
@@ -413,52 +548,52 @@
               },
             ].map((e) => {
               var r = e.formItemProps,
-                t = (0, l.Z)(e, h);
-              return (0, n.Z)(
-                (0, n.Z)({}, t),
+                t = (0, n.Z)(e, h);
+              return (0, l.Z)(
+                (0, l.Z)({}, t),
                 {},
                 {
-                  formItemProps: (0, n.Z)({ labelCol: { span: 24 }, wrapperCol: { span: 24 } }, r),
+                  formItemProps: (0, l.Z)({ labelCol: { span: 24 }, wrapperCol: { span: 24 } }, r),
                 },
               );
             });
-          return p.createElement(
-            u.Z,
+          return u.createElement(
+            p.Z,
             {
               form: t,
               onFinish: (e) => {
                 console.log('demo3 values: ', e);
               },
             },
-            p.createElement(
-              o.Z,
-              { gutter: 16 },
-              p.createElement(f.xh, { colProps: { span: 24 }, formItemsConfig: y }),
-            ),
-            p.createElement(
+            u.createElement(
               a.Z,
+              { gutter: 16 },
+              u.createElement(f.xh, { colProps: { span: 24 }, formItemsConfig: y }),
+            ),
+            u.createElement(
+              o.Z,
               { span: 6 },
-              p.createElement(m.Z, { type: 'primary', htmlType: 'submit' }, '\u63d0\u4ea4'),
+              u.createElement(m.Z, { type: 'primary', htmlType: 'submit' }, '\u63d0\u4ea4'),
             ),
           );
         };
       r['default'] = b;
     },
-    31726: function (e, r, t) {
+    83164: function (e, r, t) {
       'use strict';
       t.r(r);
       t(14643);
-      var a = t(38488),
-        o = t(52663),
-        n = t(3911),
-        l = (t(25324), t(45733)),
+      var o = t(38488),
+        a = t(52663),
+        l = t(3911),
+        n = (t(25324), t(45733)),
         s = (t(13753), t(48429)),
         m = (t(14943), t(74356)),
         i = t(67294),
-        c = t(75561),
-        u = t(64496),
+        c = t(99196),
+        p = t(64496),
         d = ['formItemChildProps'],
-        p = () => {
+        u = () => {
           var e = [
               { title: 'Name', dataIndex: 'name' },
               { title: 'Age', dataIndex: 'age', sorter: (e, r) => e.age - r.age },
@@ -480,7 +615,7 @@
                 key: 'action',
                 render: () =>
                   i.createElement(
-                    l.Z,
+                    n.Z,
                     { size: 'middle' },
                     ['\u5220\u9664', '\u8be6\u60c5', '\u5176\u4ed6\u64cd\u4f5c'].map((e) =>
                       i.createElement(
@@ -501,33 +636,33 @@
             r = Array(11)
               .fill({})
               .map((e, r) => ({
-                renderType: u.y2.Input,
+                renderType: p.y2.Input,
                 formItemProps: { name: 'label'.concat(r), label: 'label'.concat(r) },
                 formItemChildProps: { placeholder: 'please input label'.concat(r) },
               }))
               .map((e) => {
                 var r = e.formItemChildProps,
-                  t = (0, n.Z)(e, d);
-                return (0, o.Z)(
-                  (0, o.Z)({}, t),
+                  t = (0, l.Z)(e, d);
+                return (0, a.Z)(
+                  (0, a.Z)({}, t),
                   {},
-                  { formItemChildProps: (0, o.Z)({ style: { width: '100%' } }, r) },
+                  { formItemChildProps: (0, a.Z)({ style: { width: '100%' } }, r) },
                 );
               }),
-            t = (0, u.QT)(c.Y, {
+            t = (0, p.QT)(c.Y, {
               onError(e) {
-                a.ZP.error(
+                o.ZP.error(
                   (null === e || void 0 === e ? void 0 : e.message) || '\u8bf7\u6c42\u51fa\u9519',
                 );
               },
             }),
-            p = t.data,
+            u = t.data,
             f = t.loading;
-          return i.createElement(u.o, {
+          return i.createElement(p.o, {
             size: 16,
             tableProps: {
               loading: f,
-              dataSource: p,
+              dataSource: u,
               columns: e,
               scroll: { x: !0 },
               rowKey: 'id',
@@ -566,22 +701,22 @@
             searchCardProps: { style: { marginBottom: 2 } },
           });
         };
-      r['default'] = p;
+      r['default'] = u;
     },
-    63337: function (e, r, t) {
+    91593: function (e, r, t) {
       'use strict';
       t.r(r);
-      var a = t(52663),
-        o = t(3911),
-        n = (t(25324), t(45733)),
-        l = (t(13753), t(48429)),
+      var o = t(52663),
+        a = t(3911),
+        l = (t(25324), t(45733)),
+        n = (t(13753), t(48429)),
         s = (t(14643), t(38488)),
         m = (t(14943), t(74356)),
         i = t(67294),
         c = t(64496),
-        u = t(75561),
+        p = t(99196),
         d = ['formItemChildProps'],
-        p = () => {
+        u = () => {
           var e = (0, i.useRef)({}),
             r = [
               { title: 'Name', dataIndex: 'name' },
@@ -604,11 +739,11 @@
                 key: 'action',
                 render: () =>
                   i.createElement(
-                    n.Z,
+                    l.Z,
                     { size: 'middle' },
                     ['delete', '\u8be6\u60c5', '\u5176\u4ed6\u64cd\u4f5c'].map((r) =>
                       i.createElement(
-                        l.Z,
+                        n.Z,
                         {
                           key: r,
                           type: 'link',
@@ -636,15 +771,15 @@
               }))
               .map((e) => {
                 var r = e.formItemChildProps,
-                  t = (0, o.Z)(e, d);
-                return (0, a.Z)(
-                  (0, a.Z)({}, t),
+                  t = (0, a.Z)(e, d);
+                return (0, o.Z)(
+                  (0, o.Z)({}, t),
                   {},
-                  { formItemChildProps: (0, a.Z)({ style: { width: '100%' } }, r) },
+                  { formItemChildProps: (0, o.Z)({ style: { width: '100%' } }, r) },
                 );
               }),
-            p = (0, c.CR)({
-              queryListService: u.Y,
+            u = (0, c.CR)({
+              queryListService: p.Y,
               formItemsConfig: t,
               rowProps: { gutter: 8 },
               colProps: { span: 8 },
@@ -661,20 +796,20 @@
                 },
               },
             }),
-            f = p.listContainer,
-            h = p.queryList;
+            f = u.listContainer,
+            h = u.queryList;
           return (e.current = { queryList: h }), f;
         };
-      r['default'] = p;
+      r['default'] = u;
     },
-    71503: function (e, r, t) {
+    20154: function (e, r, t) {
       'use strict';
       t.r(r);
       t(26780);
-      var a = t(31980),
-        o = (t(67604), t(64687)),
-        n = (t(68137), t(76563)),
-        l = (t(13753), t(48429)),
+      var o = t(31980),
+        a = (t(67604), t(64687)),
+        l = (t(68137), t(76563)),
+        n = (t(13753), t(48429)),
         s = t(38573),
         m = t(67294),
         i = t(64496),
@@ -688,7 +823,7 @@
             m.Fragment,
             null,
             m.createElement(
-              l.Z,
+              n.Z,
               {
                 onClick: () => {
                   c(!0);
@@ -697,32 +832,32 @@
               '\u7f16\u8f91\u4fe1\u606f',
             ),
             m.createElement(
-              a.Z,
+              o.Z,
               { visible: t },
               m.createElement(
-                o.Z,
+                a.Z,
                 null,
-                m.createElement(o.Z.Item, { name: 'name' }, m.createElement(n.Z, null)),
+                m.createElement(a.Z.Item, { name: 'name' }, m.createElement(l.Z, null)),
               ),
             ),
           );
         };
       r['default'] = c;
     },
-    47331: function (e, r, t) {
+    72294: function (e, r, t) {
       'use strict';
       t.r(r);
       t(13753);
-      var a = t(48429),
-        o = (t(14643), t(38488)),
-        n = t(67294),
-        l = t(64496),
-        s = t(75561),
+      var o = t(48429),
+        a = (t(14643), t(38488)),
+        l = t(67294),
+        n = t(64496),
+        s = t(99196),
         m = () => {
-          var e = (0, l.QT)(s.Y, {
+          var e = (0, n.QT)(s.Y, {
               lazy: !0,
               onError(e) {
-                o.ZP.error(
+                a.ZP.error(
                   (null === e || void 0 === e ? void 0 : e.message) || '\u8bf7\u6c42\u51fa\u9519',
                 );
               },
@@ -732,44 +867,44 @@
             m = e.lazyService;
           return (
             r && console.log('\u8bf7\u6c42\u7684\u6570\u636e:', JSON.stringify(r, null, 2)),
-            n.createElement(
+            l.createElement(
               'section',
               null,
-              n.createElement(a.Z, { onClick: () => m() }, '\u70b9\u51fb\u8bf7\u6c42\u6570\u636e'),
-              n.createElement(
+              l.createElement(o.Z, { onClick: () => m() }, '\u70b9\u51fb\u8bf7\u6c42\u6570\u636e'),
+              l.createElement(
                 'main',
                 null,
                 '\u8bf7\u6c42\u7ed3\u679c\uff1a',
-                n.createElement('code', null, t ? 'loading ...' : JSON.stringify(r, null, 2)),
+                l.createElement('code', null, t ? 'loading ...' : JSON.stringify(r, null, 2)),
               ),
             )
           );
         };
       r['default'] = m;
     },
-    75561: function (e, r, t) {
+    99196: function (e, r, t) {
       'use strict';
       t.d(r, {
         Y: function () {
-          return n;
+          return l;
         },
       });
-      var a = t(99829),
-        o = t(68699),
-        n = (function () {
-          var e = (0, o.Z)(
-            (0, a.Z)().mark(function e(r) {
-              var t, o, n, l, s, m, i;
-              return (0, a.Z)().wrap(function (e) {
+      var o = t(99829),
+        a = t(68699),
+        l = (function () {
+          var e = (0, a.Z)(
+            (0, o.Z)().mark(function e(r) {
+              var t, a, l, n, s, m, i;
+              return (0, o.Z)().wrap(function (e) {
                 while (1)
                   switch ((e.prev = e.next)) {
                     case 0:
                       return (
                         (t = r || {}),
-                        (o = t.len),
-                        (n = void 0 === o ? 21 : o),
-                        (l = t.timeout),
-                        (s = void 0 === l ? 1500 : l),
+                        (a = t.len),
+                        (l = void 0 === a ? 21 : a),
+                        (n = t.timeout),
+                        (s = void 0 === n ? 1500 : n),
                         (m = t.throwErr),
                         (i = void 0 !== m && m),
                         e.abrupt(
@@ -778,7 +913,7 @@
                             setTimeout(() => {
                               i && r('\u51fa\u9519\u5566'),
                                 e(
-                                  Array(n)
+                                  Array(l)
                                     .fill({})
                                     .map((e, r) => ({
                                       id: ''.concat(r + Math.floor(100 * Math.random())),
@@ -836,22 +971,22 @@
         },
       });
       t(52222);
-      var a = t(65507),
-        o = t(13378),
-        n = (t(67604), t(64687)),
-        l = t(52663),
+      var o = t(65507),
+        a = t(13378),
+        l = (t(67604), t(64687)),
+        n = t(52663),
         s = t(3911),
         m = (t(67331), t(33034)),
         i = (t(74393), t(8578)),
         c = (t(65679), t(36775)),
-        u = (t(59560), t(47153)),
+        p = (t(59560), t(47153)),
         d = (t(90140), t(69984)),
-        p = (t(97140), t(81469)),
+        u = (t(97140), t(81469)),
         f = (t(44862), t(42091)),
         h = (t(11826), t(38654)),
         b = (t(68137), t(76563)),
         y = t(67294),
-        j = ['key', 'itemTitle', 'itemColProps', 'formItemProps'],
+        P = ['key', 'itemTitle', 'itemColProps', 'formItemProps'],
         g = {
           Input: 'Input',
           Select: 'Select',
@@ -868,11 +1003,11 @@
           Slider: 'Slider',
           CustomItemChildren: 'CustomItemChildren',
         },
-        P = (e) => {
+        j = (e) => {
           var r = e.renderType,
             t = e.customItemChildren,
-            a = e.formItemChildProps,
-            o = void 0 === a ? {} : a;
+            o = e.formItemChildProps,
+            a = void 0 === o ? {} : o;
           switch (r) {
             case g.CustomItemChildren:
               if (!t)
@@ -884,31 +1019,31 @@
                 );
               return t;
             case g.Input:
-              return y.createElement(b.Z, o);
+              return y.createElement(b.Z, a);
             case g.InputNumber:
-              return y.createElement(h.Z, o);
+              return y.createElement(h.Z, a);
             case g.Checkbox:
-              return y.createElement(f.Z, o);
+              return y.createElement(f.Z, a);
             case g.CheckboxGroup:
-              return y.createElement(f.Z.Group, o);
+              return y.createElement(f.Z.Group, a);
             case g.Select:
-              return y.createElement(p.Z, o);
+              return y.createElement(u.Z, a);
             case g.Radio:
-              return y.createElement(d.ZP, o);
+              return y.createElement(d.ZP, a);
             case g.RadioGroup:
-              return y.createElement(d.ZP.Group, o);
+              return y.createElement(d.ZP.Group, a);
             case g.Switch:
-              return y.createElement(u.Z, o);
+              return y.createElement(p.Z, a);
             case g.TimePicker:
-              return y.createElement(c.Z, o);
+              return y.createElement(c.Z, a);
             case g.TimeRangePicker:
-              return y.createElement(c.Z.RangePicker, o);
+              return y.createElement(c.Z.RangePicker, a);
             case g.DatePicker:
-              return y.createElement(i.Z, o);
+              return y.createElement(i.Z, a);
             case g.DateRangePicker:
-              return y.createElement(i.Z.RangePicker, o);
+              return y.createElement(i.Z.RangePicker, a);
             case g.Slider:
-              return y.createElement(m.Z, o);
+              return y.createElement(m.Z, a);
             default:
               throw new TypeError(
                 '\u6ca1\u6709\u8be5\u6e32\u67d3\u7c7b\u578b\uff0c\u8bf7\u901a\u8fc7renderType\u4e3aRenderType.CustomItemChildren\u6765\u914d\u7f6e\u81ea\u5b9a\u4e49\u6e32\u67d3',
@@ -927,12 +1062,12 @@
                   var m,
                     i = e.key,
                     c = e.itemTitle,
-                    u = e.itemColProps,
+                    p = e.itemColProps,
                     d = e.formItemProps,
-                    p = (0, s.Z)(e, j);
+                    u = (0, s.Z)(e, P);
                   return y.createElement(
-                    a.Z,
-                    (0, o.Z)(
+                    o.Z,
+                    (0, a.Z)(
                       {
                         key:
                           i ||
@@ -941,18 +1076,18 @@
                             : m.toString()) ||
                           r,
                       },
-                      u || t || {},
+                      p || t || {},
                     ),
                     c,
-                    y.createElement(n.Z.Item, d, P((0, l.Z)({}, p))),
+                    y.createElement(l.Z.Item, d, j((0, n.Z)({}, u))),
                   );
                 }),
           );
         },
         k = (t(5317), t(87555)),
         C = (t(25324), t(45733)),
-        v = (t(13753), t(48429)),
-        I = t(38573),
+        I = (t(13753), t(48429)),
+        v = t(38573),
         E = [
           'form',
           'colProps',
@@ -980,16 +1115,16 @@
             m = e.rowProps,
             i = e.showExpend,
             c = e.showSubmit,
-            u = e.showRest,
+            p = e.showRest,
             d = e.actionBar,
-            p = e.formItemsConfig,
+            u = e.formItemsConfig,
             f = e.foldNumber,
             h = void 0 === f ? 2 : f,
             b = e.actionColProps,
-            j = e.foldNode,
-            g = void 0 === j ? '\u6536\u8d77' : j,
-            P = e.unfoldNode,
-            w = void 0 === P ? '\u5c55\u5f00' : P,
+            P = e.foldNode,
+            g = void 0 === P ? '\u6536\u8d77' : P,
+            j = e.unfoldNode,
+            w = void 0 === j ? '\u5c55\u5f00' : j,
             T = e.restNode,
             S = void 0 === T ? '\u91cd\u7f6e' : T,
             x = e.submitNode,
@@ -1001,11 +1136,11 @@
             L = e.submitBtnProps,
             B = e.resetBtnProps,
             G = (0, s.Z)(e, E),
-            A = n.Z.useForm(r),
-            q = (0, I.Z)(A, 1),
+            A = l.Z.useForm(r),
+            q = (0, v.Z)(A, 1),
             D = q[0],
             O = (0, y.useState)(!0),
-            _ = (0, I.Z)(O, 2),
+            _ = (0, v.Z)(O, 2),
             V = _[0],
             Y = _[1],
             Q = (0, y.useRef)({});
@@ -1016,31 +1151,31 @@
               (Q.current = {}), D.resetFields(), N && N();
             },
             J = (e, r) => {
-              (Q.current = (0, l.Z)((0, l.Z)({}, Q.current), e || {})), M && M(e, r);
+              (Q.current = (0, n.Z)((0, n.Z)({}, Q.current), e || {})), M && M(e, r);
             },
-            K = (0, y.useMemo)(() => (V ? p : p.slice(0, h)), [h, p, V]);
+            K = (0, y.useMemo)(() => (V ? u : u.slice(0, h)), [h, u, V]);
           return y.createElement(
-            n.Z,
-            (0, o.Z)({ form: D, onValuesChange: J }, G),
+            l.Z,
+            (0, a.Z)({ form: D, onValuesChange: J }, G),
             y.createElement(
               k.Z,
               m || {},
               y.createElement(Z, { formItemsConfig: K, colProps: t || {} }),
               y.createElement(
-                a.Z,
+                o.Z,
                 b || t || {},
                 d ||
-                  ((i || u || c) &&
+                  ((i || p || c) &&
                     y.createElement(
                       C.Z,
                       null,
                       c &&
                         y.createElement(
-                          v.Z,
-                          (0, o.Z)({ type: 'primary', htmlType: 'submit' }, L || {}),
+                          I.Z,
+                          (0, a.Z)({ type: 'primary', htmlType: 'submit' }, L || {}),
                           R,
                         ),
-                      u && y.createElement(v.Z, (0, o.Z)({ onClick: H }, B || {}), S),
+                      p && y.createElement(I.Z, (0, a.Z)({ onClick: H }, B || {}), S),
                       i &&
                         y.createElement(
                           'a',
@@ -1062,12 +1197,12 @@
         x = (e) => {
           var r = e.detail,
             t = e.placeholder,
-            a = e.keyMapLabel,
-            n = e.keyMapItemProps,
+            o = e.keyMapLabel,
+            l = e.keyMapItemProps,
             m = (0, s.Z)(e, S),
             i = (0, y.useMemo)(
               () =>
-                Object.keys(a || {}).filter((e) => r && Object.prototype.hasOwnProperty.call(r, e)),
+                Object.keys(o || {}).filter((e) => r && Object.prototype.hasOwnProperty.call(r, e)),
               [],
             );
           return y.createElement(
@@ -1075,16 +1210,16 @@
             m,
             i.map((e) => {
               var s,
-                m = (0, l.Z)(
-                  (0, l.Z)({}, (null === n || void 0 === n ? void 0 : n[e]) || {}),
+                m = (0, n.Z)(
+                  (0, n.Z)({}, (null === l || void 0 === l ? void 0 : l[e]) || {}),
                   {},
-                  { label: a[e] },
+                  { label: o[e] },
                 );
               return (
-                a[e] &&
+                o[e] &&
                 y.createElement(
                   T.Z.Item,
-                  (0, o.Z)({ key: e }, m),
+                  (0, a.Z)({ key: e }, m),
                   y.createElement(y.Fragment, null, null !== (s = r[e]) && void 0 !== s ? s : t),
                 )
               );
@@ -1096,56 +1231,56 @@
         F = (e) => {
           var r = e.tableProps,
             t = e.searchBarProps,
-            a = e.searchCardProps,
-            o = e.tableCardProps,
-            n = e.spaceProps,
-            s = (0, l.Z)({ direction: 'vertical', style: { width: '100%' } }, n || {}),
-            m = (0, l.Z)({ showSubmit: !0, showRest: !0 }, t || { formItemsConfig: [] }),
-            i = (0, l.Z)({ style: { marginTop: 16 } }, o);
+            o = e.searchCardProps,
+            a = e.tableCardProps,
+            l = e.spaceProps,
+            s = (0, n.Z)({ direction: 'vertical', style: { width: '100%' } }, l || {}),
+            m = (0, n.Z)({ showSubmit: !0, showRest: !0 }, t || { formItemsConfig: [] }),
+            i = (0, n.Z)({ style: { marginTop: 16 } }, a);
           return y.createElement(
             C.Z,
             s,
-            y.createElement(z.Z, a || {}, y.createElement(w, m)),
+            y.createElement(z.Z, o || {}, y.createElement(w, m)),
             y.createElement(z.Z, i, y.createElement(R.Z, r)),
           );
         },
         N = (e, r) => {
           var t = (0, y.useState)(!1),
-            a = (0, I.Z)(t, 2),
-            o = a[0],
-            n = a[1],
-            l = (0, y.useState)(),
-            s = (0, I.Z)(l, 2),
+            o = (0, v.Z)(t, 2),
+            a = o[0],
+            l = o[1],
+            n = (0, y.useState)(),
+            s = (0, v.Z)(n, 2),
             m = s[0],
             i = s[1],
             c = (0, y.useState)(),
-            u = (0, I.Z)(c, 2),
-            d = u[0],
-            p = u[1],
+            p = (0, v.Z)(c, 2),
+            d = p[0],
+            u = p[1],
             f = r || {},
             h = f.lazy,
             b = f.defaulParams,
-            j = f.onSuccess,
+            P = f.onSuccess,
             g = f.onError,
-            P = f.formaResult,
+            j = f.formaResult,
             Z = (r) => {
-              n(!0),
+              l(!0),
                 e(r)
                   .then((e) => {
-                    i(P ? P(e) : e), j && j(e);
+                    i(j ? j(e) : e), P && P(e);
                   })
                   .catch((e) => {
-                    p(e), g && g(e);
+                    u(e), g && g(e);
                   })
                   .finally(() => {
-                    n(!1);
+                    l(!1);
                   });
             };
           return (
             (0, y.useEffect)(() => {
               h || Z(b);
             }, [h]),
-            { lazyService: Z, data: m, error: d, loading: o, setLoading: n }
+            { lazyService: Z, data: m, error: d, loading: a, setLoading: l }
           );
         },
         M = (t(26780), t(14643), t(38488)),
@@ -1153,43 +1288,43 @@
         B = (e) => {
           var r = e.queryListService,
             t = e.formatSubmitValue,
-            a = e.onSuccess,
-            o = e.onError,
-            n = e.spaceProps,
+            o = e.onSuccess,
+            a = e.onError,
+            l = e.spaceProps,
             m = e.tableProps,
             i = e.tableCardProps,
             c = e.formItemsConfig,
-            u = void 0 === c ? [] : c,
+            p = void 0 === c ? [] : c,
             d = e.defaulParams,
-            p = e.formaResult,
+            u = e.formaResult,
             f = e.actionColProps,
             h = e.colProps,
             b = e.rowProps,
-            j = N(r, {
+            P = N(r, {
               defaulParams: d,
               onSuccess(e) {
-                null === a || void 0 === a || a(e);
+                null === o || void 0 === o || o(e);
               },
               onError(e) {
-                o ? o(e) : M.ZP.error('\u8bf7\u6c42\u5217\u8868\u6570\u636e\u51fa\u9519');
+                a ? a(e) : M.ZP.error('\u8bf7\u6c42\u5217\u8868\u6570\u636e\u51fa\u9519');
               },
-              formaResult: p,
+              formaResult: u,
             }),
-            g = j.loading,
-            P = j.data,
-            Z = j.lazyService,
-            k = (0, s.Z)(j, L),
+            g = P.loading,
+            j = P.data,
+            Z = P.lazyService,
+            k = (0, s.Z)(P, L),
             C = (0, y.useMemo)(
               () =>
                 y.createElement(F, {
-                  tableProps: (0, l.Z)((0, l.Z)({}, m), {}, { loading: g, dataSource: P }),
+                  tableProps: (0, n.Z)((0, n.Z)({}, m), {}, { loading: g, dataSource: j }),
                   tableCardProps: i,
-                  spaceProps: n,
+                  spaceProps: l,
                   searchBarProps: {
                     onFinish: (e) => {
                       Z(t ? t(e) : e);
                     },
-                    formItemsConfig: u,
+                    formItemsConfig: p,
                     onReset: () => {
                       Z(d);
                     },
@@ -1198,17 +1333,17 @@
                     actionColProps: f,
                   },
                 }),
-              [n, m, i, u],
+              [l, m, i, p],
             );
-          return (0, l.Z)(
-            (0, l.Z)({ loading: g, dataSource: P, queryList: Z }, k),
+          return (0, n.Z)(
+            (0, n.Z)({ loading: g, dataSource: j, queryList: Z }, k),
             {},
             { listContainer: C },
           );
         };
     },
     46700: function (e, r, t) {
-      var a = {
+      var o = {
         './af': 60757,
         './af.js': 60757,
         './ar': 22490,
@@ -1480,23 +1615,23 @@
         './zh-tw': 36087,
         './zh-tw.js': 36087,
       };
-      function o(e) {
-        var r = n(e);
+      function a(e) {
+        var r = l(e);
         return t(r);
       }
-      function n(e) {
-        if (!t.o(a, e)) {
+      function l(e) {
+        if (!t.o(o, e)) {
           var r = new Error("Cannot find module '" + e + "'");
           throw ((r.code = 'MODULE_NOT_FOUND'), r);
         }
-        return a[e];
+        return o[e];
       }
-      (o.keys = function () {
-        return Object.keys(a);
+      (a.keys = function () {
+        return Object.keys(o);
       }),
-        (o.resolve = n),
-        (e.exports = o),
-        (o.id = 46700);
+        (a.resolve = l),
+        (e.exports = a),
+        (a.id = 46700);
     },
   },
 ]);

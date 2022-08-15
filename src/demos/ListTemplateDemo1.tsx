@@ -1,5 +1,5 @@
 import React from 'react';
-import { getData, MockData } from '../mock';
+import { getData, MockData } from './mock';
 import { ColumnsType } from 'antd/lib/table';
 import { Button, message, Space, Tag } from 'antd';
 import { FormItemConfig, ListTemplate, useRequest, RenderType } from 'art-antd-react';

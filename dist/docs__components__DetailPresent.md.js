@@ -20,8 +20,8 @@
         c = n(4187),
         i = l.memo((e) => {
           var t = e.demos,
-            n = t['docs-detailpresentdemo1'].component,
-            i = t['docs-detailpresentdemo2'].component;
+            n = t['art-react-antd-detailpresentdemo1'].component,
+            i = t['art-react-antd-detailpresentdemo2'].component;
           return l.createElement(
             l.Fragment,
             null,
@@ -96,7 +96,7 @@
               ),
               l.createElement(
                 r.default,
-                t['docs-detailpresentdemo1'].previewerProps,
+                t['art-react-antd-detailpresentdemo1'].previewerProps,
                 l.createElement(n, null),
               ),
               l.createElement(
@@ -119,7 +119,7 @@
               ),
               l.createElement(
                 r.default,
-                t['docs-detailpresentdemo2'].previewerProps,
+                t['art-react-antd-detailpresentdemo2'].previewerProps,
                 l.createElement(i, null),
               ),
               l.createElement(

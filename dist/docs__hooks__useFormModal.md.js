@@ -15,12 +15,12 @@
       'use strict';
       n.r(t);
       var l = n(67294),
-        o = n(96089),
-        a = n(50886),
+        a = n(96089),
+        o = n(50886),
         r = n(4187),
         c = l.memo((e) => {
           var t = e.demos,
-            n = t['docs-useformmodaldemo1'].component;
+            n = t['art-react-antd-useformmodaldemo1'].component;
           return l.createElement(
             l.Fragment,
             null,
@@ -34,7 +34,7 @@
                   'h2',
                   { id: 'useformmodal' },
                   l.createElement(
-                    o.AnchorLink,
+                    a.AnchorLink,
                     { to: '#useformmodal', 'aria-hidden': 'true', tabIndex: -1 },
                     l.createElement('span', { className: 'icon icon-link' }),
                   ),
@@ -50,7 +50,7 @@
                   'h2',
                   { id: '\u4f55\u65f6\u4f7f\u7528' },
                   l.createElement(
-                    o.AnchorLink,
+                    a.AnchorLink,
                     { to: '#\u4f55\u65f6\u4f7f\u7528', 'aria-hidden': 'true', tabIndex: -1 },
                     l.createElement('span', { className: 'icon icon-link' }),
                   ),
@@ -65,7 +65,7 @@
                   'h2',
                   { id: '\u4ee3\u7801\u6f14\u793a' },
                   l.createElement(
-                    o.AnchorLink,
+                    a.AnchorLink,
                     { to: '#\u4ee3\u7801\u6f14\u793a', 'aria-hidden': 'true', tabIndex: -1 },
                     l.createElement('span', { className: 'icon icon-link' }),
                   ),
@@ -75,7 +75,7 @@
                   'h3',
                   { id: '\u57fa\u672c\u4f7f\u7528' },
                   l.createElement(
-                    o.AnchorLink,
+                    a.AnchorLink,
                     { to: '#\u57fa\u672c\u4f7f\u7528', 'aria-hidden': 'true', tabIndex: -1 },
                     l.createElement('span', { className: 'icon icon-link' }),
                   ),
@@ -83,8 +83,8 @@
                 ),
               ),
               l.createElement(
-                a.default,
-                t['docs-useformmodaldemo1'].previewerProps,
+                o.default,
+                t['art-react-antd-useformmodaldemo1'].previewerProps,
                 l.createElement(n, null),
               ),
               l.createElement(
@@ -94,7 +94,7 @@
                   'h3',
                   { id: 'result-hook-\u8fd4\u56de\u7ed3\u679c' },
                   l.createElement(
-                    o.AnchorLink,
+                    a.AnchorLink,
                     {
                       to: '#result-hook-\u8fd4\u56de\u7ed3\u679c',
                       'aria-hidden': 'true',
@@ -148,7 +148,7 @@
                   'h3',
                   { id: 'options' },
                   l.createElement(
-                    o.AnchorLink,
+                    a.AnchorLink,
                     { to: '#options', 'aria-hidden': 'true', tabIndex: -1 },
                     l.createElement('span', { className: 'icon icon-link' }),
                   ),
@@ -159,7 +159,7 @@
                   null,
                   '\u8bf4\u660e\uff1a \u8be5 hooks \u7684\u5165\u53c2\u7c7b\u578b\u7ee7\u627f\u4e8e ant design \u7684 ',
                   l.createElement(
-                    o.Link,
+                    a.Link,
                     { to: 'https://ant-design.gitee.io/components/modal-cn/' },
                     'ModalProps',
                   ),
@@ -170,31 +170,31 @@
                   null,
                   '| \u53c2\u6570 | \u8bf4\u660e | \u7c7b\u578b | \u9ed8\u8ba4\u503c | | --- | --- | --- | --- | --- | --- | --- | | form | modal \u6846\u4e2d\u7684 form \u8868\u5355\u5b9e\u4f8b\uff0c\u53ef\u9009 |  | formItemsConfig | \u641c\u7d22\u8868\u5355\u9879\u7684\u914d\u7f6e | ',
                   l.createElement(
-                    o.AnchorLink,
+                    a.AnchorLink,
                     { to: '/components/form-items-builder#formitemconfig-api' },
                     'FormItemsConfig API',
                   ),
                   '[] | - | | colProps | \u5b9a\u4e49\u6bcf\u4e00\u5217\u7684\u5e03\u5c40,\u540c antd ',
                   l.createElement(
-                    o.Link,
+                    a.Link,
                     { to: 'https://ant-design.gitee.io/components/grid-cn/#Col' },
                     'ColProps',
                   ),
                   ' | ',
                   l.createElement(
-                    o.Link,
+                    a.Link,
                     { to: 'https://ant-design.gitee.io/components/grid-cn/#Col' },
                     'ColProps',
                   ),
                   ' | - | | rowProps | \u5b9a\u4e49\u884c\u7684\u5e03\u5c40, \u540c antd ',
                   l.createElement(
-                    o.Link,
+                    a.Link,
                     { to: 'https://ant-design.gitee.io/components/grid-cn/#Row' },
                     'RowProps',
                   ),
                   ' | ',
                   l.createElement(
-                    o.Link,
+                    a.Link,
                     { to: 'https://ant-design.gitee.io/components/grid-cn/#Row' },
                     'RowProps',
                   ),
@@ -221,7 +221,7 @@
           );
         });
       t['default'] = (e) => {
-        var t = l.useContext(o.context),
+        var t = l.useContext(a.context),
           n = t.demos;
         return (
           l.useEffect(() => {
@@ -231,7 +231,7 @@
               null !== (t = e.location) &&
               void 0 !== t &&
               t.hash &&
-              o.AnchorLink.scrollToAnchor(decodeURIComponent(e.location.hash.slice(1)));
+              a.AnchorLink.scrollToAnchor(decodeURIComponent(e.location.hash.slice(1)));
           }, []),
           l.createElement(c, { demos: n })
         );

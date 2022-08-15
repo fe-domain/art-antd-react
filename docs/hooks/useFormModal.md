@@ -18,7 +18,7 @@ nav:
 
 ### 基本使用
 
-<code src="../demos/UseFormModalDemo1.tsx"  title="简单的使用">
+<code src="../../src/demos/UseFormModalDemo1.tsx"  title="简单的使用">
 
 ### Result hook 返回结果
 

@@ -5,7 +5,7 @@ import { useRequest } from 'art-antd-react';
 // import { useRequest, Button, message } from 'art-antd-react';
 
 // getData 来自于你的请求服务函数
-import { getData, MockData } from '../mock';
+import { getData, MockData } from './mock';
 
 const RequestHookDemo = () => {
   const { data, loading, lazyService } = useRequest<MockData>(getData, {

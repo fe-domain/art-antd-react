@@ -6,7 +6,7 @@ import { FormItemConfig, RenderType, useConfigListPage } from 'art-antd-react';
 // import { FormItemConfig, RenderType, useConfigListPage, Button, message, Space, Tag } from 'art-antd-react';
 
 // 这里的请求和类型来自于你的项目
-import { getData, MockData } from '../mock';
+import { getData, MockData } from './mock';
 
 const Demo1 = () => {
   // 记录 useConfigListPage 抛出来的 queryList，在操作栏操作后好重新查询表格数据

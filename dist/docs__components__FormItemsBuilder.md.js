@@ -16,14 +16,14 @@
       n.r(t);
       var r = n(67294),
         l = n(96089),
-        m = n(50886),
-        a = n(65659),
+        a = n(50886),
+        m = n(65659),
         o = n(4187),
         c = r.memo((e) => {
           var t = e.demos,
-            n = t['docs-formitemsbuilderdemo1'].component,
-            c = t['docs-formitemsbuilderdemo2'].component,
-            i = t['docs-formitemsbuilderdemo3'].component;
+            n = t['art-react-antd-formitemsbuilderdemo1'].component,
+            c = t['art-react-antd-formitemsbuilderdemo2'].component,
+            i = t['art-react-antd-formitemsbuilderdemo3'].component;
           return r.createElement(
             r.Fragment,
             null,
@@ -100,8 +100,8 @@
                 ),
               ),
               r.createElement(
-                m.default,
-                t['docs-formitemsbuilderdemo1'].previewerProps,
+                a.default,
+                t['art-react-antd-formitemsbuilderdemo1'].previewerProps,
                 r.createElement(n, null),
               ),
               r.createElement(
@@ -125,8 +125,8 @@
                 ),
               ),
               r.createElement(
-                m.default,
-                t['docs-formitemsbuilderdemo2'].previewerProps,
+                a.default,
+                t['art-react-antd-formitemsbuilderdemo2'].previewerProps,
                 r.createElement(c, null),
               ),
               r.createElement(
@@ -144,8 +144,8 @@
                 ),
               ),
               r.createElement(
-                m.default,
-                t['docs-formitemsbuilderdemo3'].previewerProps,
+                a.default,
+                t['art-react-antd-formitemsbuilderdemo3'].previewerProps,
                 r.createElement(i, null),
               ),
               r.createElement(
@@ -375,7 +375,7 @@
                   ),
                   'RenderType',
                 ),
-                r.createElement(a.Z, {
+                r.createElement(m.Z, {
                   code: "// \u4e0d\u4f7f\u7528 \u679a\u4e3e \u662f\u56e0\u4e3a \u63d0\u793a\u4e0d\u591f\u667a\u80fd 202E0D19.png\nconst RenderType = {\n  /*\n   \u5bf9\u5e94 \u6e32\u67d3 antd \u7684 Input \u7ec4\u4ef6, formItemChildProps \u5bf9\u5e94\u4e3a InputProps\n   */\n  Input: 'Input',\n  /*\n   \u5bf9\u5e94 \u6e32\u67d3 antd \u7684 Select \u7ec4\u4ef6, formItemChildProps \u5bf9\u5e94\u4e3a InputNumberProps\n   */\n  Select: 'Select',\n  /*\n   \u5bf9\u5e94 \u6e32\u67d3 antd \u7684 InputNumber \u7ec4\u4ef6, formItemChildProps \u5bf9\u5e94\u4e3a CheckboxProps\n   */\n  InputNumber: 'InputNumber',\n  /*\n   \u5bf9\u5e94 \u6e32\u67d3 antd \u7684 Checkbox \u7ec4\u4ef6, formItemChildProps \u5bf9\u5e94\u4e3a CheckboxGroupProps\n   */\n  Checkbox: 'Checkbox',\n  /*\n   \u5bf9\u5e94 \u6e32\u67d3 antd \u7684 Checkbox.Group \u7ec4\u4ef6, formItemChildProps \u5bf9\u5e94\u4e3a SelectProps\n   */\n  CheckboxGroup: 'CheckboxGroup',\n  /*\n   \u5bf9\u5e94 \u6e32\u67d3 antd \u7684 Radio \u7ec4\u4ef6, formItemChildProps \u5bf9\u5e94\u4e3a RadioProps\n   */\n  Radio: 'Radio',\n  /*\n   \u5bf9\u5e94 \u6e32\u67d3 antd \u7684 Radio.Group \u7ec4\u4ef6, formItemChildProps \u5bf9\u5e94\u4e3a RadioGroupProps\n   */\n  RadioGroup: 'RadioGroup',\n  /*\n   \u5bf9\u5e94 \u6e32\u67d3 antd \u7684 Switch \u7ec4\u4ef6, formItemChildProps \u5bf9\u5e94\u4e3a SwitchProps\n   */\n  Switch: 'Switch',\n  /*\n   \u5bf9\u5e94 \u6e32\u67d3 antd \u7684 TimePicker \u7ec4\u4ef6, formItemChildProps \u5bf9\u5e94\u4e3a TimePickerProps\n   */\n  TimePicker: 'TimePicker',\n  /*\n   \u5bf9\u5e94 \u6e32\u67d3 antd \u7684 TimePicker.RangePicker \u7ec4\u4ef6, formItemChildProps \u5bf9\u5e94\u4e3a TimeRangePickerProps\n   */\n  TimeRangePicker: 'TimeRangePicker',\n  /*\n   \u5bf9\u5e94 \u6e32\u67d3 antd \u7684 DatePicker \u7ec4\u4ef6, formItemChildProps \u5bf9\u5e94\u4e3a DatePickerProps*/\n  DatePicker: 'DatePicker',\n  /*\n   \u5bf9\u5e94 \u6e32\u67d3 antd \u7684 DatePicker.RangePicker \u7ec4\u4ef6, formItemChildProps \u5bf9\u5e94\u4e3a RangePickerProps*/\n  DateRangePicker: 'DateRangePicker',\n  /*\n   \u5bf9\u5e94 \u6e32\u67d3 antd \u7684 Slider \u7ec4\u4ef6, formItemChildProps \u5bf9\u5e94\u4e3a SliderBaseProps*/\n  Slider: 'Slider',\n  // \u81ea\u5b9a\u4ee5 Form.Item \u7684 children \u6e32\u67d3\n  CustomItemChildren: 'CustomItemChildren',\n};",
                   lang: 'typescript',
                 }),

@@ -20,7 +20,7 @@
         c = l(4187),
         m = n.memo((e) => {
           var t = e.demos,
-            l = t['docs-useconfiglistpagedemo1'].component;
+            l = t['art-react-antd-useconfiglistpagedemo1'].component;
           return n.createElement(
             n.Fragment,
             null,
@@ -84,7 +84,7 @@
               ),
               n.createElement(
                 r.default,
-                t['docs-useconfiglistpagedemo1'].previewerProps,
+                t['art-react-antd-useconfiglistpagedemo1'].previewerProps,
                 n.createElement(l, null),
               ),
               n.createElement(

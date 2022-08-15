@@ -23077,7 +23077,7 @@
           layout: !1,
           wrappers: [
             (0, r.D8)({
-              loader: () => Promise.all([n.e(302), n.e(31), n.e(275)]).then(n.bind(n, 82246)),
+              loader: () => Promise.all([n.e(302), n.e(31), n.e(275)]).then(n.bind(n, 54556)),
             }),
           ],
           component: ((e) =>
@@ -23171,7 +23171,7 @@
           path: '/',
           wrappers: [
             (0, r.D8)({
-              loader: () => Promise.all([n.e(302), n.e(31), n.e(275)]).then(n.bind(n, 82246)),
+              loader: () => Promise.all([n.e(302), n.e(31), n.e(275)]).then(n.bind(n, 54556)),
             }),
             (0, r.D8)({
               loader: () => Promise.all([n.e(302), n.e(31), n.e(275)]).then(n.bind(n, 48749)),
@@ -23186,34 +23186,38 @@
               exact: !0,
               meta: {
                 filePath: 'docs/index.md',
-                updatedTime: 1660318346e3,
+                updatedTime: 1660576943e3,
                 hero: {
-                  title: 'art-react-antd',
-                  desc: '<div class="markdown"><p>art-react-antd site example</p></div>',
+                  title: 'art-antd-react',
+                  desc: '<div class="markdown"><p>\u914d\u7f6e\u5316\u5f00\u53d1\u7ec4\u4ef6\u3001\u9875\u9762\u3001\u9ad8\u6548\u505a\u4f60\u60f3\u505a - \u81f4\u6211\u4eec\u90fd\u60f3\u505a\u4e00\u4e2a\u524d\u7aef\u827a\u672f\u5bb6</p></div>',
                   actions: [{ text: 'Getting Started', link: '/components' }],
                 },
                 features: [
                   {
                     icon: 'https://gw.alipayobjects.com/zos/bmw-prod/881dc458-f20b-407b-947a-95104b5ec82b/k79dm8ih_w144_h144.png',
-                    title: 'Feature 1',
-                    desc: '<div class="markdown"><p>Balabala</p></div>',
+                    title: '\u5f00\u7bb1\u5373\u7528',
+                    desc: '<div class="markdown"><p>\u4e09\u6b65\u8d70\uff0c\u5373\u53ef\u7528\uff0c\u4f60\u61c2\u6ef4</p></div>',
                   },
                   {
                     icon: 'https://gw.alipayobjects.com/zos/bmw-prod/d60657df-0822-4631-9d7c-e7a869c2f21c/k79dmz3q_w126_h126.png',
-                    title: 'Feature 2',
-                    desc: '<div class="markdown"><p>Balabala</p></div>',
+                    title: '\u9ad8\u6548\u5f00\u53d1',
+                    desc: '<div class="markdown"><p>\u914d\u7f6e\u5316\u5f00\u53d1\uff0c\u542c\u8d77\u6765\u5c31\u9ad8\u6548</p></div>',
                   },
                   {
                     icon: 'https://gw.alipayobjects.com/zos/bmw-prod/d1ee0c6f-5aed-4a45-a507-339a4bfe076c/k7bjsocq_w144_h144.png',
-                    title: 'Feature 3',
-                    desc: '<div class="markdown"><p>Balabala</p></div>',
+                    title: '\u5f00\u5fc3\u5de5\u4f5c',
+                    desc: '<div class="markdown"><p>\u4ece\u6b64\u518d\u4e5f\u4e0d\u7528\u62c5\u5fc3\u81ea\u5df1\u6ca1\u6709\u65f6\u95f4\u6478\u9c7c\uff08learn\uff09</p></div>',
                   },
                 ],
                 footer:
-                  '<div class="markdown"><p>Open-source MIT Licensed | Copyright \xa9 2020<br />Powered by <a href="https://d.umijs.org/" target="_blank">dumi<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="__dumi-default-external-link-icon"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></div>',
+                  '<div class="markdown"><p>Open-source MIT Licensed | Copyright jakequc 2022<br />Powered by <a href="https://d.umijs.org/" target="_blank">dumi<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="__dumi-default-external-link-icon"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></div>',
                 slugs: [
-                  { depth: 2, value: 'Hello art-react-antd!', heading: 'hello-art-react-antd' },
-                  { depth: 1, value: 'art-antd-react', heading: 'art-antd-react' },
+                  {
+                    depth: 2,
+                    value: '\ud83c\udf08 Hello art-react-antd!',
+                    heading: '-hello-art-react-antd',
+                  },
+                  { depth: 2, value: '\ud83c\udf6d Target', heading: '-target' },
                   {
                     depth: 3,
                     value:
@@ -23221,11 +23225,12 @@
                     heading:
                       '\u57fa\u4e8e-ant-design-\u5f00\u53d1\u7684\u914d\u7f6e\u5316\u7ec4\u4ef6\u65e8\u5728\u901a\u8fc7\u914d\u7f6e\u5316\u5f00\u53d1\u505a\u66f4\u5feb\u66f4\u9ad8\u6548\u66f4\u5feb\u4e50\u7684\u505a\u4e00\u4e2a\u524d\u7aef\u5f00\u53d1\u827a\u672f\u5bb6',
                   },
-                  { depth: 3, value: 'Getting Started', heading: 'getting-started' },
+                  { depth: 2, value: '\ud83d\udda5 Getting Started', heading: '-getting-started' },
+                  { depth: 2, value: '\u26a1 \u53cd\u9988', heading: '-\u53cd\u9988' },
                 ],
-                title: 'Hello art-react-antd!',
+                title: '\ud83c\udf08 Hello art-react-antd!',
               },
-              title: 'Hello art-react-antd! - art-antd-react',
+              title: '\ud83c\udf08 Hello art-react-antd! - art-antd-react',
             },
             {
               path: '/components/detail-present',
@@ -23238,7 +23243,7 @@
               exact: !0,
               meta: {
                 filePath: 'docs/components/DetailPresent.md',
-                updatedTime: 1660318346e3,
+                updatedTime: 1660576943e3,
                 nav: { title: 'DetailPresent', path: '/components' },
                 slugs: [
                   {
@@ -23284,7 +23289,7 @@
               exact: !0,
               meta: {
                 filePath: 'docs/components/FormGenerator.md',
-                updatedTime: 1660404889e3,
+                updatedTime: 1660579138e3,
                 nav: { title: 'FormGenerator', path: '/components' },
                 slugs: [
                   {
@@ -23330,7 +23335,7 @@
               exact: !0,
               meta: {
                 filePath: 'docs/components/FormItemsBuilder.md',
-                updatedTime: 1660404889e3,
+                updatedTime: 1660576943e3,
                 nav: { title: 'FormItemsBuilder', path: '/components' },
                 slugs: [
                   {
@@ -23386,7 +23391,7 @@
               exact: !0,
               meta: {
                 filePath: 'docs/components/ListTemplate.md',
-                updatedTime: 1660318346e3,
+                updatedTime: 1660576943e3,
                 nav: { title: 'ListTemplate', path: '/components' },
                 slugs: [
                   {
@@ -23427,7 +23432,7 @@
               exact: !0,
               meta: {
                 filePath: 'docs/hooks/useConfigListPage.md',
-                updatedTime: 1660404889e3,
+                updatedTime: 1660576943e3,
                 nav: { title: 'useConfigListPage', path: '/hooks' },
                 slugs: [
                   { depth: 2, value: 'useConfigListPage', heading: 'useconfiglistpage' },
@@ -23469,7 +23474,7 @@
               exact: !0,
               meta: {
                 filePath: 'docs/hooks/useFormModal.md',
-                updatedTime: 1660404889e3,
+                updatedTime: 1660576943e3,
                 nav: { title: 'useFormModal', path: '/hooks' },
                 slugs: [
                   { depth: 2, value: 'useFormModal', heading: 'useformmodal' },
@@ -23511,7 +23516,7 @@
               exact: !0,
               meta: {
                 filePath: 'docs/hooks/useRequest.md',
-                updatedTime: 166040069e4,
+                updatedTime: 1660576943e3,
                 nav: { title: 'useRequest', path: '/hooks' },
                 slugs: [
                   { depth: 2, value: 'useRequest', heading: 'userequest' },
