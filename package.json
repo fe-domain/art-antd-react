@@ -1,7 +1,7 @@
 {
   "name": "art-antd-react",
   "description": "configure and develop Ant Design(React)",
-  "homepage": "https://kehao33.github.io/art-antd-react/",
+  "homepage": "https://quankehao.gitee.io/art-antd-react/",
    "repository": {
     "type": "github",
     "url": "https://github.com/Kehao33/art-antd-react"
@@ -43,7 +43,7 @@
     "pre-commit": "lint-staged"
   },
   "lint-staged": {
-    "*.{js,jsx,less,md,json}": [
+    "*.{js,jsx,less,json}": [
       "prettier --write"
     ],
     "*.ts?(x)": [
