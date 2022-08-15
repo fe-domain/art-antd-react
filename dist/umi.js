@@ -22805,7 +22805,7 @@
         var n = {
           31: 1,
           50: 1,
-          72: 1,
+          265: 1,
           336: 1,
           386: 1,
           645: 1,
@@ -23077,7 +23077,7 @@
           layout: !1,
           wrappers: [
             (0, r.D8)({
-              loader: () => Promise.all([n.e(302), n.e(31), n.e(275)]).then(n.bind(n, 54556)),
+              loader: () => Promise.all([n.e(302), n.e(31), n.e(275)]).then(n.bind(n, 92950)),
             }),
           ],
           component: ((e) =>
@@ -23095,7 +23095,7 @@
                             return (
                               (t = e.sent),
                               (e.next = 5),
-                              Promise.all([n.e(302), n.e(886), n.e(659), n.e(336)]).then(
+                              Promise.all([n.e(302), n.e(659), n.e(886), n.e(336)]).then(
                                 n.bind(n, 65971),
                               )
                             );
@@ -23104,7 +23104,7 @@
                               (r = e.sent),
                               (o = r.default),
                               (e.next = 9),
-                              Promise.all([n.e(302), n.e(886), n.e(659), n.e(336)]).then(
+                              Promise.all([n.e(302), n.e(659), n.e(886), n.e(336)]).then(
                                 n.bind(n, 50886),
                               )
                             );
@@ -23113,7 +23113,7 @@
                               (u = e.sent),
                               (l = u.default),
                               (e.next = 13),
-                              Promise.all([n.e(302), n.e(886), n.e(659), n.e(336)]).then(
+                              Promise.all([n.e(302), n.e(659), n.e(886), n.e(336)]).then(
                                 n.bind(n, 96089),
                               )
                             );
@@ -23171,7 +23171,7 @@
           path: '/',
           wrappers: [
             (0, r.D8)({
-              loader: () => Promise.all([n.e(302), n.e(31), n.e(275)]).then(n.bind(n, 54556)),
+              loader: () => Promise.all([n.e(302), n.e(31), n.e(275)]).then(n.bind(n, 92950)),
             }),
             (0, r.D8)({
               loader: () => Promise.all([n.e(302), n.e(31), n.e(275)]).then(n.bind(n, 48749)),
@@ -23236,14 +23236,12 @@
               path: '/components/detail-present',
               component: (0, r.D8)({
                 loader: () =>
-                  Promise.all([n.e(302), n.e(886), n.e(659), n.e(230), n.e(793)]).then(
-                    n.bind(n, 79514),
-                  ),
+                  Promise.all([n.e(302), n.e(659), n.e(886), n.e(793)]).then(n.bind(n, 79514)),
               }),
               exact: !0,
               meta: {
                 filePath: 'docs/components/DetailPresent.md',
-                updatedTime: 1660576943e3,
+                updatedTime: 1660580367e3,
                 nav: { title: 'DetailPresent', path: '/components' },
                 slugs: [
                   {
@@ -23282,14 +23280,12 @@
               path: '/components/form-generator',
               component: (0, r.D8)({
                 loader: () =>
-                  Promise.all([n.e(302), n.e(886), n.e(659), n.e(230), n.e(766)]).then(
-                    n.bind(n, 44857),
-                  ),
+                  Promise.all([n.e(302), n.e(659), n.e(886), n.e(766)]).then(n.bind(n, 44857)),
               }),
               exact: !0,
               meta: {
                 filePath: 'docs/components/FormGenerator.md',
-                updatedTime: 1660579138e3,
+                updatedTime: 1660580367e3,
                 nav: { title: 'FormGenerator', path: '/components' },
                 slugs: [
                   {
@@ -23328,14 +23324,12 @@
               path: '/components/form-items-builder',
               component: (0, r.D8)({
                 loader: () =>
-                  Promise.all([n.e(302), n.e(886), n.e(659), n.e(230), n.e(665)]).then(
-                    n.bind(n, 89947),
-                  ),
+                  Promise.all([n.e(302), n.e(659), n.e(886), n.e(665)]).then(n.bind(n, 89947)),
               }),
               exact: !0,
               meta: {
                 filePath: 'docs/components/FormItemsBuilder.md',
-                updatedTime: 1660576943e3,
+                updatedTime: 1660580367e3,
                 nav: { title: 'FormItemsBuilder', path: '/components' },
                 slugs: [
                   {
@@ -23384,14 +23378,12 @@
               path: '/components/list-template',
               component: (0, r.D8)({
                 loader: () =>
-                  Promise.all([n.e(302), n.e(886), n.e(659), n.e(230), n.e(882)]).then(
-                    n.bind(n, 10838),
-                  ),
+                  Promise.all([n.e(302), n.e(659), n.e(886), n.e(882)]).then(n.bind(n, 10838)),
               }),
               exact: !0,
               meta: {
                 filePath: 'docs/components/ListTemplate.md',
-                updatedTime: 1660576943e3,
+                updatedTime: 1660580367e3,
                 nav: { title: 'ListTemplate', path: '/components' },
                 slugs: [
                   {
@@ -23425,14 +23417,12 @@
               path: '/hooks/use-config-list-page',
               component: (0, r.D8)({
                 loader: () =>
-                  Promise.all([n.e(302), n.e(886), n.e(659), n.e(230), n.e(386)]).then(
-                    n.bind(n, 4512),
-                  ),
+                  Promise.all([n.e(302), n.e(659), n.e(886), n.e(386)]).then(n.bind(n, 4512)),
               }),
               exact: !0,
               meta: {
                 filePath: 'docs/hooks/useConfigListPage.md',
-                updatedTime: 1660576943e3,
+                updatedTime: 1660580367e3,
                 nav: { title: 'useConfigListPage', path: '/hooks' },
                 slugs: [
                   { depth: 2, value: 'useConfigListPage', heading: 'useconfiglistpage' },
@@ -23466,15 +23456,12 @@
             {
               path: '/hooks/use-form-modal',
               component: (0, r.D8)({
-                loader: () =>
-                  Promise.all([n.e(302), n.e(886), n.e(659), n.e(230), n.e(875)]).then(
-                    n.bind(n, 50246),
-                  ),
+                loader: () => Promise.all([n.e(302), n.e(659), n.e(875)]).then(n.bind(n, 50246)),
               }),
               exact: !0,
               meta: {
                 filePath: 'docs/hooks/useFormModal.md',
-                updatedTime: 1660576943e3,
+                updatedTime: 1660580367e3,
                 nav: { title: 'useFormModal', path: '/hooks' },
                 slugs: [
                   { depth: 2, value: 'useFormModal', heading: 'useformmodal' },
@@ -23501,7 +23488,6 @@
                   { depth: 3, value: 'Options', heading: 'options' },
                 ],
                 title: 'useFormModal',
-                hasPreviewer: !0,
               },
               title: 'useFormModal - art-antd-react',
             },
@@ -23509,14 +23495,12 @@
               path: '/hooks/use-request',
               component: (0, r.D8)({
                 loader: () =>
-                  Promise.all([n.e(302), n.e(886), n.e(659), n.e(230), n.e(645)]).then(
-                    n.bind(n, 65697),
-                  ),
+                  Promise.all([n.e(302), n.e(659), n.e(886), n.e(645)]).then(n.bind(n, 65697)),
               }),
               exact: !0,
               meta: {
                 filePath: 'docs/hooks/useRequest.md',
-                updatedTime: 1660576943e3,
+                updatedTime: 1660580367e3,
                 nav: { title: 'useRequest', path: '/hooks' },
                 slugs: [
                   { depth: 2, value: 'useRequest', heading: 'userequest' },

@@ -7,16 +7,16 @@ export default defineConfig({
   outputPath: 'dist',
   webpack5: {},
   dynamicImport: {},
-  extraBabelPlugins: [
-    [
-      'babel-plugin-import',
-      {
-        libraryName: 'antd',
-        libraryDirectory: 'es',
-        style: true,
-      },
-    ],
-  ],
+  // extraBabelPlugins: [
+  //   [
+  //     'babel-plugin-import',
+  //     {
+  //       libraryName: 'antd',
+  //       libraryDirectory: 'es',
+  //       style: true,
+  //     },
+  //   ],
+  // ],
   exportStatic: {}, // 将所有路由输出为 HTML 目录结构，以免刷新页面时 404
   mode: 'site',
   // more config: https://d.umijs.org/config

@@ -1,6 +1,9 @@
 (self['webpackChunkart_antd_react'] = self['webpackChunkart_antd_react'] || []).push([
   [665],
   {
+    24390: function () {},
+    86845: function () {},
+    8036: function () {},
     22231: function (e, t, n) {
       'use strict';
       n.d(t, {
@@ -17,13 +20,13 @@
       var r = n(67294),
         l = n(96089),
         a = n(50886),
-        m = n(65659),
-        o = n(4187),
+        o = n(65659),
+        i = n(4187),
         c = r.memo((e) => {
           var t = e.demos,
             n = t['art-react-antd-formitemsbuilderdemo1'].component,
             c = t['art-react-antd-formitemsbuilderdemo2'].component,
-            i = t['art-react-antd-formitemsbuilderdemo3'].component;
+            m = t['art-react-antd-formitemsbuilderdemo3'].component;
           return r.createElement(
             r.Fragment,
             null,
@@ -146,7 +149,7 @@
               r.createElement(
                 a.default,
                 t['art-react-antd-formitemsbuilderdemo3'].previewerProps,
-                r.createElement(i, null),
+                r.createElement(m, null),
               ),
               r.createElement(
                 'div',
@@ -172,7 +175,7 @@
                   '\u6574\u4f53 API',
                 ),
                 r.createElement(
-                  o.Z,
+                  i.Z,
                   null,
                   r.createElement(
                     'thead',
@@ -231,7 +234,7 @@
                   'FormItemConfig API',
                 ),
                 r.createElement(
-                  o.Z,
+                  i.Z,
                   null,
                   r.createElement(
                     'thead',
@@ -375,7 +378,7 @@
                   ),
                   'RenderType',
                 ),
-                r.createElement(m.Z, {
+                r.createElement(o.Z, {
                   code: "// \u4e0d\u4f7f\u7528 \u679a\u4e3e \u662f\u56e0\u4e3a \u63d0\u793a\u4e0d\u591f\u667a\u80fd 202E0D19.png\nconst RenderType = {\n  /*\n   \u5bf9\u5e94 \u6e32\u67d3 antd \u7684 Input \u7ec4\u4ef6, formItemChildProps \u5bf9\u5e94\u4e3a InputProps\n   */\n  Input: 'Input',\n  /*\n   \u5bf9\u5e94 \u6e32\u67d3 antd \u7684 Select \u7ec4\u4ef6, formItemChildProps \u5bf9\u5e94\u4e3a InputNumberProps\n   */\n  Select: 'Select',\n  /*\n   \u5bf9\u5e94 \u6e32\u67d3 antd \u7684 InputNumber \u7ec4\u4ef6, formItemChildProps \u5bf9\u5e94\u4e3a CheckboxProps\n   */\n  InputNumber: 'InputNumber',\n  /*\n   \u5bf9\u5e94 \u6e32\u67d3 antd \u7684 Checkbox \u7ec4\u4ef6, formItemChildProps \u5bf9\u5e94\u4e3a CheckboxGroupProps\n   */\n  Checkbox: 'Checkbox',\n  /*\n   \u5bf9\u5e94 \u6e32\u67d3 antd \u7684 Checkbox.Group \u7ec4\u4ef6, formItemChildProps \u5bf9\u5e94\u4e3a SelectProps\n   */\n  CheckboxGroup: 'CheckboxGroup',\n  /*\n   \u5bf9\u5e94 \u6e32\u67d3 antd \u7684 Radio \u7ec4\u4ef6, formItemChildProps \u5bf9\u5e94\u4e3a RadioProps\n   */\n  Radio: 'Radio',\n  /*\n   \u5bf9\u5e94 \u6e32\u67d3 antd \u7684 Radio.Group \u7ec4\u4ef6, formItemChildProps \u5bf9\u5e94\u4e3a RadioGroupProps\n   */\n  RadioGroup: 'RadioGroup',\n  /*\n   \u5bf9\u5e94 \u6e32\u67d3 antd \u7684 Switch \u7ec4\u4ef6, formItemChildProps \u5bf9\u5e94\u4e3a SwitchProps\n   */\n  Switch: 'Switch',\n  /*\n   \u5bf9\u5e94 \u6e32\u67d3 antd \u7684 TimePicker \u7ec4\u4ef6, formItemChildProps \u5bf9\u5e94\u4e3a TimePickerProps\n   */\n  TimePicker: 'TimePicker',\n  /*\n   \u5bf9\u5e94 \u6e32\u67d3 antd \u7684 TimePicker.RangePicker \u7ec4\u4ef6, formItemChildProps \u5bf9\u5e94\u4e3a TimeRangePickerProps\n   */\n  TimeRangePicker: 'TimeRangePicker',\n  /*\n   \u5bf9\u5e94 \u6e32\u67d3 antd \u7684 DatePicker \u7ec4\u4ef6, formItemChildProps \u5bf9\u5e94\u4e3a DatePickerProps*/\n  DatePicker: 'DatePicker',\n  /*\n   \u5bf9\u5e94 \u6e32\u67d3 antd \u7684 DatePicker.RangePicker \u7ec4\u4ef6, formItemChildProps \u5bf9\u5e94\u4e3a RangePickerProps*/\n  DateRangePicker: 'DateRangePicker',\n  /*\n   \u5bf9\u5e94 \u6e32\u67d3 antd \u7684 Slider \u7ec4\u4ef6, formItemChildProps \u5bf9\u5e94\u4e3a SliderBaseProps*/\n  Slider: 'Slider',\n  // \u81ea\u5b9a\u4ee5 Form.Item \u7684 children \u6e32\u67d3\n  CustomItemChildren: 'CustomItemChildren',\n};",
                   lang: 'typescript',
                 }),
@@ -404,6 +407,601 @@
           r.createElement(c, { demos: n })
         );
       };
+    },
+    50886: function (e, t, n) {
+      'use strict';
+      n.r(t),
+        n.d(t, {
+          default: function () {
+            return y;
+          },
+        });
+      var r = n(67294),
+        l = n(42886),
+        a = n(52444),
+        o = n(22231),
+        i = n(96089),
+        c = n(65659);
+      n(24390);
+      function m() {
+        return (
+          (m = Object.assign
+            ? Object.assign.bind()
+            : function (e) {
+                for (var t = 1; t < arguments.length; t++) {
+                  var n = arguments[t];
+                  for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r]);
+                }
+                return e;
+              }),
+          m.apply(this, arguments)
+        );
+      }
+      var u = function (e) {
+        return r.createElement('div', m({ className: '__dumi-default-alert' }, e));
+      };
+      n(86845);
+      function d(e, t) {
+        return h(e) || E(e, t) || f(e, t) || s();
+      }
+      function s() {
+        throw new TypeError(
+          'Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.',
+        );
+      }
+      function f(e, t) {
+        if (e) {
+          if ('string' === typeof e) return p(e, t);
+          var n = Object.prototype.toString.call(e).slice(8, -1);
+          return (
+            'Object' === n && e.constructor && (n = e.constructor.name),
+            'Map' === n || 'Set' === n
+              ? Array.from(e)
+              : 'Arguments' === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)
+              ? p(e, t)
+              : void 0
+          );
+        }
+      }
+      function p(e, t) {
+        (null == t || t > e.length) && (t = e.length);
+        for (var n = 0, r = new Array(t); n < t; n++) r[n] = e[n];
+        return r;
+      }
+      function E(e, t) {
+        var n =
+          null == e
+            ? null
+            : ('undefined' !== typeof Symbol && e[Symbol.iterator]) || e['@@iterator'];
+        if (null != n) {
+          var r,
+            l,
+            a = [],
+            o = !0,
+            i = !1;
+          try {
+            for (n = n.call(e); !(o = (r = n.next()).done); o = !0)
+              if ((a.push(r.value), t && a.length === t)) break;
+          } catch (c) {
+            (i = !0), (l = c);
+          } finally {
+            try {
+              o || null == n['return'] || n['return']();
+            } finally {
+              if (i) throw l;
+            }
+          }
+          return a;
+        }
+      }
+      function h(e) {
+        if (Array.isArray(e)) return e;
+      }
+      function b(e, t) {
+        var n,
+          r = null === (n = e.match(/\.(\w+)$/)) || void 0 === n ? void 0 : n[1];
+        return r || (r = t.tsx ? 'tsx' : 'jsx'), r;
+      }
+      var v = function (e) {
+          var t,
+            n,
+            m,
+            s = (0, r.useRef)(),
+            f = (0, r.useContext)(i.context),
+            p = f.locale,
+            E = (0, i.useLocaleProps)(p, e),
+            h = (0, i.useDemoUrl)(E.identifier),
+            v = E.demoUrl || h,
+            y =
+              (null === o.m || void 0 === o.m ? void 0 : o.m.location.hash) ===
+              '#'.concat(E.identifier),
+            k = 1 === Object.keys(E.sources).length,
+            g = (0, i.useCodeSandbox)(
+              (null === (t = E.hideActions) || void 0 === t ? void 0 : t.includes('CSB'))
+                ? null
+                : E,
+            ),
+            C = (0, i.useRiddle)(
+              (null === (n = E.hideActions) || void 0 === n ? void 0 : n.includes('RIDDLE'))
+                ? null
+                : E,
+            ),
+            P = (0, i.useMotions)(E.motions || [], s.current),
+            I = d(P, 2),
+            _ = I[0],
+            w = I[1],
+            A = (0, i.useCopy)(),
+            N = d(A, 2),
+            R = N[0],
+            S = N[1],
+            x = (0, r.useState)(function () {
+              return E.sources._ ? '_' : Object.keys(E.sources)[0];
+            }),
+            L = d(x, 2),
+            F = L[0],
+            O = L[1],
+            B = (0, r.useState)(b(F, E.sources[F])),
+            T = d(B, 2),
+            j = T[0],
+            D = T[1],
+            G = (0, r.useState)(Boolean(E.defaultShowCode)),
+            M = d(G, 2),
+            U = M[0],
+            K = M[1],
+            Z = (0, r.useState)(Math.random()),
+            $ = d(Z, 2),
+            z = $[0],
+            H = $[1],
+            J = E.sources[F][j] || E.sources[F].content,
+            W = (0, i.useTSPlaygroundUrl)(p, J),
+            X = (0, r.useRef)(),
+            q = (0, i.usePrefersColor)(),
+            V = d(q, 1),
+            Q = V[0],
+            Y = E.actionBarRender,
+            ee =
+              void 0 === Y
+                ? function (e) {
+                    return e;
+                  }
+                : Y;
+          function te(e) {
+            O(e), D(b(e, E.sources[e]));
+          }
+          return (
+            (0, r.useEffect)(
+              function () {
+                H(Math.random());
+              },
+              [Q],
+            ),
+            r.createElement(
+              'div',
+              {
+                style: E.style,
+                className: [
+                  E.className,
+                  '__dumi-default-previewer',
+                  y ? '__dumi-default-previewer-target' : '',
+                ]
+                  .filter(Boolean)
+                  .join(' '),
+                id: E.identifier,
+                'data-debug': E.debug || void 0,
+                'data-iframe': E.iframe || void 0,
+              },
+              E.iframe &&
+                r.createElement('div', { className: '__dumi-default-previewer-browser-nav' }),
+              r.createElement(
+                'div',
+                {
+                  ref: s,
+                  className: '__dumi-default-previewer-demo',
+                  style: {
+                    transform: E.transform ? 'translate(0, 0)' : void 0,
+                    padding: E.compact || (E.iframe && !1 !== E.compact) ? '0' : void 0,
+                    background: E.background,
+                  },
+                },
+                E.iframe
+                  ? r.createElement('iframe', {
+                      title: 'dumi-previewer',
+                      style: { height: String(E.iframe).replace(/(\d)$/, '$1px') },
+                      key: z,
+                      src: v,
+                      ref: X,
+                    })
+                  : r.createElement(
+                      a.ErrorBoundary,
+                      {
+                        fallbackRender: function (e) {
+                          var t = e.error;
+                          return r.createElement(
+                            u,
+                            { type: 'error' },
+                            r.createElement('h4', null, t.message || 'This demo has been crashed.'),
+                            t.stack &&
+                              r.createElement(
+                                'details',
+                                null,
+                                r.createElement('summary', null, 'Error stack'),
+                                r.createElement('pre', null, t.stack),
+                              ),
+                          );
+                        },
+                      },
+                      E.children,
+                    ),
+              ),
+              r.createElement(
+                'div',
+                { className: '__dumi-default-previewer-desc', 'data-title': E.title },
+                E.title && r.createElement(i.AnchorLink, { to: '#'.concat(E.identifier) }, E.title),
+                E.description &&
+                  r.createElement('div', { dangerouslySetInnerHTML: { __html: E.description } }),
+              ),
+              r.createElement(
+                'div',
+                { className: '__dumi-default-previewer-actions' },
+                ee(
+                  r.createElement(
+                    r.Fragment,
+                    null,
+                    g &&
+                      r.createElement('button', {
+                        title: 'Open demo on CodeSandbox.io',
+                        className: '__dumi-default-icon',
+                        role: 'codesandbox',
+                        onClick: g,
+                      }),
+                    C &&
+                      r.createElement('button', {
+                        title: 'Open demo on Riddle',
+                        className: '__dumi-default-icon',
+                        role: 'riddle',
+                        onClick: C,
+                      }),
+                    E.motions &&
+                      r.createElement('button', {
+                        title: 'Execute motions',
+                        className: '__dumi-default-icon',
+                        role: 'motions',
+                        disabled: w,
+                        onClick: function () {
+                          return _();
+                        },
+                      }),
+                    E.iframe &&
+                      r.createElement('button', {
+                        title: 'Reload demo iframe page',
+                        className: '__dumi-default-icon',
+                        role: 'refresh',
+                        onClick: function () {
+                          return H(Math.random());
+                        },
+                      }),
+                    !(null === (m = E.hideActions) || void 0 === m
+                      ? void 0
+                      : m.includes('EXTERNAL')) &&
+                      r.createElement(
+                        i.Link,
+                        { target: '_blank', to: v },
+                        r.createElement('button', {
+                          title: 'Open demo in new tab',
+                          className: '__dumi-default-icon',
+                          role: 'open-demo',
+                          type: 'button',
+                        }),
+                      ),
+                    r.createElement('span', null),
+                    r.createElement('button', {
+                      title: 'Copy source code',
+                      className: '__dumi-default-icon',
+                      role: 'copy',
+                      'data-status': S,
+                      onClick: function () {
+                        return R(J);
+                      },
+                    }),
+                    'tsx' === j &&
+                      U &&
+                      r.createElement(
+                        i.Link,
+                        { target: '_blank', to: W },
+                        r.createElement('button', {
+                          title: 'Get JSX via TypeScript Playground',
+                          className: '__dumi-default-icon',
+                          role: 'change-tsx',
+                          type: 'button',
+                        }),
+                      ),
+                    r.createElement('button', {
+                      title: 'Toggle source code panel',
+                      className: '__dumi-default-icon'.concat(
+                        U ? ' __dumi-default-btn-expand' : '',
+                      ),
+                      role: 'source',
+                      type: 'button',
+                      onClick: function () {
+                        return K(!U);
+                      },
+                    }),
+                  ),
+                ),
+              ),
+              U &&
+                r.createElement(
+                  'div',
+                  { className: '__dumi-default-previewer-source-wrapper' },
+                  !k &&
+                    r.createElement(
+                      l.Z,
+                      {
+                        className: '__dumi-default-previewer-source-tab',
+                        prefixCls: '__dumi-default-tabs',
+                        moreIcon: '\xb7\xb7\xb7',
+                        defaultActiveKey: F,
+                        onChange: te,
+                      },
+                      Object.keys(E.sources).map(function (e) {
+                        return r.createElement(l.J, {
+                          tab: '_' === e ? 'index.'.concat(b(e, E.sources[e])) : e,
+                          key: e,
+                        });
+                      }),
+                    ),
+                  r.createElement(
+                    'div',
+                    { className: '__dumi-default-previewer-source' },
+                    r.createElement(c.Z, { code: J, lang: j, showCopy: !1 }),
+                  ),
+                ),
+            )
+          );
+        },
+        y = v;
+    },
+    4187: function (e, t, n) {
+      'use strict';
+      var r = n(67294),
+        l = n(97397),
+        a = n.n(l);
+      n(8036);
+      function o(e, t) {
+        return d(e) || u(e, t) || c(e, t) || i();
+      }
+      function i() {
+        throw new TypeError(
+          'Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.',
+        );
+      }
+      function c(e, t) {
+        if (e) {
+          if ('string' === typeof e) return m(e, t);
+          var n = Object.prototype.toString.call(e).slice(8, -1);
+          return (
+            'Object' === n && e.constructor && (n = e.constructor.name),
+            'Map' === n || 'Set' === n
+              ? Array.from(e)
+              : 'Arguments' === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)
+              ? m(e, t)
+              : void 0
+          );
+        }
+      }
+      function m(e, t) {
+        (null == t || t > e.length) && (t = e.length);
+        for (var n = 0, r = new Array(t); n < t; n++) r[n] = e[n];
+        return r;
+      }
+      function u(e, t) {
+        var n =
+          null == e
+            ? null
+            : ('undefined' !== typeof Symbol && e[Symbol.iterator]) || e['@@iterator'];
+        if (null != n) {
+          var r,
+            l,
+            a = [],
+            o = !0,
+            i = !1;
+          try {
+            for (n = n.call(e); !(o = (r = n.next()).done); o = !0)
+              if ((a.push(r.value), t && a.length === t)) break;
+          } catch (c) {
+            (i = !0), (l = c);
+          } finally {
+            try {
+              o || null == n['return'] || n['return']();
+            } finally {
+              if (i) throw l;
+            }
+          }
+          return a;
+        }
+      }
+      function d(e) {
+        if (Array.isArray(e)) return e;
+      }
+      var s = function (e) {
+        var t = e.children,
+          n = (0, r.useRef)(),
+          l = (0, r.useState)(!1),
+          i = o(l, 2),
+          c = i[0],
+          m = i[1],
+          u = (0, r.useState)(!1),
+          d = o(u, 2),
+          s = d[0],
+          f = d[1];
+        return (
+          (0, r.useEffect)(function () {
+            var e = n.current,
+              t = a()(function () {
+                m(e.scrollLeft > 0), f(e.scrollLeft < e.scrollWidth - e.offsetWidth);
+              }, 100);
+            return (
+              t(),
+              e.addEventListener('scroll', t),
+              window.addEventListener('resize', t),
+              function () {
+                e.removeEventListener('scroll', t), window.removeEventListener('resize', t);
+              }
+            );
+          }, []),
+          r.createElement(
+            'div',
+            { className: '__dumi-default-table' },
+            r.createElement(
+              'div',
+              {
+                className: '__dumi-default-table-content',
+                ref: n,
+                'data-left-folded': c || void 0,
+                'data-right-folded': s || void 0,
+              },
+              r.createElement('table', null, t),
+            ),
+          )
+        );
+      };
+      t['Z'] = s;
+    },
+    52444: function (e, t, n) {
+      (function (e, r) {
+        r(t, n(67294));
+      })(0, function (e, t) {
+        'use strict';
+        function n(e) {
+          if (e && e.__esModule) return e;
+          var t = Object.create(null);
+          return (
+            e &&
+              Object.keys(e).forEach(function (n) {
+                if ('default' !== n) {
+                  var r = Object.getOwnPropertyDescriptor(e, n);
+                  Object.defineProperty(
+                    t,
+                    n,
+                    r.get
+                      ? r
+                      : {
+                          enumerable: !0,
+                          get: function () {
+                            return e[n];
+                          },
+                        },
+                  );
+                }
+              }),
+            (t['default'] = e),
+            Object.freeze(t)
+          );
+        }
+        var r = n(t);
+        function l(e, t) {
+          return (
+            (l =
+              Object.setPrototypeOf ||
+              function (e, t) {
+                return (e.__proto__ = t), e;
+              }),
+            l(e, t)
+          );
+        }
+        function a(e, t) {
+          (e.prototype = Object.create(t.prototype)), (e.prototype.constructor = e), l(e, t);
+        }
+        var o = function (e, t) {
+            return (
+              void 0 === e && (e = []),
+              void 0 === t && (t = []),
+              e.length !== t.length ||
+                e.some(function (e, n) {
+                  return !Object.is(e, t[n]);
+                })
+            );
+          },
+          i = { error: null },
+          c = (function (e) {
+            function t() {
+              for (var t, n = arguments.length, r = new Array(n), l = 0; l < n; l++)
+                r[l] = arguments[l];
+              return (
+                (t = e.call.apply(e, [this].concat(r)) || this),
+                (t.state = i),
+                (t.resetErrorBoundary = function () {
+                  for (var e, n = arguments.length, r = new Array(n), l = 0; l < n; l++)
+                    r[l] = arguments[l];
+                  null == t.props.onReset || (e = t.props).onReset.apply(e, r), t.reset();
+                }),
+                t
+              );
+            }
+            a(t, e),
+              (t.getDerivedStateFromError = function (e) {
+                return { error: e };
+              });
+            var n = t.prototype;
+            return (
+              (n.reset = function () {
+                this.setState(i);
+              }),
+              (n.componentDidCatch = function (e, t) {
+                var n, r;
+                null == (n = (r = this.props).onError) || n.call(r, e, t);
+              }),
+              (n.componentDidUpdate = function (e, t) {
+                var n,
+                  r,
+                  l = this.state.error,
+                  a = this.props.resetKeys;
+                null !== l &&
+                  null !== t.error &&
+                  o(e.resetKeys, a) &&
+                  (null == (n = (r = this.props).onResetKeysChange) || n.call(r, e.resetKeys, a),
+                  this.reset());
+              }),
+              (n.render = function () {
+                var e = this.state.error,
+                  t = this.props,
+                  n = t.fallbackRender,
+                  l = t.FallbackComponent,
+                  a = t.fallback;
+                if (null !== e) {
+                  var o = { error: e, resetErrorBoundary: this.resetErrorBoundary };
+                  if (r.isValidElement(a)) return a;
+                  if ('function' === typeof n) return n(o);
+                  if (l) return r.createElement(l, o);
+                  throw new Error(
+                    'react-error-boundary requires either a fallback, fallbackRender, or FallbackComponent prop',
+                  );
+                }
+                return this.props.children;
+              }),
+              t
+            );
+          })(r.Component);
+        function m(e, t) {
+          var n = function (n) {
+              return r.createElement(c, t, r.createElement(e, n));
+            },
+            l = e.displayName || e.name || 'Unknown';
+          return (n.displayName = 'withErrorBoundary(' + l + ')'), n;
+        }
+        function u(e) {
+          var t = r.useState(null),
+            n = t[0],
+            l = t[1];
+          if (null != e) throw e;
+          if (null != n) throw n;
+          return l;
+        }
+        (e.ErrorBoundary = c),
+          (e.useErrorHandler = u),
+          (e.withErrorBoundary = m),
+          Object.defineProperty(e, '__esModule', { value: !0 });
+      });
     },
   },
 ]);
