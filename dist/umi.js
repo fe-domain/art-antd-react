@@ -23214,8 +23214,8 @@
                 slugs: [
                   {
                     depth: 2,
-                    value: '\ud83c\udf08 Hello art-react-antd!',
-                    heading: '-hello-art-react-antd',
+                    value: '\ud83c\udf08 Hello art-antd-react!',
+                    heading: '-hello-art-antd-react',
                   },
                   { depth: 2, value: '\ud83c\udf6d Target', heading: '-target' },
                   {
@@ -23228,9 +23228,9 @@
                   { depth: 2, value: '\ud83d\udda5 Getting Started', heading: '-getting-started' },
                   { depth: 2, value: '\u26a1 \u53cd\u9988', heading: '-\u53cd\u9988' },
                 ],
-                title: '\ud83c\udf08 Hello art-react-antd!',
+                title: '\ud83c\udf08 Hello art-antd-react!',
               },
-              title: '\ud83c\udf08 Hello art-react-antd! - art-antd-react',
+              title: '\ud83c\udf08 Hello art-antd-react! - art-antd-react',
             },
             {
               path: '/components/detail-present',

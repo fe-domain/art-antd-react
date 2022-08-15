@@ -22,7 +22,7 @@
       var r = t(13378),
         o = t(67294),
         a = JSON.parse(
-          '{"menus":{"en-US":{"*":[{"path":"/","title":"\ud83c\udf08 Hello art-react-antd!","meta":{}}],"/components":[{"path":"/components/detail-present","title":"DetailPresent \u8be6\u60c5\u9648\u8ff0","meta":{}},{"path":"/components/form-generator","title":"FormGenerator \u8868\u5355\u751f\u6210\u5668","meta":{}},{"path":"/components/form-items-builder","title":"FormItemsBuilder \u8868\u5355\u9879\u6784\u5efa\u5668","meta":{}},{"path":"/components/list-template","title":"ListTemplate \u5217\u8868\u6a21\u677f","meta":{}}],"/hooks":[{"path":"/hooks/use-config-list-page","title":"useConfigListPage","meta":{}},{"path":"/hooks/use-form-modal","title":"useFormModal","meta":{}},{"path":"/hooks/use-request","title":"useRequest","meta":{}}]}},"locales":[{"name":"en-US","label":"English"}],"navs":{"en-US":[{"title":"components","path":"/components"},{"title":"hooks","path":"/hooks"},{"title":"Gitee","path":"https://gitee.com/quankehao/art-antd-react"},{"title":"GitHub","path":"https://github.com/Kehao33/art-antd-react"}]},"title":"art-antd-react","logo":"/icons/logo.png","mode":"site","repository":{"url":"https://github.com/Kehao33/art-antd-react","branch":"master"},"theme":{},"exportStatic":{}}',
+          '{"menus":{"en-US":{"*":[{"path":"/","title":"\ud83c\udf08 Hello art-antd-react!","meta":{}}],"/components":[{"path":"/components/detail-present","title":"DetailPresent \u8be6\u60c5\u9648\u8ff0","meta":{}},{"path":"/components/form-generator","title":"FormGenerator \u8868\u5355\u751f\u6210\u5668","meta":{}},{"path":"/components/form-items-builder","title":"FormItemsBuilder \u8868\u5355\u9879\u6784\u5efa\u5668","meta":{}},{"path":"/components/list-template","title":"ListTemplate \u5217\u8868\u6a21\u677f","meta":{}}],"/hooks":[{"path":"/hooks/use-config-list-page","title":"useConfigListPage","meta":{}},{"path":"/hooks/use-form-modal","title":"useFormModal","meta":{}},{"path":"/hooks/use-request","title":"useRequest","meta":{}}]}},"locales":[{"name":"en-US","label":"English"}],"navs":{"en-US":[{"title":"components","path":"/components"},{"title":"hooks","path":"/hooks"},{"title":"Gitee","path":"https://gitee.com/quankehao/art-antd-react"},{"title":"GitHub","path":"https://github.com/Kehao33/art-antd-react"}]},"title":"art-antd-react","logo":"/icons/logo.png","mode":"site","repository":{"url":"https://github.com/Kehao33/art-antd-react","branch":"master"},"theme":{},"exportStatic":{}}',
         ),
         s = t(99829),
         m = t(68699),
@@ -50,7 +50,7 @@
         I =
           "import React from 'react';\nimport { Button, message } from 'antd';\nimport { useRequest } from 'art-antd-react';\n//  \u5b89\u88dd\u4e86 art-antd-react \u4ee5\u540e antd \u76f4\u63a5\u5bfc\u51fa\u7684 \u7c7b\u578b\u6216\u7ec4\u4ef6 \u53ef\u4ee5\u76f4\u63a5\u4ece art-antd-react \u4e2d\u5bfc\u51fa\n// import { useRequest, Button, message } from 'art-antd-react';\n\n// getData \u6765\u81ea\u4e8e\u4f60\u7684\u8bf7\u6c42\u670d\u52a1\u51fd\u6570\nimport { getData, MockData } from './mock';\n\nconst RequestHookDemo = () => {\n  const { data, loading, lazyService } = useRequest<MockData>(getData, {\n    lazy: true, // lazy \u4e3a true \u7684\u65f6\u5019\u9700\u8981\u624b\u52a8\u53bb\u8c03\u7528 lazyService(xx)\n    onError(e: Error) {\n      message.error(e?.message || '\u8bf7\u6c42\u51fa\u9519');\n    },\n  });\n\n  if (data) {\n    console.log('\u8bf7\u6c42\u7684\u6570\u636e:', JSON.stringify(data, null, 2));\n  }\n\n  return (\n    <section>\n      <Button onClick={() => lazyService()}>\u70b9\u51fb\u8bf7\u6c42\u6570\u636e</Button>\n      <main>\n        \u8bf7\u6c42\u7ed3\u679c\uff1a\n        <code>{loading ? 'loading ...' : JSON.stringify(data, null, 2)}</code>\n      </main>\n    </section>\n  );\n};\n\nexport default RequestHookDemo;",
         P = {
-          'art-react-antd-detailpresentdemo1': {
+          'art-antd-react-detailpresentdemo1': {
             component: (0, i.D8)({
               loader: (function () {
                 var n = (0, m.Z)(
@@ -87,10 +87,10 @@
               },
               title:
                 '\u6839\u636e\u83b7\u53d6\u7684\u4fe1\u606f\uff0c\u914d\u7f6e\u4e0alabel\u7684\u6620\u5c04\u5373\u53ef\u5feb\u901f\u663e\u793a',
-              identifier: 'art-react-antd-detailpresentdemo1',
+              identifier: 'art-antd-react-detailpresentdemo1',
             },
           },
-          'art-react-antd-detailpresentdemo2': {
+          'art-antd-react-detailpresentdemo2': {
             component: (0, i.D8)({
               loader: (function () {
                 var n = (0, m.Z)(
@@ -126,10 +126,10 @@
                 'art-antd-react': { version: '1.8.3' },
               },
               title: '\u4f7f\u7528 keyMapItemProps \u6765\u6620\u5c04\u67d0\u9879\u5e03\u5c40',
-              identifier: 'art-react-antd-detailpresentdemo2',
+              identifier: 'art-antd-react-detailpresentdemo2',
             },
           },
-          'art-react-antd-formgeneratordemo1': {
+          'art-antd-react-formgeneratordemo1': {
             component: (0, i.D8)({
               loader: (function () {
                 var n = (0, m.Z)(
@@ -167,10 +167,10 @@
                 'react-dom': { version: '>=16.9.0' },
               },
               title: '\u4e00\u4e2a\u914d\u7f6e\u5316\u7684\u641c\u7d22 bar',
-              identifier: 'art-react-antd-formgeneratordemo1',
+              identifier: 'art-antd-react-formgeneratordemo1',
             },
           },
-          'art-react-antd-formgeneratordemo2': {
+          'art-antd-react-formgeneratordemo2': {
             component: (0, i.D8)({
               loader: (function () {
                 var n = (0, m.Z)(
@@ -208,10 +208,10 @@
                 'react-dom': { version: '>=16.9.0' },
               },
               title: '\u81ea\u5b9a\u4e49\u8868\u5355',
-              identifier: 'art-react-antd-formgeneratordemo2',
+              identifier: 'art-antd-react-formgeneratordemo2',
             },
           },
-          'art-react-antd-formitemsbuilderdemo1': {
+          'art-antd-react-formitemsbuilderdemo1': {
             component: (0, i.D8)({
               loader: (function () {
                 var n = (0, m.Z)(
@@ -250,10 +250,10 @@
               },
               title:
                 '\u4f7f\u7528TS as \u65ad\u8a00\u53ef\u4ee5\u5e2e\u52a9\u6211\u4eec\u68c0\u67e5 formItemChildProps \u7684 API \u662f\u5426\u6b63\u786e',
-              identifier: 'art-react-antd-formitemsbuilderdemo1',
+              identifier: 'art-antd-react-formitemsbuilderdemo1',
             },
           },
-          'art-react-antd-formitemsbuilderdemo2': {
+          'art-antd-react-formitemsbuilderdemo2': {
             component: (0, i.D8)({
               loader: (function () {
                 var n = (0, m.Z)(
@@ -291,10 +291,10 @@
                 'react-dom': { version: '>=16.9.0' },
               },
               title: 'itemColProps \u4f18\u5148\u7ea7\u9ad8\u4e8e colProps',
-              identifier: 'art-react-antd-formitemsbuilderdemo2',
+              identifier: 'art-antd-react-formitemsbuilderdemo2',
             },
           },
-          'art-react-antd-formitemsbuilderdemo3': {
+          'art-antd-react-formitemsbuilderdemo3': {
             component: (0, i.D8)({
               loader: (function () {
                 var n = (0, m.Z)(
@@ -332,10 +332,10 @@
                 'react-dom': { version: '>=16.9.0' },
               },
               title: 'itemColProps \u4f18\u5148\u7ea7\u9ad8\u4e8e colProps',
-              identifier: 'art-react-antd-formitemsbuilderdemo3',
+              identifier: 'art-antd-react-formitemsbuilderdemo3',
             },
           },
-          'art-react-antd-listtemplatedemo1': {
+          'art-antd-react-listtemplatedemo1': {
             component: (0, i.D8)({
               loader: (function () {
                 var n = (0, m.Z)(
@@ -373,10 +373,10 @@
                 'react-dom': { version: '>=16.9.0' },
               },
               title: '\u7b80\u5355\u7684\u4f7f\u7528',
-              identifier: 'art-react-antd-listtemplatedemo1',
+              identifier: 'art-antd-react-listtemplatedemo1',
             },
           },
-          'art-react-antd-useconfiglistpagedemo1': {
+          'art-antd-react-useconfiglistpagedemo1': {
             component: (0, i.D8)({
               loader: (function () {
                 var n = (0, m.Z)(
@@ -414,10 +414,10 @@
                 'react-dom': { version: '>=16.9.0' },
               },
               title: '\u4f7f\u7528demo',
-              identifier: 'art-react-antd-useconfiglistpagedemo1',
+              identifier: 'art-antd-react-useconfiglistpagedemo1',
             },
           },
-          'art-react-antd-userequestdemo1': {
+          'art-antd-react-userequestdemo1': {
             component: (0, i.D8)({
               loader: (function () {
                 var n = (0, m.Z)(
@@ -455,7 +455,7 @@
                 'react-dom': { version: '>=16.9.0' },
               },
               title: '\u7b80\u5355\u7684\u4f7f\u7528',
-              identifier: 'art-react-antd-userequestdemo1',
+              identifier: 'art-antd-react-userequestdemo1',
             },
           },
         },

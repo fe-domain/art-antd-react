@@ -24,9 +24,9 @@
         i = n(4187),
         c = r.memo((e) => {
           var t = e.demos,
-            n = t['art-react-antd-formitemsbuilderdemo1'].component,
-            c = t['art-react-antd-formitemsbuilderdemo2'].component,
-            m = t['art-react-antd-formitemsbuilderdemo3'].component;
+            n = t['art-antd-react-formitemsbuilderdemo1'].component,
+            c = t['art-antd-react-formitemsbuilderdemo2'].component,
+            m = t['art-antd-react-formitemsbuilderdemo3'].component;
           return r.createElement(
             r.Fragment,
             null,
@@ -104,7 +104,7 @@
               ),
               r.createElement(
                 a.default,
-                t['art-react-antd-formitemsbuilderdemo1'].previewerProps,
+                t['art-antd-react-formitemsbuilderdemo1'].previewerProps,
                 r.createElement(n, null),
               ),
               r.createElement(
@@ -129,7 +129,7 @@
               ),
               r.createElement(
                 a.default,
-                t['art-react-antd-formitemsbuilderdemo2'].previewerProps,
+                t['art-antd-react-formitemsbuilderdemo2'].previewerProps,
                 r.createElement(c, null),
               ),
               r.createElement(
@@ -148,7 +148,7 @@
               ),
               r.createElement(
                 a.default,
-                t['art-react-antd-formitemsbuilderdemo3'].previewerProps,
+                t['art-antd-react-formitemsbuilderdemo3'].previewerProps,
                 r.createElement(m, null),
               ),
               r.createElement(

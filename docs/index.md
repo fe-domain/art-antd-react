@@ -18,7 +18,7 @@ features:
 footer: Open-source MIT Licensed | Copyright jakequc 2022<br />Powered by [dumi](https://d.umijs.org)
 ---
 
-## 🌈 Hello art-react-antd!
+## 🌈 Hello art-antd-react!
 
 ## 🍭 Target
 

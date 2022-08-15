@@ -23,8 +23,8 @@
         o = n(4187),
         c = r.memo((e) => {
           var t = e.demos,
-            n = t['art-react-antd-formgeneratordemo1'].component,
-            c = t['art-react-antd-formgeneratordemo2'].component;
+            n = t['art-antd-react-formgeneratordemo1'].component,
+            c = t['art-antd-react-formgeneratordemo2'].component;
           return r.createElement(
             r.Fragment,
             null,
@@ -102,7 +102,7 @@
               ),
               r.createElement(
                 a.default,
-                t['art-react-antd-formgeneratordemo1'].previewerProps,
+                t['art-antd-react-formgeneratordemo1'].previewerProps,
                 r.createElement(n, null),
               ),
               r.createElement(
@@ -125,7 +125,7 @@
               ),
               r.createElement(
                 a.default,
-                t['art-react-antd-formgeneratordemo2'].previewerProps,
+                t['art-antd-react-formgeneratordemo2'].previewerProps,
                 r.createElement(c, null),
               ),
               r.createElement(

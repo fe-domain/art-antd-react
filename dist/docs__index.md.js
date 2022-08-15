@@ -17,13 +17,13 @@
               { className: 'markdown' },
               a.createElement(
                 'h2',
-                { id: '-hello-art-react-antd' },
+                { id: '-hello-art-antd-react' },
                 a.createElement(
                   l.AnchorLink,
-                  { to: '#-hello-art-react-antd', 'aria-hidden': 'true', tabIndex: -1 },
+                  { to: '#-hello-art-antd-react', 'aria-hidden': 'true', tabIndex: -1 },
                   a.createElement('span', { className: 'icon icon-link' }),
                 ),
-                '\ud83c\udf08 Hello art-react-antd!',
+                '\ud83c\udf08 Hello art-antd-react!',
               ),
               a.createElement(
                 'h2',

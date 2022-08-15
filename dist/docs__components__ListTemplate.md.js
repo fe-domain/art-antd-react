@@ -23,7 +23,7 @@
         o = n(4187),
         c = r.memo((e) => {
           var t = e.demos,
-            n = t['art-react-antd-listtemplatedemo1'].component;
+            n = t['art-antd-react-listtemplatedemo1'].component;
           return r.createElement(
             r.Fragment,
             null,
@@ -90,7 +90,7 @@
               ),
               r.createElement(
                 l.default,
-                t['art-react-antd-listtemplatedemo1'].previewerProps,
+                t['art-antd-react-listtemplatedemo1'].previewerProps,
                 r.createElement(n, null),
               ),
               r.createElement(
