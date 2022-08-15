@@ -1,5 +1,11 @@
 {
   "name": "art-antd-react",
+  "description": "configure and develop Ant Design(React)",
+  "homepage": "https://kehao33.github.io/art-antd-react/",
+   "repository": {
+    "type": "github",
+    "url": "https://github.com/Kehao33/art-antd-react"
+  },
   "version": "1.8.3",
   "scripts": {
     "start": "dumi dev",
@@ -47,7 +53,7 @@
   "dependencies": {
     "antd": "^4.22.4",
     "babel-plugin-import": "^1.13.5",
-    "react": "^18.0.0"
+    "react": "^18.2.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.15.1",
