@@ -1,12 +1,12 @@
 (self['webpackChunkart_antd_react'] = self['webpackChunkart_antd_react'] || []).push([
   [935],
   {
-    35956: function (e, t, n) {
+    16269: function (e, t, n) {
       'use strict';
       n.r(t);
-      var a = n(67294),
-        l = n(96089),
-        r = n(65659),
+      var a = n(50959),
+        l = n(29155),
+        r = n(5068),
         c = a.memo((e) => {
           e.demos;
           return a.createElement(

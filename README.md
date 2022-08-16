@@ -52,9 +52,6 @@ npm i art-antd-react
 # or
 yarn add art-antd-react
 
-# 安装 antd 并 引入样式
-yarn add antd
-
 # 在入口引入以下文件(这是antd的默认主题样式，如果要引入其他主题样式可以在项目中按照 https://ant-design.gitee.io/docs/react/use-with-create-react-app-cn 覆盖即可) 
 import "art-antd-react/dist/esm/styles/defaultAntdCss.css"
 

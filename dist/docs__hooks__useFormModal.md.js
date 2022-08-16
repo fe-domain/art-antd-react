@@ -1,14 +1,14 @@
 (self['webpackChunkart_antd_react'] = self['webpackChunkart_antd_react'] || []).push([
   [875],
   {
-    8036: function () {},
-    50246: function (e, n, t) {
+    77539: function () {},
+    16528: function (e, n, t) {
       'use strict';
       t.r(n);
-      var l = t(67294),
-        r = t(96089),
-        a = t(65659),
-        o = t(4187),
+      var l = t(50959),
+        r = t(29155),
+        a = t(5068),
+        o = t(93550),
         c = l.memo((e) => {
           e.demos;
           return l.createElement(
@@ -339,12 +339,12 @@
         );
       };
     },
-    4187: function (e, n, t) {
+    93550: function (e, n, t) {
       'use strict';
-      var l = t(67294),
-        r = t(97397),
+      var l = t(50959),
+        r = t(665),
         a = t.n(r);
-      t(8036);
+      t(77539);
       function o(e, n) {
         return s(e) || d(e, n) || m(e, n) || c();
       }

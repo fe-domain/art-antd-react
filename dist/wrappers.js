@@ -1,17 +1,17 @@
 (self['webpackChunkart_antd_react'] = self['webpackChunkart_antd_react'] || []).push([
   [275],
   {
-    22231: function (n, e, t) {
+    83063: function (n, e, t) {
       'use strict';
       t.d(e, {
         m: function () {
           return r.m;
         },
       });
-      var r = t(9684);
-      t(72255);
+      var r = t(35925);
+      t(15150);
     },
-    92950: function (n, e, t) {
+    64655: function (n, e, t) {
       'use strict';
       t.r(e),
         t.d(e, {
@@ -19,14 +19,14 @@
             return v;
           },
         });
-      var r = t(13378),
-        o = t(67294),
+      var r = t(54465),
+        o = t(50959),
         a = JSON.parse(
           '{"menus":{"en-US":{"*":[{"path":"/","title":"\ud83c\udf08 Hello art-antd-react!","meta":{}}],"/components":[{"path":"/components/detail-present","title":"DetailPresent \u8be6\u60c5\u9648\u8ff0","meta":{}},{"path":"/components/form-generator","title":"FormGenerator \u8868\u5355\u751f\u6210\u5668","meta":{}},{"path":"/components/form-items-builder","title":"FormItemsBuilder \u8868\u5355\u9879\u6784\u5efa\u5668","meta":{}},{"path":"/components/list-template","title":"ListTemplate \u5217\u8868\u6a21\u677f","meta":{}}],"/hooks":[{"path":"/hooks/use-config-list-page","title":"useConfigListPage","meta":{}},{"path":"/hooks/use-form-modal","title":"useFormModal","meta":{}},{"path":"/hooks/use-request","title":"useRequest","meta":{}}]}},"locales":[{"name":"en-US","label":"English"}],"navs":{"en-US":[{"title":"components","path":"/components"},{"title":"hooks","path":"/hooks"},{"title":"Gitee","path":"https://gitee.com/quankehao/art-antd-react"},{"title":"GitHub","path":"https://github.com/Kehao33/art-antd-react"}]},"title":"art-antd-react","logo":"/icons/logo.png","mode":"site","repository":{"url":"https://github.com/Kehao33/art-antd-react","branch":"master"},"theme":{},"exportStatic":{}}',
         ),
-        s = t(99829),
-        m = t(68699),
-        i = t(60535),
+        s = t(90738),
+        m = t(35023),
+        i = t(26086),
         l =
           "import React from 'react';\nimport { DetailPresent } from 'art-antd-react';\n\nconst Demo1 = () => {\n  const responseData = {\n    user: '\u5f20\u826f',\n    age: '88',\n    hobby: ['\u8c0b\u7565', '\u5175\u6cd5', '\u8bc6\u4eba'],\n    state: '\u4e2d\u56fd-\u6c49\u671d',\n    sex: '\u7537',\n    friend: {\n      user: '\u97e9\u975e\u5b50',\n    },\n  };\n\n  const keyMapLabel = {\n    user: '\u59d3\u540d',\n    age: '\u5e74\u9f84',\n    sex: '\u6027\u522b',\n    state: '\u56fd\u7c4d',\n    hobby: '\u7231\u597d',\n    friend: '\u670b\u53cb',\n  };\n\n  return (\n    <DetailPresent\n      title=\"\u8c0b\u5723\u4fe1\u606f\"\n      detail={{\n        ...responseData,\n        friend: responseData.friend.user,\n      }}\n      keyMapLabel={keyMapLabel}\n    />\n  );\n};\n\nexport default Demo1;",
         p =
@@ -43,15 +43,15 @@
           "import React from 'react';\nimport { FormItemsBuilder, FormItemConfig, RenderType } from 'art-antd-react';\nimport { Button, Col, Form, Input, Row, SelectProps, Space, TimeRangePickerProps } from 'antd';\n//  \u5b89\u88dd\u4e86 art-antd-react \u4ee5\u540e antd \u76f4\u63a5\u5bfc\u51fa\u7684 \u7c7b\u578b\u6216\u7ec4\u4ef6 \u53ef\u4ee5\u76f4\u63a5\u4ece art-antd-react \u4e2d\u5bfc\u51fa\n// import { FormItemsBuilder, FormItemConfig, RenderType, Button, Col, Form, Input, Row, SelectProps, Space, TimeRangePickerProps } from 'art-antd-react';\n\nconst Demo3 = () => {\n  const [form] = Form.useForm();\n\n  const mockOptions = [\n    {\n      label: 'mock1',\n      value: 'mock1',\n    },\n    {\n      label: 'mock2',\n      value: 'mock2',\n    },\n  ];\n\n  const group1FormItems: FormItemConfig[] = [\n    {\n      renderType: RenderType.Input,\n      key: '1',\n      itemTitle: <div>itemTitle \u4e00\u822c\u653e\u5728label\u524d\u52a0\u4ee5\u8bf4\u660e</div>,\n      formItemProps: {\n        // \u8fd9\u91cc\u53ef\u4ee5 \u653e Form.Item \u7684 \u6240\u6709 props\uff0c\u4f60\u61c2\u7684\uff01\n        name: 'label1',\n        label: <div>label1</div>,\n        colon: true, // \u663e\u793a Form.Item \u540e\u8fb9\u7684\u5192\u53f7\n        dependencies: ['label2'],\n        extra: <div>\u989d\u5916\u7684\u4fe1\u606f</div>,\n        tooltip: 'demo3',\n        rules: [\n          {\n            required: true,\n            message: '\u4e0d\u80fd\u4e3a\u7a7a',\n          },\n        ],\n      },\n      formItemChildProps: {\n        placeholder: '\u8bf7\u8f93\u5165\u540d\u5b57',\n      },\n    },\n    {\n      renderType: RenderType.Select,\n      key: '2',\n      formItemProps: {\n        name: 'label2',\n        label: 'label2',\n      },\n      formItemChildProps: {\n        placeholder: '\u8bf7\u9009\u62e9',\n        options: mockOptions,\n      } as SelectProps,\n    },\n    {\n      renderType: RenderType.TimeRangePicker,\n      key: '4',\n      // itemColProps \u7684\u4f18\u5148\u7ea7 \u5927\u4e8e colProps \u7684\u4f18\u5148\u7ea7\n      itemColProps: { span: 24 },\n      formItemProps: {\n        name: 'label4',\n        label: 'label4',\n      },\n      formItemChildProps: {\n        // \u7c7b\u540d style \u7b49\u90fd\u53ef\u4ee5\u76f4\u63a5\u5199\u6210 key-value \u7684\u5f62\u5f0f\n        style: { width: '100%' },\n        onChange: (v) => {\n          console.log('v', v);\n        },\n        // \u5f53\u9700\u8981\u63d0\u793a\u6216\u8005\u9759\u6001\u68c0\u67e5\u65f6\u63a8\u8350\u4f7f\u7528 ts \u7684 as \u65ad\u8a00\n      } as TimeRangePickerProps,\n    },\n    {\n      // \u5f53 \u4f7f\u7528\u4e86 renderType \u7b49\u4e8e CustomItemChildren \u7684\u65f6\u5019\uff0c\u5b9a\u4e49 formItemChildProps \u5c31\u4e0d\u7ba1\u7528\u4e86\uff0c\u53ea\u9700\u8981 \u4f7f\u7528 customItemChild \u5199 \u6b63\u5e38\u7684\u6807\u7b7e\u5373\u53ef\n      renderType: RenderType.CustomItemChildren,\n      key: 'CustomItemChildren',\n      // itemColProps \u7684\u4f18\u5148\u7ea7 \u5927\u4e8e colProps \u7684\u4f18\u5148\u7ea7\n      itemColProps: { span: 24 },\n      formItemProps: {\n        label: 'label4',\n      },\n      customItemChildren: (\n        <Form.List name=\"sights\">\n          {(fields, { add, remove }) => (\n            <>\n              {fields.map((field) => (\n                <Space key={field.key} align=\"baseline\" style={{ marginRight: 10 }}>\n                  <Form.Item\n                    {...field}\n                    label=\"Price\"\n                    name={[field.name, 'price']}\n                    rules={[{ required: true, message: '\u4ef7\u683c\u4e0d\u80fd\u4e3a\u7a7a' }]}\n                  >\n                    <Input />\n                  </Form.Item>\n\n                  <Button onClick={() => remove(field.name)} type=\"primary\" danger>\n                    \u79fb\u9664\n                  </Button>\n                </Space>\n              ))}\n\n              <Form.Item>\n                <Button type=\"dashed\" onClick={() => add()} block>\n                  \u65b0\u589e\u9879\n                </Button>\n              </Form.Item>\n            </>\n          )}\n        </Form.List>\n      ),\n    },\n  ].map(({ formItemProps, ...rest }) => ({\n    ...rest,\n    formItemProps: {\n      labelCol: { span: 24 },\n      wrapperCol: { span: 24 },\n      ...formItemProps,\n    },\n  }));\n\n  return (\n    <Form\n      form={form}\n      onFinish={(value: Record<string, unknown>) => {\n        console.log('demo3 values: ', value);\n      }}\n    >\n      <Row gutter={16}>\n        <FormItemsBuilder colProps={{ span: 24 }} formItemsConfig={group1FormItems} />\n      </Row>\n\n      <Col span={6}>\n        <Button type=\"primary\" htmlType=\"submit\">\n          \u63d0\u4ea4\n        </Button>\n      </Col>\n    </Form>\n  );\n};\n\nexport default Demo3;",
         h =
           "import React from 'react';\nimport { getData, MockData } from './mock';\nimport { ColumnsType } from 'antd/lib/table';\nimport { Button, message, Space, Tag } from 'antd';\nimport { FormItemConfig, ListTemplate, useRequest, RenderType } from 'art-antd-react';\n//  \u5b89\u88dd\u4e86 art-antd-react \u4ee5\u540e antd \u76f4\u63a5\u5bfc\u51fa\u7684 \u7c7b\u578b\u6216\u7ec4\u4ef6 \u53ef\u4ee5\u76f4\u63a5\u4ece art-antd-react \u4e2d\u5bfc\u51fa\n// import { FormItemConfig, ListTemplate, useRequest, RenderType, Button, message, Space, Tag } from 'art-antd-react';\n\nconst Demo1 = () => {\n  const columns: ColumnsType<MockData> = [\n    {\n      title: 'Name',\n      dataIndex: 'name',\n    },\n    {\n      title: 'Age',\n      dataIndex: 'age',\n      sorter: (a, b) => a.age - b.age,\n    },\n    {\n      title: 'Gender',\n      dataIndex: 'gender',\n    },\n    {\n      title: 'Hobby',\n      dataIndex: 'hobby',\n    },\n    {\n      title: 'Description',\n      dataIndex: 'description',\n    },\n    {\n      title: 'BestFirend',\n      dataIndex: 'bestFirend',\n      render: (bestFirend) => {\n        return <Tag color=\"success\">{bestFirend?.name || '-'}</Tag>;\n      },\n    },\n    {\n      title: 'Action',\n      key: 'action',\n      render: () => (\n        <Space size=\"middle\">\n          {['\u5220\u9664', '\u8be6\u60c5', '\u5176\u4ed6\u64cd\u4f5c'].map((act) => (\n            <Button\n              key={act}\n              type=\"link\"\n              onClick={() => {\n                console.log(`you click add ${act}`);\n              }}\n            >\n              {act}\n            </Button>\n          ))}\n        </Space>\n      ),\n    },\n  ];\n\n  // \u66f4\u591a \u641c\u7d22\u8868\u5355\u914d\u7f6e \u8bf7\u770b FormItemsBuilder \u7684 API\n  const formItemsConfig: FormItemConfig[] = Array(11)\n    .fill({})\n    .map((_, index) => ({\n      renderType: RenderType.Input,\n      formItemProps: {\n        name: `label${index}`,\n        label: `label${index}`,\n      },\n      formItemChildProps: {\n        placeholder: `please input label${index}`,\n      },\n    }))\n    .map(({ formItemChildProps, ...rest }) => ({\n      ...rest,\n      formItemChildProps: {\n        style: { width: '100%' },\n        ...formItemChildProps,\n      },\n    }));\n\n  const { data: dataSource, loading } = useRequest(getData, {\n    onError(e) {\n      message.error(e?.message || '\u8bf7\u6c42\u51fa\u9519');\n    },\n  });\n\n  return (\n    <ListTemplate\n      // ListTemplate \u7684 \u5c5e\u6027\u7ee7\u627f\u4e8e Space \u6240\u4ee5 size \u5c31\u662f \u6765\u81ea\u4e8e\u7ee7\u627f\u7684 SpaceProps\n      size={16}\n      // table \u7684\u914d\u7f6e\n      tableProps={{\n        loading,\n        dataSource,\n        columns,\n        scroll: { x: true },\n        rowKey: 'id',\n        // \u5206\u9875\u914d\u7f6e\uff0c\u4e0d\u9700\u8981\u5c31\u4e0d\u7528\u914d\u7f6e\uff0c\u4f60\u61c2\u7684\n        pagination: {\n          onChange(page, pageSize) {\n            console.log(`change pagination: pageNo = ${page}, pageSize = ${pageSize}`);\n          },\n        },\n      }}\n      // \u5305\u88f9 Table \u7684 Card \u7684\u914d\u7f6e\n      tableCardProps={{\n        title: '\u5217\u8868\u6570\u636e',\n        extra: (\n          <Button\n            type=\"primary\"\n            onClick={() => {\n              console.log('you click add btn');\n            }}\n          >\n            Add\n          </Button>\n        ),\n      }}\n      // \u641c\u7d22\u8868\u5355\u7684\u914d\u7f6e\u9879\uff08\u8fd9\u91cc\u5176\u5b9e\u5c31\u662f FormGenerator \u7684\u914d\u7f6e\n      searchBarProps={{\n        formItemsConfig,\n        rowProps: { gutter: 8 },\n        colProps: { span: 8 },\n        showSubmit: true, // \u9ed8\u8ba4\u5c55\u793a\u7684\n        showRest: true, // \u9ed8\u8ba4\u5c55\u793a\u7684\n        onFinish: (v) => {\n          console.log('\u70b9\u51fb\u4e86\u63d0\u4ea4', v);\n        },\n        onReset: () => {\n          console.log('\u51fa\u53d1\u4e86\u91cd\u7f6e');\n        },\n      }}\n      // \u5305\u88f9 \u641c\u7d22\u8868\u5355\u7684 \u914d\u7f6e\n      searchCardProps={{\n        // \u4efb\u610f\u7684 cardProps \u5c5e\u6027\u914d\u7f6e\n        style: { marginBottom: 2 },\n      }}\n    />\n  );\n};\n\nexport default Demo1;",
-        b =
-          "export type MockData = {\n  id: string;\n  name: string;\n  age: number;\n  gender: string;\n  hobby: string;\n  bestFirend: {\n    name: string;\n    age: number;\n  };\n  description: string;\n};\n\nexport type MockConfig = {\n  len?: number;\n  timeout?: number;\n  throwErr?: boolean;\n};\nexport const getData = async (config?: MockConfig): Promise<MockData[]> => {\n  const { len = 21, timeout = 1500, throwErr = false } = config || {};\n  return new Promise((resolve, reject) => {\n    setTimeout(() => {\n      if (throwErr) {\n        reject('\u51fa\u9519\u5566');\n      }\n\n      resolve(\n        Array(len)\n          .fill({})\n          .map((_, index) => ({\n            id: `${index + Math.floor(Math.random() * 100)}`,\n            name: `name${index}`,\n            age: Math.floor(Math.random() * 100),\n            gender: `gender${index}`,\n            hobby: `hobby${index}`,\n            firend: `firend${index}`,\n            description: `description${index}`,\n            bestFirend: {\n              name: `zhanag ${index}`,\n              age: Math.floor(Math.random() * 100),\n            },\n          })),\n      );\n    }, timeout);\n  });\n};",
         y =
+          "export type MockData = {\n  id: string;\n  name: string;\n  age: number;\n  gender: string;\n  hobby: string;\n  bestFirend: {\n    name: string;\n    age: number;\n  };\n  description: string;\n};\n\nexport type MockConfig = {\n  len?: number;\n  timeout?: number;\n  throwErr?: boolean;\n};\nexport const getData = async (config?: MockConfig): Promise<MockData[]> => {\n  const { len = 21, timeout = 1500, throwErr = false } = config || {};\n  return new Promise((resolve, reject) => {\n    setTimeout(() => {\n      if (throwErr) {\n        reject('\u51fa\u9519\u5566');\n      }\n\n      resolve(\n        Array(len)\n          .fill({})\n          .map((_, index) => ({\n            id: `${index + Math.floor(Math.random() * 100)}`,\n            name: `name${index}`,\n            age: Math.floor(Math.random() * 100),\n            gender: `gender${index}`,\n            hobby: `hobby${index}`,\n            firend: `firend${index}`,\n            description: `description${index}`,\n            bestFirend: {\n              name: `zhanag ${index}`,\n              age: Math.floor(Math.random() * 100),\n            },\n          })),\n      );\n    }, timeout);\n  });\n};",
+        b =
           "import React, { useRef } from 'react';\nimport { ColumnsType } from 'antd/lib/table';\nimport { Button, message, Space, Tag } from 'antd';\nimport { FormItemConfig, RenderType, useConfigListPage } from 'art-antd-react';\n//  \u5b89\u88dd\u4e86 art-antd-react \u4ee5\u540e antd \u76f4\u63a5\u5bfc\u51fa\u7684 \u7c7b\u578b\u6216\u7ec4\u4ef6 \u53ef\u4ee5\u76f4\u63a5\u4ece art-antd-react \u4e2d\u5bfc\u51fa\n// import { FormItemConfig, RenderType, useConfigListPage, Button, message, Space, Tag } from 'art-antd-react';\n\n// \u8fd9\u91cc\u7684\u8bf7\u6c42\u548c\u7c7b\u578b\u6765\u81ea\u4e8e\u4f60\u7684\u9879\u76ee\nimport { getData, MockData } from './mock';\n\nconst Demo1 = () => {\n  // \u8bb0\u5f55 useConfigListPage \u629b\u51fa\u6765\u7684 queryList\uff0c\u5728\u64cd\u4f5c\u680f\u64cd\u4f5c\u540e\u597d\u91cd\u65b0\u67e5\u8be2\u8868\u683c\u6570\u636e\n  const managerRef = useRef<Record<string, any>>({});\n\n  const columns: ColumnsType<MockData> = [\n    {\n      title: 'Name',\n      dataIndex: 'name',\n    },\n    {\n      title: 'Age',\n      dataIndex: 'age',\n      sorter: (a, b) => a.age - b.age,\n    },\n    {\n      title: 'Gender',\n      dataIndex: 'gender',\n    },\n    {\n      title: 'Hobby',\n      dataIndex: 'hobby',\n    },\n    {\n      title: 'Description',\n      dataIndex: 'description',\n    },\n    {\n      title: 'BestFirend',\n      dataIndex: 'bestFirend',\n      render: (bestFirend) => {\n        return <Tag color=\"success\">{bestFirend?.name || '-'}</Tag>;\n      },\n    },\n    {\n      title: 'Action',\n      key: 'action',\n      render: () => (\n        <Space size=\"middle\">\n          {['delete', '\u8be6\u60c5', '\u5176\u4ed6\u64cd\u4f5c'].map((act) => (\n            <Button\n              key={act}\n              type=\"link\"\n              onClick={() => {\n                console.log(`you click add ${act}`);\n                if ('delete' === act) {\n                  message.success('\u5220\u9664\u6210\u529f\uff0c\u7136\u540e\u91cd\u65b0\u8bf7\u6c42\u6570\u636e');\n                  managerRef.current.queryList({ \u8bf7\u6c42\u7684\u53c2\u6570: 12 });\n                }\n              }}\n            >\n              {act}\n            </Button>\n          ))}\n        </Space>\n      ),\n    },\n  ];\n\n  // \u66f4\u591a \u641c\u7d22\u8868\u5355\u914d\u7f6e \u8bf7\u770b FormItemsBuilder \u7684 API\n  const formItemsConfig: FormItemConfig[] = Array(11)\n    .fill({})\n    .map((_, index) => ({\n      renderType: RenderType.Input,\n      formItemProps: {\n        name: `label${index}`,\n        label: `label${index}`,\n      },\n      formItemChildProps: {\n        placeholder: `please input label${index}`,\n      },\n    }))\n    .map(({ formItemChildProps, ...rest }) => ({\n      ...rest,\n      formItemChildProps: {\n        style: { width: '100%' },\n        ...formItemChildProps,\n      },\n    }));\n\n  const { listContainer, queryList } = useConfigListPage({\n    queryListService: getData,\n    formItemsConfig,\n    rowProps: { gutter: 8 },\n    colProps: { span: 8 },\n    tableProps: {\n      columns,\n      scroll: { x: true },\n      rowKey: 'id',\n      // \u5206\u9875\u914d\u7f6e\uff0c\u4e0d\u9700\u8981\u5c31\u4e0d\u7528\u914d\u7f6e\uff0c\u4f60\u61c2\u7684\n      pagination: {\n        onChange(page, pageSize) {\n          console.log(`change pagination: pageNo = ${page}, pageSize = ${pageSize}`);\n        },\n      },\n    },\n  });\n\n  managerRef.current = {\n    queryList,\n  };\n\n  return listContainer; // \u8fd9\u4fbf\u662f\u6e32\u67d3\u7684\u5217\u8868\u9875\n};\n\nexport default Demo1;",
         I =
           "import React from 'react';\nimport { Button, message } from 'antd';\nimport { useRequest } from 'art-antd-react';\n//  \u5b89\u88dd\u4e86 art-antd-react \u4ee5\u540e antd \u76f4\u63a5\u5bfc\u51fa\u7684 \u7c7b\u578b\u6216\u7ec4\u4ef6 \u53ef\u4ee5\u76f4\u63a5\u4ece art-antd-react \u4e2d\u5bfc\u51fa\n// import { useRequest, Button, message } from 'art-antd-react';\n\n// getData \u6765\u81ea\u4e8e\u4f60\u7684\u8bf7\u6c42\u670d\u52a1\u51fd\u6570\nimport { getData, MockData } from './mock';\n\nconst RequestHookDemo = () => {\n  const { data, loading, lazyService } = useRequest<MockData>(getData, {\n    lazy: true, // lazy \u4e3a true \u7684\u65f6\u5019\u9700\u8981\u624b\u52a8\u53bb\u8c03\u7528 lazyService(xx)\n    onError(e: Error) {\n      message.error(e?.message || '\u8bf7\u6c42\u51fa\u9519');\n    },\n  });\n\n  if (data) {\n    console.log('\u8bf7\u6c42\u7684\u6570\u636e:', JSON.stringify(data, null, 2));\n  }\n\n  return (\n    <section>\n      <Button onClick={() => lazyService()}>\u70b9\u51fb\u8bf7\u6c42\u6570\u636e</Button>\n      <main>\n        \u8bf7\u6c42\u7ed3\u679c\uff1a\n        <code>{loading ? 'loading ...' : JSON.stringify(data, null, 2)}</code>\n      </main>\n    </section>\n  );\n};\n\nexport default RequestHookDemo;",
         P = {
-          'art-antd-react-detailpresentdemo1': {
-            component: (0, i.D8)({
+          'art-react-antd-detailpresentdemo1': {
+            component: (0, i.dynamic)({
               loader: (function () {
                 var n = (0, m.Z)(
                   (0, s.Z)().mark(function n() {
@@ -61,7 +61,7 @@
                           case 0:
                             return (
                               (n.next = 2),
-                              Promise.all([t.e(886), t.e(265), t.e(50)]).then(t.bind(t, 64382))
+                              Promise.all([t.e(845), t.e(552), t.e(50)]).then(t.bind(t, 60836))
                             );
                           case 2:
                             return n.abrupt('return', n.sent.default);
@@ -83,15 +83,15 @@
               sources: { _: { tsx: l } },
               dependencies: {
                 react: { version: '18.2.0' },
-                'art-antd-react': { version: '1.8.3' },
+                'art-antd-react': { version: '1.8.4' },
               },
               title:
                 '\u6839\u636e\u83b7\u53d6\u7684\u4fe1\u606f\uff0c\u914d\u7f6e\u4e0alabel\u7684\u6620\u5c04\u5373\u53ef\u5feb\u901f\u663e\u793a',
-              identifier: 'art-antd-react-detailpresentdemo1',
+              identifier: 'art-react-antd-detailpresentdemo1',
             },
           },
-          'art-antd-react-detailpresentdemo2': {
-            component: (0, i.D8)({
+          'art-react-antd-detailpresentdemo2': {
+            component: (0, i.dynamic)({
               loader: (function () {
                 var n = (0, m.Z)(
                   (0, s.Z)().mark(function n() {
@@ -101,7 +101,7 @@
                           case 0:
                             return (
                               (n.next = 2),
-                              Promise.all([t.e(886), t.e(265), t.e(50)]).then(t.bind(t, 47798))
+                              Promise.all([t.e(845), t.e(552), t.e(50)]).then(t.bind(t, 24536))
                             );
                           case 2:
                             return n.abrupt('return', n.sent.default);
@@ -123,14 +123,14 @@
               sources: { _: { tsx: p } },
               dependencies: {
                 react: { version: '18.2.0' },
-                'art-antd-react': { version: '1.8.3' },
+                'art-antd-react': { version: '1.8.4' },
               },
               title: '\u4f7f\u7528 keyMapItemProps \u6765\u6620\u5c04\u67d0\u9879\u5e03\u5c40',
-              identifier: 'art-antd-react-detailpresentdemo2',
+              identifier: 'art-react-antd-detailpresentdemo2',
             },
           },
-          'art-antd-react-formgeneratordemo1': {
-            component: (0, i.D8)({
+          'art-react-antd-formgeneratordemo1': {
+            component: (0, i.dynamic)({
               loader: (function () {
                 var n = (0, m.Z)(
                   (0, s.Z)().mark(function n() {
@@ -140,7 +140,7 @@
                           case 0:
                             return (
                               (n.next = 2),
-                              Promise.all([t.e(886), t.e(265), t.e(50)]).then(t.bind(t, 25044))
+                              Promise.all([t.e(845), t.e(552), t.e(50)]).then(t.bind(t, 66986))
                             );
                           case 2:
                             return n.abrupt('return', n.sent.default);
@@ -163,15 +163,15 @@
               dependencies: {
                 react: { version: '>=16.9.0' },
                 antd: { version: '4.22.5', css: 'antd/dist/antd.css' },
-                'art-antd-react': { version: '1.8.3' },
+                'art-antd-react': { version: '1.8.4' },
                 'react-dom': { version: '>=16.9.0' },
               },
               title: '\u4e00\u4e2a\u914d\u7f6e\u5316\u7684\u641c\u7d22 bar',
-              identifier: 'art-antd-react-formgeneratordemo1',
+              identifier: 'art-react-antd-formgeneratordemo1',
             },
           },
-          'art-antd-react-formgeneratordemo2': {
-            component: (0, i.D8)({
+          'art-react-antd-formgeneratordemo2': {
+            component: (0, i.dynamic)({
               loader: (function () {
                 var n = (0, m.Z)(
                   (0, s.Z)().mark(function n() {
@@ -181,7 +181,7 @@
                           case 0:
                             return (
                               (n.next = 2),
-                              Promise.all([t.e(886), t.e(265), t.e(50)]).then(t.bind(t, 18353))
+                              Promise.all([t.e(845), t.e(552), t.e(50)]).then(t.bind(t, 34962))
                             );
                           case 2:
                             return n.abrupt('return', n.sent.default);
@@ -204,15 +204,15 @@
               dependencies: {
                 react: { version: '>=16.9.0' },
                 antd: { version: '4.22.5', css: 'antd/dist/antd.css' },
-                'art-antd-react': { version: '1.8.3' },
+                'art-antd-react': { version: '1.8.4' },
                 'react-dom': { version: '>=16.9.0' },
               },
               title: '\u81ea\u5b9a\u4e49\u8868\u5355',
-              identifier: 'art-antd-react-formgeneratordemo2',
+              identifier: 'art-react-antd-formgeneratordemo2',
             },
           },
-          'art-antd-react-formitemsbuilderdemo1': {
-            component: (0, i.D8)({
+          'art-react-antd-formitemsbuilderdemo1': {
+            component: (0, i.dynamic)({
               loader: (function () {
                 var n = (0, m.Z)(
                   (0, s.Z)().mark(function n() {
@@ -222,7 +222,7 @@
                           case 0:
                             return (
                               (n.next = 2),
-                              Promise.all([t.e(886), t.e(265), t.e(50)]).then(t.bind(t, 29061))
+                              Promise.all([t.e(845), t.e(552), t.e(50)]).then(t.bind(t, 36840))
                             );
                           case 2:
                             return n.abrupt('return', n.sent.default);
@@ -245,16 +245,16 @@
               dependencies: {
                 react: { version: '>=16.9.0' },
                 antd: { version: '4.22.5', css: 'antd/dist/antd.css' },
-                'art-antd-react': { version: '1.8.3' },
+                'art-antd-react': { version: '1.8.4' },
                 'react-dom': { version: '>=16.9.0' },
               },
               title:
                 '\u4f7f\u7528TS as \u65ad\u8a00\u53ef\u4ee5\u5e2e\u52a9\u6211\u4eec\u68c0\u67e5 formItemChildProps \u7684 API \u662f\u5426\u6b63\u786e',
-              identifier: 'art-antd-react-formitemsbuilderdemo1',
+              identifier: 'art-react-antd-formitemsbuilderdemo1',
             },
           },
-          'art-antd-react-formitemsbuilderdemo2': {
-            component: (0, i.D8)({
+          'art-react-antd-formitemsbuilderdemo2': {
+            component: (0, i.dynamic)({
               loader: (function () {
                 var n = (0, m.Z)(
                   (0, s.Z)().mark(function n() {
@@ -264,7 +264,7 @@
                           case 0:
                             return (
                               (n.next = 2),
-                              Promise.all([t.e(886), t.e(265), t.e(50)]).then(t.bind(t, 13526))
+                              Promise.all([t.e(845), t.e(552), t.e(50)]).then(t.bind(t, 3769))
                             );
                           case 2:
                             return n.abrupt('return', n.sent.default);
@@ -287,15 +287,15 @@
               dependencies: {
                 react: { version: '>=16.9.0' },
                 antd: { version: '4.22.5', css: 'antd/dist/antd.css' },
-                'art-antd-react': { version: '1.8.3' },
+                'art-antd-react': { version: '1.8.4' },
                 'react-dom': { version: '>=16.9.0' },
               },
               title: 'itemColProps \u4f18\u5148\u7ea7\u9ad8\u4e8e colProps',
-              identifier: 'art-antd-react-formitemsbuilderdemo2',
+              identifier: 'art-react-antd-formitemsbuilderdemo2',
             },
           },
-          'art-antd-react-formitemsbuilderdemo3': {
-            component: (0, i.D8)({
+          'art-react-antd-formitemsbuilderdemo3': {
+            component: (0, i.dynamic)({
               loader: (function () {
                 var n = (0, m.Z)(
                   (0, s.Z)().mark(function n() {
@@ -305,7 +305,7 @@
                           case 0:
                             return (
                               (n.next = 2),
-                              Promise.all([t.e(886), t.e(265), t.e(50)]).then(t.bind(t, 62530))
+                              Promise.all([t.e(845), t.e(552), t.e(50)]).then(t.bind(t, 79621))
                             );
                           case 2:
                             return n.abrupt('return', n.sent.default);
@@ -327,16 +327,16 @@
               sources: { _: { tsx: g } },
               dependencies: {
                 react: { version: '>=16.9.0' },
-                'art-antd-react': { version: '1.8.3' },
+                'art-antd-react': { version: '1.8.4' },
                 antd: { version: '4.22.5', css: 'antd/dist/antd.css' },
                 'react-dom': { version: '>=16.9.0' },
               },
               title: 'itemColProps \u4f18\u5148\u7ea7\u9ad8\u4e8e colProps',
-              identifier: 'art-antd-react-formitemsbuilderdemo3',
+              identifier: 'art-react-antd-formitemsbuilderdemo3',
             },
           },
-          'art-antd-react-listtemplatedemo1': {
-            component: (0, i.D8)({
+          'art-react-antd-listtemplatedemo1': {
+            component: (0, i.dynamic)({
               loader: (function () {
                 var n = (0, m.Z)(
                   (0, s.Z)().mark(function n() {
@@ -346,7 +346,7 @@
                           case 0:
                             return (
                               (n.next = 2),
-                              Promise.all([t.e(886), t.e(265), t.e(50)]).then(t.bind(t, 83164))
+                              Promise.all([t.e(845), t.e(552), t.e(50)]).then(t.bind(t, 64169))
                             );
                           case 2:
                             return n.abrupt('return', n.sent.default);
@@ -365,19 +365,19 @@
               loading: () => null,
             }),
             previewerProps: {
-              sources: { _: { tsx: h }, 'mock/index.ts': { import: './mock', content: b } },
+              sources: { _: { tsx: h }, 'mock/index.ts': { import: './mock', content: y } },
               dependencies: {
                 react: { version: '>=16.9.0' },
                 antd: { version: '4.22.5', css: 'antd/dist/antd.css' },
-                'art-antd-react': { version: '1.8.3' },
+                'art-antd-react': { version: '1.8.4' },
                 'react-dom': { version: '>=16.9.0' },
               },
               title: '\u7b80\u5355\u7684\u4f7f\u7528',
-              identifier: 'art-antd-react-listtemplatedemo1',
+              identifier: 'art-react-antd-listtemplatedemo1',
             },
           },
-          'art-antd-react-useconfiglistpagedemo1': {
-            component: (0, i.D8)({
+          'art-react-antd-useconfiglistpagedemo1': {
+            component: (0, i.dynamic)({
               loader: (function () {
                 var n = (0, m.Z)(
                   (0, s.Z)().mark(function n() {
@@ -387,7 +387,7 @@
                           case 0:
                             return (
                               (n.next = 2),
-                              Promise.all([t.e(886), t.e(265), t.e(50)]).then(t.bind(t, 91593))
+                              Promise.all([t.e(845), t.e(552), t.e(50)]).then(t.bind(t, 74156))
                             );
                           case 2:
                             return n.abrupt('return', n.sent.default);
@@ -406,19 +406,19 @@
               loading: () => null,
             }),
             previewerProps: {
-              sources: { _: { tsx: y }, 'mock/index.ts': { import: './mock', content: b } },
+              sources: { _: { tsx: b }, 'mock/index.ts': { import: './mock', content: y } },
               dependencies: {
                 react: { version: '>=16.9.0' },
                 antd: { version: '4.22.5', css: 'antd/dist/antd.css' },
-                'art-antd-react': { version: '1.8.3' },
+                'art-antd-react': { version: '1.8.4' },
                 'react-dom': { version: '>=16.9.0' },
               },
               title: '\u4f7f\u7528demo',
-              identifier: 'art-antd-react-useconfiglistpagedemo1',
+              identifier: 'art-react-antd-useconfiglistpagedemo1',
             },
           },
-          'art-antd-react-userequestdemo1': {
-            component: (0, i.D8)({
+          'art-react-antd-userequestdemo1': {
+            component: (0, i.dynamic)({
               loader: (function () {
                 var n = (0, m.Z)(
                   (0, s.Z)().mark(function n() {
@@ -428,7 +428,7 @@
                           case 0:
                             return (
                               (n.next = 2),
-                              Promise.all([t.e(886), t.e(265), t.e(50)]).then(t.bind(t, 72294))
+                              Promise.all([t.e(845), t.e(552), t.e(50)]).then(t.bind(t, 47239))
                             );
                           case 2:
                             return n.abrupt('return', n.sent.default);
@@ -447,20 +447,20 @@
               loading: () => null,
             }),
             previewerProps: {
-              sources: { _: { tsx: I }, 'mock/index.ts': { import: './mock', content: b } },
+              sources: { _: { tsx: I }, 'mock/index.ts': { import: './mock', content: y } },
               dependencies: {
                 react: { version: '>=16.9.0' },
                 antd: { version: '4.22.5', css: 'antd/dist/antd.css' },
-                'art-antd-react': { version: '1.8.3' },
+                'art-antd-react': { version: '1.8.4' },
                 'react-dom': { version: '>=16.9.0' },
               },
               title: '\u7b80\u5355\u7684\u4f7f\u7528',
-              identifier: 'art-antd-react-userequestdemo1',
+              identifier: 'art-react-antd-userequestdemo1',
             },
           },
         },
         C = {},
-        k = t(49215),
+        k = t(28323),
         v = (n) => o.createElement(k.Z, (0, r.Z)({}, n, { config: a, demos: P, apis: C }));
     },
   },

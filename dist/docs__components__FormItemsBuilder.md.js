@@ -1,32 +1,32 @@
 (self['webpackChunkart_antd_react'] = self['webpackChunkart_antd_react'] || []).push([
   [665],
   {
-    24390: function () {},
-    86845: function () {},
-    8036: function () {},
-    22231: function (e, t, n) {
+    70453: function () {},
+    50521: function () {},
+    77539: function () {},
+    83063: function (e, t, n) {
       'use strict';
       n.d(t, {
         m: function () {
           return r.m;
         },
       });
-      var r = n(9684);
-      n(72255);
+      var r = n(35925);
+      n(15150);
     },
-    89947: function (e, t, n) {
+    6771: function (e, t, n) {
       'use strict';
       n.r(t);
-      var r = n(67294),
-        l = n(96089),
-        a = n(50886),
-        o = n(65659),
-        i = n(4187),
+      var r = n(50959),
+        l = n(29155),
+        a = n(83635),
+        o = n(5068),
+        i = n(93550),
         c = r.memo((e) => {
           var t = e.demos,
-            n = t['art-antd-react-formitemsbuilderdemo1'].component,
-            c = t['art-antd-react-formitemsbuilderdemo2'].component,
-            m = t['art-antd-react-formitemsbuilderdemo3'].component;
+            n = t['art-react-antd-formitemsbuilderdemo1'].component,
+            c = t['art-react-antd-formitemsbuilderdemo2'].component,
+            m = t['art-react-antd-formitemsbuilderdemo3'].component;
           return r.createElement(
             r.Fragment,
             null,
@@ -104,7 +104,7 @@
               ),
               r.createElement(
                 a.default,
-                t['art-antd-react-formitemsbuilderdemo1'].previewerProps,
+                t['art-react-antd-formitemsbuilderdemo1'].previewerProps,
                 r.createElement(n, null),
               ),
               r.createElement(
@@ -129,7 +129,7 @@
               ),
               r.createElement(
                 a.default,
-                t['art-antd-react-formitemsbuilderdemo2'].previewerProps,
+                t['art-react-antd-formitemsbuilderdemo2'].previewerProps,
                 r.createElement(c, null),
               ),
               r.createElement(
@@ -148,7 +148,7 @@
               ),
               r.createElement(
                 a.default,
-                t['art-antd-react-formitemsbuilderdemo3'].previewerProps,
+                t['art-react-antd-formitemsbuilderdemo3'].previewerProps,
                 r.createElement(m, null),
               ),
               r.createElement(
@@ -408,7 +408,7 @@
         );
       };
     },
-    50886: function (e, t, n) {
+    83635: function (e, t, n) {
       'use strict';
       n.r(t),
         n.d(t, {
@@ -416,13 +416,13 @@
             return y;
           },
         });
-      var r = n(67294),
-        l = n(42886),
-        a = n(52444),
-        o = n(22231),
-        i = n(96089),
-        c = n(65659);
-      n(24390);
+      var r = n(50959),
+        l = n(49845),
+        a = n(42409),
+        o = n(83063),
+        i = n(29155),
+        c = n(5068);
+      n(70453);
       function m() {
         return (
           (m = Object.assign
@@ -440,7 +440,7 @@
       var u = function (e) {
         return r.createElement('div', m({ className: '__dumi-default-alert' }, e));
       };
-      n(86845);
+      n(50521);
       function d(e, t) {
         return h(e) || E(e, t) || f(e, t) || s();
       }
@@ -761,12 +761,12 @@
         },
         y = v;
     },
-    4187: function (e, t, n) {
+    93550: function (e, t, n) {
       'use strict';
-      var r = n(67294),
-        l = n(97397),
+      var r = n(50959),
+        l = n(665),
         a = n.n(l);
-      n(8036);
+      n(77539);
       function o(e, t) {
         return d(e) || u(e, t) || c(e, t) || i();
       }
@@ -867,9 +867,9 @@
       };
       t['Z'] = s;
     },
-    52444: function (e, t, n) {
+    42409: function (e, t, n) {
       (function (e, r) {
-        r(t, n(67294));
+        r(t, n(50959));
       })(0, function (e, t) {
         'use strict';
         function n(e) {
