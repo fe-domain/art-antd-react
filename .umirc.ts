@@ -2,9 +2,11 @@ import { defineConfig } from 'dumi';
 
 export default defineConfig({
   title: 'art-antd-react',
-  favicon: '/icons/logo.ico',
-  logo: '/icons/logo.png',
-  outputPath: 'dist',
+  favicon: '/logo.ico',
+  logo: '/logo.png',
+  base: '/art-antd-react/',
+  publicPath: '/art-antd-react/',
+  outputPath: 'docs-dist',
   webpack5: {},
   dynamicImport: {},
   extraBabelPlugins: [
@@ -40,6 +42,6 @@ export default defineConfig({
     },
   ],
   alias: {
-    'art-antd-react': require('path').resolve('src', 'index.ts'),
+    // 'art-antd-react': require('path').resolve('src', 'index.ts'),
   },
 });
