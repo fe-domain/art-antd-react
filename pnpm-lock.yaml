@@ -8,6 +8,7 @@ specifiers:
   '@umijs/fabric': ^2.8.1
   '@umijs/test': ^3.0.5
   antd: ^4.22.4
+  art-antd-react: ^1.8.6
   babel-plugin-import: ^1.13.5
   dumi: ^1.1.47
   father: ^4.0.0-rc.2
@@ -19,6 +20,7 @@ specifiers:
 
 dependencies:
   antd: 4.22.5_react@18.2.0
+  art-antd-react: 1.8.6
   babel-plugin-import: 1.13.5
   react: 18.2.0
 
@@ -3771,6 +3773,17 @@ packages:
     resolution: {integrity: sha512-3CYzex9M9FGQjCGMGyi6/31c8GJbgb0qGyrx5HWxPd0aCwh4cB2YjMb2Xf9UuoogrMrlO9cTqnB5rI5GHZTcUA==}
     engines: {node: '>=0.10.0'}
     dev: true
+
+  /art-antd-react/1.8.6:
+    resolution: {integrity: sha512-pzM+Cw1gWp6G1jxiMix4OMrTzarcFiZcQ8O1SrKKjqFJ4c0Gu37LJyKRSEDQeZ8G8I8KN9bJRzGDAbDG82YnYQ==}
+    dependencies:
+      antd: 4.22.5_react@18.2.0
+      babel-plugin-import: 1.13.5
+      react: 18.2.0
+    transitivePeerDependencies:
+      - '@testing-library/dom'
+      - react-dom
+    dev: false
 
   /asn1.js/5.4.1:
     resolution: {integrity: sha512-+I//4cYPccV8LdmBLiX8CYvf9Sp3vQsrqu2QNXRcrbiWvcx/UdlFiqUJJzxRQxgsZmvhXhn4cSKeSmoFjVdupA==}
@@ -13745,6 +13758,7 @@ packages:
   /unified/8.4.2:
     resolution: {integrity: sha512-JCrmN13jI4+h9UAyKEoGcDZV+i1E7BLFuG7OsaDvTXI5P0qhHX+vZO/kOhz9jn8HGENDKbwSeB0nVOg4gVStGA==}
     dependencies:
+      '@types/unist': 2.0.6
       bail: 1.0.5
       extend: 3.0.2
       is-plain-obj: 2.1.0
@@ -13755,6 +13769,7 @@ packages:
   /unified/9.2.2:
     resolution: {integrity: sha512-Sg7j110mtefBD+qunSLO1lqOEKdrwBFBrR6Qd8f4uwkhWNlbkaqwHse6e7QvD3AP/MNoJdEDLaf8OxYyoWgorQ==}
     dependencies:
+      '@types/unist': 2.0.6
       bail: 1.0.5
       extend: 3.0.2
       is-buffer: 2.0.5
