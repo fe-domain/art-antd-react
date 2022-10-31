@@ -3,7 +3,7 @@ import { defineConfig } from 'dumi';
 export default defineConfig({
   title: 'art-antd-react',
   favicon: '/logo.ico',
-  logo: '/logo.png',
+  logo: 'https://s1.ax1x.com/2022/10/31/xTYwnI.png',
   base: '/art-antd-react/',
   publicPath: '/art-antd-react/',
   outputPath: 'docs-dist',
