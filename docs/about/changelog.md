@@ -10,4 +10,7 @@
 
 - 将 MutModal 改成了 FormModal，即 表单弹框
 - 升级 antd, 紧跟 antd 的升级，咱不掉队!
-- useConfigListPage 新增一个 formaResult， 目的是为了解决 分页 和 渲染数据，避免请求的后端接口不是标准的渲染数据
+- useConfigListPage 新增一个 `formaResult`, 目的是为了解决 分页 和 渲染数据，避免请求的后端接口不是标准的渲染数据
+
+#### version 1.8.8
+- useConfigListPage 新增一个 `headBar`, 目的是为了增加页面 header 部分的灵活性配置, 重构了内部逻辑，使得修改分页时携带搜索数据给请求接口

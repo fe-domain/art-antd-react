@@ -39,6 +39,7 @@ nav:
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
 | queryListService | 请求列表的方法 | `RequestService<Param, Res>` | - |
+| headBar | 配合列表页面的头部 | `React.ReactNode` | - |
 | formaResult | 对请求返回的数据进行格式化并返回 { dataSource: unkown[]; total?:number; } 类型 | `formaResult: (res: any) => { dataSource: unkown[]； total?:number }` | - |
 | formatSubmitValue | 查询列表时对搜索表单的数据进行格式化，没有此参数时不进行格式化操作 | `(formValue: Param) => unknown` | - |
 | formItemsConfig | 搜索表单项的配置 | [FormItemsConfig API](/components/form-items-builder#formitemconfig-api)[] | [] |

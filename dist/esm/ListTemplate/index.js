@@ -10,7 +10,8 @@ import { FormGenerator } from "../FormGenerator";
 import { jsx as _jsx } from "react/jsx-runtime";
 import { jsxs as _jsxs } from "react/jsx-runtime";
 export var ListTemplate = function ListTemplate(_ref) {
-  var tableProps = _ref.tableProps,
+  var headBar = _ref.headBar,
+      tableProps = _ref.tableProps,
       searchBarProps = _ref.searchBarProps,
       searchCardProps = _ref.searchCardProps,
       tableCardProps = _ref.tableCardProps,
@@ -37,7 +38,7 @@ export var ListTemplate = function ListTemplate(_ref) {
   }, tableCardProps);
 
   return /*#__PURE__*/_jsxs(Space, _objectSpread(_objectSpread({}, wrapConfig), {}, {
-    children: [/*#__PURE__*/_jsx(Card, _objectSpread(_objectSpread({}, searchCardProps || {}), {}, {
+    children: [headBar, /*#__PURE__*/_jsx(Card, _objectSpread(_objectSpread({}, searchCardProps || {}), {}, {
       children: /*#__PURE__*/_jsx(FormGenerator, _objectSpread({}, searchConfig))
     })), /*#__PURE__*/_jsx(Card, _objectSpread(_objectSpread({}, tableCardConfig), {}, {
       children: /*#__PURE__*/_jsx(Table, _objectSpread({}, tableProps))
