@@ -14,7 +14,7 @@ features:
     desc: 配置化开发，听起来就高效
   - icon: https://gw.alipayobjects.com/zos/bmw-prod/d1ee0c6f-5aed-4a45-a507-339a4bfe076c/k7bjsocq_w144_h144.png
     title: 开心工作
-    desc: 从此再也不用担心自己没有时间摸鱼（learn）
+    desc: 从此再也不用担心自己没有时间做你想 Do
 footer: Open-source MIT Licensed | Copyright jakequc 2022<br />Powered by [dumi](https://d.umijs.org)
 ---
 

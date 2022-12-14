@@ -3,6 +3,8 @@ import { Card, CardProps, Space, SpaceProps, Table, TableProps } from 'antd';
 import { FormGenerator, FormGeneratorProps } from '../FormGenerator';
 
 export interface ListTemplateProps<TableRecord = any> {
+  // 模板页面 header 
+  headBar?:React.ReactNode;
   // space 的props
   spaceProps?: SpaceProps;
   // Table 的配置项
@@ -16,6 +18,7 @@ export interface ListTemplateProps<TableRecord = any> {
 }
 
 export const ListTemplate = <T extends Record<string, unknown> = Record<string, unknown>>({
+  headBar,
   tableProps,
   searchBarProps,
   searchCardProps,
@@ -40,6 +43,7 @@ export const ListTemplate = <T extends Record<string, unknown> = Record<string, 
 
   return (
     <Space {...wrapConfig}>
+      {headBar}
       <Card {...(searchCardProps || {})}>
         <FormGenerator {...searchConfig} />
       </Card>
