@@ -2,6 +2,7 @@
 nav:
   title: useFormModal
   path: /hooks
+order: 2
 ---
 
 ## useFormModal
@@ -32,7 +33,7 @@ nav:
 说明： 该 hooks 的入参类型继承于 ant design 的 [ModalProps](https://ant-design.gitee.io/components/modal-cn/) 故所有 Modal 的 api 均可透传给 该 hooks 的参数
 
 | 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- |
+| --- | --- | --- | --- | --- | --- | --- |
 | form | modal 框中的 form 表单实例，可选 |  | formItemsConfig | 搜索表单项的配置 | [FormItemsConfig API](/components/form-items-builder#formitemconfig-api)[] | - |
 | colProps | 定义每一列的布局,同 antd [ColProps](https://ant-design.gitee.io/components/grid-cn/#Col) | [ColProps](https://ant-design.gitee.io/components/grid-cn/#Col) | - |
 | rowProps | 定义行的布局, 同 antd [RowProps](https://ant-design.gitee.io/components/grid-cn/#Row) | [RowProps](https://ant-design.gitee.io/components/grid-cn/#Row) | - |
