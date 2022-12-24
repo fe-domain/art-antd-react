@@ -2,6 +2,7 @@
 nav:
   title: FormItemsBuilder
   path: /components
+order: 5
 ---
 
 ## FormItemsBuilder 表单项构建

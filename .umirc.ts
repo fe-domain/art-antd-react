@@ -22,8 +22,13 @@ export default defineConfig({
   exportStatic: {}, // 将所有路由输出为 HTML 目录结构，以免刷新页面时 404
   mode: 'site',
   // more config: https://d.umijs.org/config
+
   mfsu: {},
   navs: [
+    {
+      title: 'about',
+      path: '/about',
+    },
     {
       title: 'components',
       path: '/components',
@@ -33,19 +38,12 @@ export default defineConfig({
       path: '/hooks',
     },
     {
-      title: 'about',
-      path: '/about',
-    },
-    {
       title: 'Gitee',
       path: 'https://gitee.com/quankehao/art-antd-react',
     },
     {
       title: 'GitHub',
-      path: 'https://github.com/Kehao33/art-antd-react',
+      path: 'https://github.com/oneQorg/art-antd-react',
     },
   ],
-  alias: {
-    // 'art-antd-react': require('path').resolve('src', 'index.ts'),
-  },
 });

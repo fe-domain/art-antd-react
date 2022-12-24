@@ -2,6 +2,7 @@
 nav:
   title: ListTemplate
   path: /components
+order: 2
 ---
 
 ## ListTemplate 列表模板

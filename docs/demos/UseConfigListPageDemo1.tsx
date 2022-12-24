@@ -89,6 +89,7 @@ const Demo1 = () => {
 
   const { listContainer, queryList } = useConfigListPage({
     queryListService: getData,
+    headBar: <h3>title 或者面包屑配置</h3>,
     formItemsConfig,
     rowProps: { gutter: 8 },
     colProps: { span: 8 },
@@ -99,9 +100,17 @@ const Demo1 = () => {
       // 分页配置，不需要就不用配置，你懂的
       pagination: {
         onChange(page: number, pageSize: number) {
+          // 分页的时候会自动处理搜索
           console.log(`change pagination: pageNo = ${page}, pageSize = ${pageSize}`);
         },
       },
+    },
+    formatSubmitValue(filter) {
+      console.log('filter values: ', filter);
+      return {
+        //   return 的值将会作为入参值给 queryListService，查询的时候会有loading
+        ...filter,
+      };
     },
     formaResult(res: { result: MockData[]; total: number }) {
       const { total, result } = res;
