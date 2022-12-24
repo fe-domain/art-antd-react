@@ -2,6 +2,7 @@
 nav:
   title: DetailPresent
   path: /components
+order: 3
 ---
 
 ## DetailPresent 详情陈述

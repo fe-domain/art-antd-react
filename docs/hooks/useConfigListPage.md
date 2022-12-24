@@ -2,6 +2,7 @@
 nav:
   title: useConfigListPage
   path: /hooks
+order: 3
 ---
 
 ## useConfigListPage

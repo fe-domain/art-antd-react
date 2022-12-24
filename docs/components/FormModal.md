@@ -2,6 +2,7 @@
 nav:
   title: FormModal
   path: /components
+order: 1
 ---
 
 ## FormModal 列表模板
