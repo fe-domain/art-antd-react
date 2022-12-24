@@ -1,12 +1,12 @@
 {
   "name": "art-antd-react",
   "description": "configure and develop Ant Design(React)",
-  "homepage": "https://oneqorg.github.io/art-antd-react/",
+  "homepage": "https://quankehao.gitee.io/art-antd-react/",
   "repository": {
     "type": "github",
-    "url": "https://github.com/oneQorg/art-antd-react"
+    "url": "https://github.com/Kehao33/art-antd-react"
   },
-  "version": "1.8.8",
+  "version": "1.8.9",
   "scripts": {
     "start": "dumi dev",
     "docs:build": "dumi build",
