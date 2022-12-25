@@ -105,7 +105,7 @@ const Demo1 = () => {
         },
       },
     },
-    formatSubmitValue(filter) {
+    formatSubmitValue(filter: Record<string, any>) {
       console.log('filter values: ', filter);
       return {
         //   return 的值将会作为入参值给 queryListService，查询的时候会有loading
