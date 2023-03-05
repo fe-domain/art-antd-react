@@ -24,26 +24,41 @@ export default defineConfig({
   // more config: https://d.umijs.org/config
 
   mfsu: {},
+  nav: {
+    'zh-CN': [
+      { title: 'about', link: '/about' },
+      { title: '组件', link: '/components' },
+      { title: 'hooks', link: '/hooks' },
+      {
+        title: 'Gitee',
+        link: 'https://gitee.com/quankehao/art-antd-react',
+      },
+      {
+        title: 'GitHub',
+        link: 'https://github.com/oneQorg/art-antd-react',
+      },
+    ],
+  },
   navs: [
     {
       title: 'about',
-      path: '/about',
+      link: '/about',
     },
     {
       title: 'components',
-      path: '/components',
+      link: '/components',
     },
     {
       title: 'hooks',
-      path: '/hooks',
+      link: '/hooks',
     },
     {
       title: 'Gitee',
-      path: 'https://gitee.com/quankehao/art-antd-react',
+      link: 'https://gitee.com/quankehao/art-antd-react',
     },
     {
       title: 'GitHub',
-      path: 'https://github.com/oneQorg/art-antd-react',
+      link: 'https://github.com/oneQorg/art-antd-react',
     },
   ],
 });

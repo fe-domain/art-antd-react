@@ -21,7 +21,7 @@ order: 1
 
 ## API
 
-说明，MutModal 是基于 ant design 的 Modal 进行二次封装的，所以除了如下 API 外，antd design 的 [Modal API](https://ant-design.gitee.io/components/modal-cn/#API) 均可以透传给 FormModal
+说明，FormModal 是基于 ant design 的 Modal 进行二次封装的，所以除了如下 API 外，antd design 的 [Modal API](https://ant-design.gitee.io/components/modal-cn/#API) 均可以透传给 FormModal
 
 | 参数              | 说明                         | 类型                               | 默认值 |
 | ----------------- | ---------------------------- | ---------------------------------- | ------ |

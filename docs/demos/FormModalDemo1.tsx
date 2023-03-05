@@ -4,7 +4,7 @@ import { FormItemConfig, FormGenerator, RenderType, FormModal } from 'art-antd-r
 //  安裝了 art-antd-react 以后 antd 直接导出的 类型或组件 可以直接从 art-antd-react 中导出
 // import { FormItemConfig, RenderType, useFormModal, Button, message } from 'art-antd-react';
 
-const MutModalDemo1 = () => {
+const FormModalDemo1 = () => {
   const [visible, setVisible] = useState(false);
   const [form] = Form.useForm();
 
@@ -115,4 +115,4 @@ const MutModalDemo1 = () => {
   );
 };
 
-export default MutModalDemo1;
+export default FormModalDemo1;

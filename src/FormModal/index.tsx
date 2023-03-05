@@ -50,7 +50,6 @@ export const FormModal = <Value, Res>({
       onCancel={handleCancel}
       onOk={() =>
         form.validateFields().then((res) => {
-          console.log('result: ', res);
           lazyService(formatSubmitValue ? formatSubmitValue(res) : res);
         })
       }

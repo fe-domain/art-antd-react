@@ -112,7 +112,7 @@ const Demo1 = () => {
       >
         编辑信息
       </Button>
-      <Modal visible={visible}>
+      <Modal open={visible}>
         <Form>
           <Form.Item name="name">
             <Input />

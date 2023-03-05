@@ -22,14 +22,13 @@ export const DetailPresent = <D extends Record<string, any> = Record<string, any
   keyMapItemProps,
   ...descriptionProps
 }: DetailPresentProps<D>) => {
-  const keys = useMemo(() => {
-    return Object.keys(keyMapLabel || {}).filter(
-      (key) => detail && Object.prototype.hasOwnProperty.call(detail, key),
-    );
+  const labelKeys = useMemo(() => {
+    return Object.keys(keyMapLabel || {});
   }, []);
+
   return (
     <Descriptions {...descriptionProps}>
-      {keys.map((key) => {
+      {labelKeys.map((key) => {
         const itemConfig = { ...(keyMapItemProps?.[key] || {}), label: keyMapLabel[key] };
 
         return (
