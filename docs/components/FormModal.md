@@ -17,7 +17,7 @@ order: 1
 
 ### 基本使用
 
-<code src="../demos/FormModalDemo1.tsx"  title="简单的使用,展示可能会报错，请直接copy代码在您的项目中食用">
+<code src="../demos/FormModalDemo1.tsx"  title="简单的使用,展示可能会报错，请直接copy代码在您的项目中食用"></code>
 
 ## API
 

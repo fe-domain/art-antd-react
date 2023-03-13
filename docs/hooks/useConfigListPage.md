@@ -19,7 +19,7 @@ order: 3
 
 ### 基本使用
 
-<code src="../demos/UseConfigListPageDemo1.tsx"  title="使用demo">
+<code src="../demos/UseConfigListPageDemo1.tsx"  title="使用demo"></code>
 
 #### 说明
 

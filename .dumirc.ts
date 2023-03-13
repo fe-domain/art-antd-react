@@ -1,7 +1,17 @@
 import { defineConfig } from 'dumi';
 
+const GiteeLinkItem = {
+  title: 'gitee',
+  link: 'https://gitee.com/quankehao/art-antd-react',
+};
+
+const GithubLinkItem = {
+  title: 'gitHub',
+  link: 'https://github.com/oneQorg/art-antd-react',
+};
+
 export default defineConfig({
-  outputPath: 'docs-dist',
+  outputPath: 'dist',
   themeConfig: {
     name: 'ArtAntd',
     title: 'art-antd-react',
@@ -9,7 +19,7 @@ export default defineConfig({
     logo: '/logo.png',
     base: '/art-antd-react/',
     publicPath: '/art-antd-react/',
-    outputPath: 'docs-dist',
+    outputPath: 'dist',
     webpack5: {},
     dynamicImport: {},
     extraBabelPlugins: [
@@ -29,28 +39,13 @@ export default defineConfig({
     mfsu: {},
     nav: {
       'zh-CN': [
-        { title: '相关', link: '/about' },
-        { title: '组件', link: '/components' },
-        { title: 'hooks', link: '/hooks' },
-        {
-          title: 'gitee',
-          link: 'https://gitee.com/quankehao/art-antd-react',
-        },
-        {
-          title: 'gitHub',
-          link: 'https://github.com/oneQorg/art-antd-react',
-        },
+        { title: 'about', link: '/about/quickstart' },
+        { title: 'components', link: '/components/form-modal' },
+        { title: 'hooks', link: '/hooks/use-request' },
+        GiteeLinkItem,
+        GithubLinkItem,
       ],
     },
-    navs: [
-      {
-        title: 'gitee',
-        path: 'https://gitee.com/quankehao/art-antd-react',
-      },
-      {
-        title: 'gitHub',
-        path: 'https://github.com/oneQorg/art-antd-react',
-      },
-    ],
+    navs: [GiteeLinkItem, GithubLinkItem],
   },
 });
