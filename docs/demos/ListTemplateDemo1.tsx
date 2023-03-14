@@ -1,8 +1,13 @@
+import { Button, message, Space, Tag } from 'antd';
+import { ColumnsType } from 'antd/lib/table';
+import {
+  FormItemConfig,
+  ListTemplate,
+  RenderType,
+  useRequest,
+} from 'art-antd-react';
 import React from 'react';
 import { getData, MockData } from './mock';
-import { ColumnsType } from 'antd/lib/table';
-import { Button, message, Space, Tag } from 'antd';
-import { FormItemConfig, ListTemplate, useRequest, RenderType } from 'art-antd-react';
 //  安裝了 art-antd-react 以后 antd 直接导出的 类型或组件 可以直接从 art-antd-react 中导出
 // import { FormItemConfig, ListTemplate, useRequest, RenderType, Button, message, Space, Tag } from 'art-antd-react';
 
@@ -106,7 +111,9 @@ const Demo1 = () => {
         // 分页配置，不需要就不用配置，你懂的
         pagination: {
           onChange(page: number, pageSize: number) {
-            console.log(`change pagination: pageNo = ${page}, pageSize = ${pageSize}`);
+            console.log(
+              `change pagination: pageNo = ${page}, pageSize = ${pageSize}`,
+            );
           },
           total,
         },

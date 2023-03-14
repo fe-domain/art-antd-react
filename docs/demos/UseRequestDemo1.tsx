@@ -26,10 +26,12 @@ const RequestHookDemo = () => {
   return (
     <section>
       <Button onClick={() => lazyService()}>点击请求数据</Button>
-      <main>
+      <br />
+      <br />
+      <div>
         请求结果：
         <code>{loading ? 'loading ...' : JSON.stringify(data, null, 2)}</code>
-      </main>
+      </div>
     </section>
   );
 };

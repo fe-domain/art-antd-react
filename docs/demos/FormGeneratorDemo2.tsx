@@ -1,8 +1,18 @@
 import React from 'react';
-import { Button, Form, Input, SelectProps, Space, TimeRangePickerProps } from 'antd';
-import { FormItemConfig, FormGenerator, RenderType } from 'art-antd-react';
+// import { Button, Form, Input, SelectProps, Space, TimeRangePickerProps } from 'antd';
+// import { FormGenerator, FormItemConfig, RenderType } from 'art-antd-react';
 //  安裝了 art-antd-react 以后 antd 直接导出的 类型或组件 可以直接从 art-antd-react 中导出
-// import { FormItemConfig, FormGenerator, RenderType, Button, Form, Input, SelectProps, Space, TimeRangePickerProps } from 'art-antd-react';
+import {
+  Button,
+  Form,
+  FormGenerator,
+  FormItemConfig,
+  Input,
+  RenderType,
+  SelectProps,
+  Space,
+  TimeRangePickerProps,
+} from 'art-antd-react';
 
 const Demo2 = () => {
   const [form] = Form.useForm();
@@ -54,7 +64,11 @@ const Demo2 = () => {
           {(fields, { add, remove }) => (
             <>
               {fields.map(({ key, name, ...restField }) => (
-                <Space key={key} style={{ display: 'flex', marginBottom: 8 }} align="baseline">
+                <Space
+                  key={key}
+                  style={{ display: 'flex', marginBottom: 8 }}
+                  align="baseline"
+                >
                   <Form.Item
                     {...restField}
                     name={[name, 'first']}

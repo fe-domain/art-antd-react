@@ -1,7 +1,6 @@
 import { ColProps, Form, message, RowProps, TableProps } from 'antd';
 import { FormInstance } from 'antd/es/form/Form';
-import React, { useState } from 'react';
-import { useMemo } from 'react';
+import React, { useMemo, useState } from 'react';
 import { FormItemConfig } from '../../FormItemsBuilder';
 import { ListTemplate, ListTemplateProps } from '../../ListTemplate';
 import { OptionConfig, RequestService, useRequest } from '../useRequest';
@@ -73,12 +72,17 @@ export const useConfigListPage = <
     formaResult,
   });
 
-  const { dataSource, total } = (data || {}) as { dataSource: Res; total: number };
+  const { dataSource, total } = (data || {}) as {
+    dataSource: Res;
+    total: number;
+  };
   const list = dataSource && Array.isArray(dataSource) ? dataSource : [];
   const { pagination } = tableProps || {};
 
   const queryListByFilter = (filterValues: Param) => {
-    const values = formatSubmitValue ? formatSubmitValue(filterValues) : filterValues;
+    const values = formatSubmitValue
+      ? formatSubmitValue(filterValues)
+      : filterValues;
     queryList(values as Param);
   };
 

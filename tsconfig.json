@@ -1,14 +1,16 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
-    "moduleResolution": "node",
-    "jsx": "react",
-    "esModuleInterop": true,
-    "types": ["jest"],
     "strict": true,
+    "declaration": true,
     "skipLibCheck": true,
-    "declaration": true
+    "esModuleInterop": true,
+    "jsx": "react",
+    "baseUrl": "./",
+    "paths": {
+      "@@/*": [".dumi/tmp/*"],
+      "art-antd-react": ["src"],
+      "art-antd-react/*": ["src/*", "*"]
+    }
   },
-  "paths": {}
+  "include": [".dumi/**/*", ".dumirc.ts", "src/**/*"]
 }

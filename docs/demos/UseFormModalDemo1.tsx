@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import { Button, Form, Input, message, Modal } from 'antd';
+import { Button, message } from 'antd';
 import { FormItemConfig, RenderType, useFormModal } from 'art-antd-react';
+import React, { useState } from 'react';
 //  安裝了 art-antd-react 以后 antd 直接导出的 类型或组件 可以直接从 art-antd-react 中导出
 // import { FormItemConfig, RenderType, useFormModal, Button, message } from 'art-antd-react';
 
 const Demo1 = () => {
-  const [visible, setVisible] = useState(false);
+  const [open, setOpen] = useState(false);
 
   const formItemsConfig: FormItemConfig[] = [
     {
@@ -68,10 +68,10 @@ const Demo1 = () => {
   ];
 
   const { formModal, formInstance } = useFormModal({
-    visible, // 决定了是否出现弹框
+    open, // 决定了是否出现弹框
     rowProps: { gutter: 8 },
     colProps: { span: 24 },
-    formItemsConfig: [],
+    formItemsConfig,
     title: '编辑个人信息',
     serviceFn: () => {
       return new Promise((resolve) => {
@@ -82,12 +82,12 @@ const Demo1 = () => {
     },
     onSuccess: () => {
       message.success('操作成功');
-      setVisible(false);
+      setOpen(false);
       console.log('请求之后你可以做任何行为操作');
     },
     onCancel: () => {
       message.success('取消编辑');
-      setVisible(false);
+      setOpen(false);
     },
     formatSubmitValue: (values: any) => {
       console.log('你可以对要提交的数据进行处理');
@@ -107,18 +107,12 @@ const Demo1 = () => {
             name: 'jakequc',
             age: 124,
           });
-          setVisible(true);
+          setOpen(true);
         }}
       >
         编辑信息
       </Button>
-      <Modal visible={visible}>
-        <Form>
-          <Form.Item name="name">
-            <Input />
-          </Form.Item>
-        </Form>
-      </Modal>
+      {formModal}
     </>
   );
 };

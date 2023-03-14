@@ -1,6 +1,8 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
-export type RequestService<Params = any, Res = any> = (params?: Params) => Promise<Res>;
+export type RequestService<Params = any, Res = any> = (
+  params?: Params,
+) => Promise<Res>;
 
 export interface OptionConfig<Params, Res> {
   lazy?: boolean;

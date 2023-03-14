@@ -36,7 +36,7 @@
 
 Gitee：
 
-- [art-antd-react gitee 官网](https://quankehao.gitee.io/art-antd-react) 国内的访问此链接较快
+- [art-antd-react gitee 官网](https://quankehao.gitee.io/art-antd-react) 国内的访问此链接较快(可能存在滞后性)
 
 - [art-antd-react repository 地址](https://gitee.com/quankehao/art-antd-react/pages)
 
@@ -153,7 +153,10 @@ const Demo1 = () => {
     >
       <Row gutter={18}>
         {/* FormItemsBuilder 自带 Col 布局, 因此有时候传递的 colProps/itemProps 不ok时，或许需要加一个 Row 包裹 FormItemsBuilder */}
-        <FormItemsBuilder colProps={{ span: 6 }} formItemsConfig={formItemsConfig} />
+        <FormItemsBuilder
+          colProps={{ span: 6 }}
+          formItemsConfig={formItemsConfig}
+        />
         <Col span={6}>
           <Button type="primary" htmlType="submit">
             提交
@@ -165,4 +168,45 @@ const Demo1 = () => {
 };
 
 export default Demo1;
+```
+
+## 怎样参与贡献？♥️
+
+```
+# clone 仓库
+git clone git@github.com:oneQorg/art-antd-react.git
+
+# 在 src 下新建 你要贡献的组件名字(yourComponentName)
+
+# 在 src/index 文件下
+export * from "./yourComponentName"
+
+# 在 docs/components or docs/hooks 下写清楚怎样使用等说明
+
+```
+
+## 怎样本地调试（发布到 npm 之前）
+
+```
+# 如果没有 yalc
+npm i yalc -g
+
+# 然后在本项目根目录 run
+yalc publish
+
+# 新建一个 测试仓库
+npx create-react-app art-antd-test-project --template typescript
+
+# 打开测试仓库
+yalc add art-antd-react
+
+# 复制的对应的 demo 到 art-antd-test-project 看能否跑起来
+# 运行 ok， 正确渲染，那么 🎉🎉🎉
+# 需要注意的是，如果出现了 `[eslint] Plugin "react" was conflicted between "package.json » eslint-config-react-app`错误，或许只需要在 demo 的 package.json 保存一下即可
+
+# 构建 pages
+pnpm run docs:build
+
+# 部署到 pages
+pnpm run docs:deploy
 ```

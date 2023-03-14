@@ -1,6 +1,14 @@
+import {
+  Button,
+  Col,
+  Form,
+  InputNumberProps,
+  InputProps,
+  Row,
+  SelectProps,
+} from 'antd';
+import { FormItemConfig, FormItemsBuilder, RenderType } from 'art-antd-react';
 import React from 'react';
-import { Button, Col, Form, InputNumberProps, InputProps, Row, SelectProps } from 'antd';
-import { FormItemsBuilder, FormItemConfig, RenderType } from 'art-antd-react';
 //  安裝了 art-antd-react 以后 antd 直接导出的 类型或组件 可以直接从 art-antd-react 中导出
 // import { FormItemsBuilder, FormItemConfig, RenderType, Button, Col, Form, InputNumberProps, InputProps, Row, SelectProps } from 'art-antd-react';
 
@@ -67,7 +75,10 @@ const Demo1 = () => {
     >
       <Row gutter={18}>
         {/* FormItemsBuilder 自带 Col 布局 */}
-        <FormItemsBuilder colProps={{ span: 6 }} formItemsConfig={formItemsConfig} />
+        <FormItemsBuilder
+          colProps={{ span: 6 }}
+          formItemsConfig={formItemsConfig}
+        />
         <Col span={6}>
           <Button type="primary" htmlType="submit">
             提交

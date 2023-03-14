@@ -1,7 +1,15 @@
-import React from 'react';
+import {
+  Button,
+  Card,
+  Col,
+  Form,
+  Row,
+  SelectProps,
+  TimeRangePickerProps,
+} from 'antd';
 import { SliderBaseProps } from 'antd/lib/slider';
-import { Button, Card, Col, Form, Row, SelectProps, TimeRangePickerProps } from 'antd';
-import { FormItemsBuilder, FormItemConfig, RenderType } from 'art-antd-react';
+import { FormItemConfig, FormItemsBuilder, RenderType } from 'art-antd-react';
+import React from 'react';
 
 const Demo2 = () => {
   const [form] = Form.useForm();
@@ -109,7 +117,9 @@ const Demo2 = () => {
         wrapperCol: { span: 24 },
       },
       customItemChildren: (
-        <div>使用RenderType.CustomItemChildren后，这里可以随意定义，限制住的只有你的想象力!</div>
+        <div>
+          使用RenderType.CustomItemChildren后，这里可以随意定义，限制住的只有你的想象力!
+        </div>
       ),
     },
   ];
@@ -135,7 +145,10 @@ const Demo2 = () => {
       {groupFormItems.map(({ title, itemsConfig }) => (
         <Card title={title} key={title} style={{ margin: 16 }}>
           <Row gutter={16}>
-            <FormItemsBuilder colProps={{ span: 8 }} formItemsConfig={itemsConfig} />
+            <FormItemsBuilder
+              colProps={{ span: 8 }}
+              formItemsConfig={itemsConfig}
+            />
           </Row>
         </Card>
       ))}

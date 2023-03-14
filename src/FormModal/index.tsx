@@ -1,8 +1,9 @@
-import React from 'react';
 import { FormInstance, message, Modal, ModalProps } from 'antd';
+import React from 'react';
 import { RequestService, useRequest } from '../hooks/useRequest';
 
-interface FormModalConfig<Value, Res> extends Omit<ModalProps, 'onError' | 'onOk'> {
+interface FormModalConfig<Value, Res>
+  extends Omit<ModalProps, 'onError' | 'onOk'> {
   serviceFn: RequestService<Value, Res>;
   formatSubmitValue: (formValue: Value) => unknown;
   onSuccess?: (data?: Res) => void;
@@ -50,7 +51,6 @@ export const FormModal = <Value, Res>({
       onCancel={handleCancel}
       onOk={() =>
         form.validateFields().then((res) => {
-          console.log('result: ', res);
           lazyService(formatSubmitValue ? formatSubmitValue(res) : res);
         })
       }

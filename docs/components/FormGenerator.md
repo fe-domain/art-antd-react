@@ -15,14 +15,15 @@ FormGenerator 的目的是使用配置化的思想来帮助我们快速的生成
 
 ### 基本使用
 
- <code src="../demos/FormGeneratorDemo1.tsx"  title="一个配置化的搜索 bar">
+<code src="../demos/FormGeneratorDemo1.tsx"  title="一个配置化的搜索 bar"></code>
 
 ### 自定义表单项的 col 布局
 
- <code src="../demos/FormGeneratorDemo2.tsx"  title="自定义表单">
+<code src="../demos/FormGeneratorDemo2.tsx"  title="自定义表单"></code>
 
 ## API
-说明，FormGerator 的所有 API/props 继承自 antd [Form](https://ant-design.gitee.io/components/form-cn/), 故除以下的props外，其他的Form props 均可直接透传给 FormGenrator
+
+说明，FormGerator 的所有 API/props 继承自 antd [Form](https://ant-design.gitee.io/components/form-cn/), 故除以下的 props 外，其他的 Form props 均可直接透传给 FormGenrator
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
 | colProps | 定义每一列的布局,同 antd [ColProps](https://ant-design.gitee.io/components/grid-cn/#Col) | [ColProps](https://ant-design.gitee.io/components/grid-cn/#Col)| -|

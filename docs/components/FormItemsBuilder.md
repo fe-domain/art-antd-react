@@ -15,36 +15,36 @@ FormItemsBuilder 的目的是使用配置化的思想来帮助我们快速的生
 
 ### 基本使用
 
-<code src="../demos/FormItemsBuilderDemo1.tsx"  title="使用TS as 断言可以帮助我们检查 formItemChildProps 的 API 是否正确">
+<code src="../demos/FormItemsBuilderDemo1.tsx"  title="使用TS as 断言可以帮助我们检查 formItemChildProps 的 API 是否正确"></code>
 
 ### 自定义布局和其他标签的使用
 
-<code src="../demos/FormItemsBuilderDemo2.tsx"  title="itemColProps 优先级高于 colProps">
+<code src="../demos/FormItemsBuilderDemo2.tsx"  title="itemColProps 优先级高于 colProps"></code>
 
 ### 垂直布局
 
-<code src="../demos/FormItemsBuilderDemo3.tsx"  title="itemColProps 优先级高于 colProps">
+<code src="../demos/FormItemsBuilderDemo3.tsx"  title="itemColProps 优先级高于 colProps"></code>
 
 ## API
 
 ### 整体 API
 
-| 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- |
-| colProps | 同 antd 的 [ColProps](https://ant-design.gitee.io/components/grid-cn/#Col) | ColProps | {} |
-| formItemsConfig | 定义每个 Form.Item 和其 Child 的配置，详情见下 | FormItemConfig[] | - |
+| 参数            | 说明                                                                       | 类型             | 默认值 |
+| --------------- | -------------------------------------------------------------------------- | ---------------- | ------ |
+| colProps        | 同 antd 的 [ColProps](https://ant-design.gitee.io/components/grid-cn/#Col) | ColProps         | {}     |
+| formItemsConfig | 定义每个 Form.Item 和其 Child 的配置，详情见下                             | FormItemConfig[] | -      |
 
 ### FormItemConfig API
 
-| 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- |
-| key | 唯一标识，用来做 map 时的 key，不存在则 name, name 不存在时则为 index | React.Key | - |
-| formItemProps | 同 antd 的 [Form.Item API](https://ant-design.gitee.io/components/form-cn/#Form.Item) | [FormItemProps](https://ant-design.gitee.io/components/form-cn/#Form.Item) | - |
-| itemColProps | 同 antd 的 [ColProps](https://ant-design.gitee.io/components/grid-cn/#Col) , 定义当前的 col 布局 | [ColProps](https://ant-design.gitee.io/components/grid-cn/#Col) | - |
-| renderType | 标识 Form.Item 的 Children 应该为 哪个组件 | [见如下 RenderType 声明](/components/form-items-builder#rendertype) | - |
-| formItemChildProps | 每一项对应的 Form.Item 的 children 的 Props，如 Input 的 onChange 等属性 | - | - |
-| formItemChildProps | renderType 为 CustomItemChildren 的时候 渲染的 Form.Item 的 children 元素 | React.ReactElement | - |
-| itemTitle | 定义当前项的 title | React.ReactNode | - |
+| 参数               | 说明                                                                                             | 类型                                                                       | 默认值 |
+| ------------------ | ------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------- | ------ |
+| key                | 唯一标识，用来做 map 时的 key，不存在则 name, name 不存在时则为 index                            | React.Key                                                                  | -      |
+| formItemProps      | 同 antd 的 [Form.Item API](https://ant-design.gitee.io/components/form-cn/#Form.Item)            | [FormItemProps](https://ant-design.gitee.io/components/form-cn/#Form.Item) | -      |
+| itemColProps       | 同 antd 的 [ColProps](https://ant-design.gitee.io/components/grid-cn/#Col) , 定义当前的 col 布局 | [ColProps](https://ant-design.gitee.io/components/grid-cn/#Col)            | -      |
+| renderType         | 标识 Form.Item 的 Children 应该为 哪个组件                                                       | [见如下 RenderType 声明](/components/form-items-builder#rendertype)        | -      |
+| formItemChildProps | 每一项对应的 Form.Item 的 children 的 Props，如 Input 的 onChange 等属性                         | -                                                                          | -      |
+| formItemChildProps | renderType 为 CustomItemChildren 的时候 渲染的 Form.Item 的 children 元素                        | React.ReactElement                                                         | -      |
+| itemTitle          | 定义当前项的 title                                                                               | React.ReactNode                                                            | -      |
 
 #### RenderType
 

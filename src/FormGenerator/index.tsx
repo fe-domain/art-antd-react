@@ -1,6 +1,16 @@
-import { ColProps, Form, RowProps, Row, FormProps, Col, ButtonProps, Button, Space } from 'antd';
+import {
+  Button,
+  ButtonProps,
+  Col,
+  ColProps,
+  Form,
+  FormProps,
+  Row,
+  RowProps,
+  Space,
+} from 'antd';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
-import { FormItemsBuilder, FormItemConfig } from '../FormItemsBuilder';
+import { FormItemConfig, FormItemsBuilder } from '../FormItemsBuilder';
 
 export interface FormGeneratorProps extends Omit<FormProps, 'onReset'> {
   // 操作栏的的 col 布局， 和 antd 的 Col API 相同，优先级高于 colProps
@@ -41,7 +51,7 @@ export interface FormGeneratorProps extends Omit<FormProps, 'onReset'> {
 
 export type FormStoreValue = Record<string, unknown>;
 
-export const FormGenerator: React.FC<FormGeneratorProps> = ({
+export const FormGenerator = ({
   form,
   colProps,
   rowProps,
@@ -62,7 +72,7 @@ export const FormGenerator: React.FC<FormGeneratorProps> = ({
   submitBtnProps,
   resetBtnProps,
   ...restFormConfig
-}) => {
+}: FormGeneratorProps) => {
   const [formInstance] = Form.useForm(form);
   const [expand, setExpand] = useState(true);
   const formValueRecord = useRef<FormStoreValue>({});
@@ -80,7 +90,10 @@ export const FormGenerator: React.FC<FormGeneratorProps> = ({
     }
   };
 
-  const handleValuesChange = (changeValues: FormStoreValue, allValues: FormStoreValue) => {
+  const handleValuesChange = (
+    changeValues: FormStoreValue,
+    allValues: FormStoreValue,
+  ) => {
     formValueRecord.current = {
       ...formValueRecord.current,
       ...(changeValues || {}),
@@ -96,15 +109,26 @@ export const FormGenerator: React.FC<FormGeneratorProps> = ({
   }, [foldNumber, formItemsConfig, expand]);
 
   return (
-    <Form form={formInstance} onValuesChange={handleValuesChange} {...restFormConfig}>
+    <Form
+      form={formInstance}
+      onValuesChange={handleValuesChange}
+      {...restFormConfig}
+    >
       <Row {...(rowProps || {})}>
-        <FormItemsBuilder formItemsConfig={formItems} colProps={colProps || {}} />
+        <FormItemsBuilder
+          formItemsConfig={formItems}
+          colProps={colProps || {}}
+        />
         <Col {...(actionColProps || colProps || {})}>
           {actionBar ||
             ((showExpend || showRest || showSubmit) && (
               <Space>
                 {showSubmit && (
-                  <Button type="primary" htmlType="submit" {...(submitBtnProps || {})}>
+                  <Button
+                    type="primary"
+                    htmlType="submit"
+                    {...(submitBtnProps || {})}
+                  >
                     {submitNode}
                   </Button>
                 )}
