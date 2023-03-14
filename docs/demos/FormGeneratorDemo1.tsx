@@ -1,6 +1,6 @@
-import React from 'react';
 import { Form, InputProps } from 'antd';
-import { FormItemConfig, RenderType, FormGenerator } from 'art-antd-react';
+import { FormGenerator, FormItemConfig, RenderType } from 'art-antd-react';
+import React from 'react';
 //  安裝了 art-antd-react 以后 antd 直接导出的 类型或组件 可以直接从 art-antd-react 中导出
 // import { FormItemConfig, RenderType, FormGenerator, Form, InputProps } from 'art-antd-react';
 

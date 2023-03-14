@@ -1,6 +1,15 @@
+import {
+  Button,
+  Col,
+  Form,
+  Input,
+  Row,
+  SelectProps,
+  Space,
+  TimeRangePickerProps,
+} from 'antd';
+import { FormItemConfig, FormItemsBuilder, RenderType } from 'art-antd-react';
 import React from 'react';
-import { FormItemsBuilder, FormItemConfig, RenderType } from 'art-antd-react';
-import { Button, Col, Form, Input, Row, SelectProps, Space, TimeRangePickerProps } from 'antd';
 //  安裝了 art-antd-react 以后 antd 直接导出的 类型或组件 可以直接从 art-antd-react 中导出
 // import { FormItemsBuilder, FormItemConfig, RenderType, Button, Col, Form, Input, Row, SelectProps, Space, TimeRangePickerProps } from 'art-antd-react';
 
@@ -86,7 +95,11 @@ const Demo3 = () => {
           {(fields, { add, remove }) => (
             <>
               {fields.map((field) => (
-                <Space key={field.key} align="baseline" style={{ marginRight: 10 }}>
+                <Space
+                  key={field.key}
+                  align="baseline"
+                  style={{ marginRight: 10 }}
+                >
                   <Form.Item
                     {...field}
                     label="Price"
@@ -96,7 +109,11 @@ const Demo3 = () => {
                     <Input />
                   </Form.Item>
 
-                  <Button onClick={() => remove(field.name)} type="primary" danger>
+                  <Button
+                    onClick={() => remove(field.name)}
+                    type="primary"
+                    danger
+                  >
                     移除
                   </Button>
                 </Space>
@@ -129,7 +146,10 @@ const Demo3 = () => {
       }}
     >
       <Row gutter={16}>
-        <FormItemsBuilder colProps={{ span: 24 }} formItemsConfig={group1FormItems} />
+        <FormItemsBuilder
+          colProps={{ span: 24 }}
+          formItemsConfig={group1FormItems}
+        />
       </Row>
 
       <Col span={6}>

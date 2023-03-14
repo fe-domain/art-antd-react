@@ -192,7 +192,7 @@ export * from "./yourComponentName"
 npm i yalc -g
 
 # 然后在本项目根目录 run
-yalc public
+yalc publish
 
 # 新建一个 测试仓库
 npx create-react-app art-antd-test-project --template typescript
@@ -202,4 +202,11 @@ yalc add art-antd-react
 
 # 复制的对应的 demo 到 art-antd-test-project 看能否跑起来
 # 运行 ok， 正确渲染，那么 🎉🎉🎉
+# 需要注意的是，如果出现了 `[eslint] Plugin "react" was conflicted between "package.json » eslint-config-react-app`错误，或许只需要在 demo 的 package.json 保存一下即可
+
+# 构建 pages
+pnpm run docs:build
+
+# 部署到 pages
+pnpm run docs:deploy
 ```

@@ -11,7 +11,12 @@ const GithubLinkItem = {
 };
 
 export default defineConfig({
-  outputPath: 'dist',
+  outputPath: 'docs-dist',
+  hash: true,
+  base: './docs',
+  resolve: {
+    docDirs: ['docs'],
+  },
   themeConfig: {
     name: 'ArtAntd',
     title: 'art-antd-react',
@@ -19,7 +24,7 @@ export default defineConfig({
     logo: '/logo.png',
     base: '/art-antd-react/',
     publicPath: '/art-antd-react/',
-    outputPath: 'dist',
+    outputPath: 'docs-dist',
     webpack5: {},
     dynamicImport: {},
     extraBabelPlugins: [

@@ -1,6 +1,9 @@
 import {
+  Checkbox,
   CheckboxProps,
+  Col,
   ColProps,
+  DatePicker,
   DatePickerProps,
   Form,
   FormItemProps,
@@ -8,20 +11,17 @@ import {
   InputNumber,
   InputNumberProps,
   InputProps,
+  Radio,
   RadioGroupProps,
   RadioProps,
+  Select,
   SelectProps,
+  Slider,
+  Switch,
+  SwitchProps,
+  TimePicker,
   TimePickerProps,
   TimeRangePickerProps,
-  Checkbox,
-  Select,
-  Radio,
-  Switch,
-  Slider,
-  TimePicker,
-  DatePicker,
-  Col,
-  SwitchProps,
 } from 'antd';
 import { CheckboxGroupProps } from 'antd/lib/checkbox';
 import { RangePickerProps } from 'antd/lib/date-picker';
@@ -104,9 +104,16 @@ export interface FormItemConfig {
 }
 
 export const renderFormItemChild = (
-  formItemConfig: Pick<FormItemConfig, 'renderType' | 'customItemChildren' | 'formItemChildProps'>,
+  formItemConfig: Pick<
+    FormItemConfig,
+    'renderType' | 'customItemChildren' | 'formItemChildProps'
+  >,
 ) => {
-  const { renderType, customItemChildren, formItemChildProps = {} } = formItemConfig;
+  const {
+    renderType,
+    customItemChildren,
+    formItemChildProps = {},
+  } = formItemConfig;
 
   switch (renderType) {
     case RenderType.CustomItemChildren: {
@@ -136,12 +143,18 @@ export const renderFormItemChild = (
     case RenderType.TimePicker:
       return <TimePicker {...(formItemChildProps as TimePickerProps)} />;
     case RenderType.TimeRangePicker:
-      return <TimePicker.RangePicker {...(formItemChildProps as TimeRangePickerProps)} />;
+      return (
+        <TimePicker.RangePicker
+          {...(formItemChildProps as TimeRangePickerProps)}
+        />
+      );
       break;
     case RenderType.DatePicker:
       return <DatePicker {...(formItemChildProps as DatePickerProps)} />;
     case RenderType.DateRangePicker:
-      return <DatePicker.RangePicker {...(formItemChildProps as RangePickerProps)} />;
+      return (
+        <DatePicker.RangePicker {...(formItemChildProps as RangePickerProps)} />
+      );
     case RenderType.Slider:
       return <Slider {...(formItemChildProps as SliderBaseProps)} />;
     default:
@@ -170,14 +183,18 @@ export const FormItemsBuilder: React.FC<FormItemsBuilderProps> = ({
   colProps,
 }) => (
   <>
-    {formItemsConfig?.map(({ key, itemTitle, itemColProps, formItemProps, ...rest }, index) => (
-      <Col
-        key={key || formItemProps?.name?.toString() || index}
-        {...(itemColProps || colProps || {})}
-      >
-        {itemTitle}
-        <Form.Item {...formItemProps}>{renderFormItemChild({ ...rest })}</Form.Item>
-      </Col>
-    ))}
+    {formItemsConfig?.map(
+      ({ key, itemTitle, itemColProps, formItemProps, ...rest }, index) => (
+        <Col
+          key={key || formItemProps?.name?.toString() || index}
+          {...(itemColProps || colProps || {})}
+        >
+          {itemTitle}
+          <Form.Item {...formItemProps}>
+            {renderFormItemChild({ ...rest })}
+          </Form.Item>
+        </Col>
+      ),
+    )}
   </>
 );
