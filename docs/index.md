@@ -1,9 +1,10 @@
 ---
+title: ArtAntd
 hero:
   title: ArtAntd
   description: 让前端更智能、让我们作一个前端艺术家
   actions:
-    - text: 🚀 快速开始 🚀
+    - text: 🚀 快速开始
       link: /about/quickstart
 features:
   - avatar: https://gw.alipayobjects.com/zos/bmw-prod/881dc458-f20b-407b-947a-95104b5ec82b/k79dm8ih_w144_h144.png
@@ -42,9 +43,9 @@ yarn add art-antd-react
 # yet
 pnpm i art-antd-react
 
-# 在入口引入以下文件(这是antd的默认主题样式，
+# 在入口引入以下文件(这是antd的默认主题样式，可选导入）
 # 如果要引入其他主题样式可以在项目中按照 https://ant-design.gitee.io/docs/react/use-with-create-react-app-cn 覆盖即可)
-import "art-antd-react/dist/esm/styles/defaultAntdCss.css"
+import "art-antd-react/dist/esm/styles/defaultAntdCss.css" # 可选
 
 ```
 
@@ -52,5 +53,5 @@ import "art-antd-react/dist/esm/styles/defaultAntdCss.css"
 
 非常欢迎你的意见，你可以通过以下方式
 
-- 通过 [Issue](https://github.com/Kehao33/art-antd-react/issues) 报告 bug 或进行咨询(同理如果遇到了问题也可以直接看看别人是否也遇到了呢)。
+- 通过 [Issue](https://github.com/oneQorg/art-antd-react/issues) 报告 bug 或进行咨询(同理如果遇到了问题也可以直接看看别人是否也遇到了呢)。
 - 添加微信 jakequc 直接反馈问题

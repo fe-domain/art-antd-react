@@ -1,7 +1,6 @@
 ---
-nav:
-  title: quickstart
-  path: /about
+title: quickstart
+path: /about
 order: 1
 ---
 
@@ -16,9 +15,9 @@ yarn add art-antd-react
 # yet
 pnpm i art-antd-react
 
-# 在入口引入以下文件(这是antd的默认主题样式，
+# 在入口引入以下文件(这是antd的默认主题样式，可选导入）
 # 如果要引入其他主题样式可以在项目中按照 https://ant-design.gitee.io/docs/react/use-with-create-react-app-cn 覆盖即可)
-import "art-antd-react/dist/esm/styles/defaultAntdCss.css"
+import "art-antd-react/dist/esm/styles/defaultAntdCss.css" # 可选
 ```
 
 ### code

@@ -1,7 +1,6 @@
 ---
-nav:
-  title: useConfigListPage
-  path: /hooks
+title: useConfigListPage
+path: /hooks
 order: 3
 ---
 

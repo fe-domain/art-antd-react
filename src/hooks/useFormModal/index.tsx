@@ -1,16 +1,9 @@
-import {
-  ColProps,
-  Form,
-  FormInstance,
-  message,
-  Modal,
-  ModalProps,
-  RowProps,
-} from 'antd';
+import { ColProps, Form, FormInstance, ModalProps, RowProps } from 'antd';
+import { FormModal } from 'art-antd-react/FormModal';
 import React, { useMemo } from 'react';
 import { FormGenerator } from '../../FormGenerator';
 import { FormItemConfig } from '../../FormItemsBuilder';
-import { RequestService, useRequest } from '../useRequest';
+import { RequestService } from '../useRequest';
 
 export interface FormModalConfig<Value, Res>
   extends Omit<ModalProps, 'onError' | 'onOk'> {
@@ -22,7 +15,7 @@ export interface FormModalConfig<Value, Res>
   // Form.Item 和 其 children 的配置，和 FormItemsBuilder 的配置一样
   formItemsConfig: FormItemConfig[];
   serviceFn: RequestService<Value, Res>;
-  formatSubmitValue: (formValue: Value) => unknown;
+  formatSubmitValue?: (formValue: Value) => unknown;
   onSuccess?: (data?: Res) => void;
   onError?: (e?: Error) => void;
   onCancel?: () => void;
@@ -34,58 +27,21 @@ export const useFormModal = <Value, Res>({
   rowProps,
   formItemsConfig,
   serviceFn,
-  formatSubmitValue,
-  onSuccess,
-  onError,
-  onCancel,
   ...restModalProps
 }: FormModalConfig<Value, Res>) => {
   const [formInstance] = Form.useForm(form);
 
-  const { lazyService, loading } = useRequest(serviceFn, {
-    lazy: true,
-    onSuccess(data) {
-      if (onSuccess) {
-        onSuccess(data);
-      } else {
-        message.success('操作成功');
-        // 成功后调用 取消操作
-        onCancel?.();
-      }
-    },
-    onError(error?: Error) {
-      if (onError) {
-        onError(error);
-      } else {
-        message.error('操作失败');
-      }
-    },
-  });
-
-  const onFinish = (formValues: any) => {
-    lazyService(formatSubmitValue ? formatSubmitValue(formValues) : formValues);
-  };
-
-  const handleCancel = () => {
-    onCancel?.();
-  };
-
+  // refactor
   const formModal = useMemo(() => {
     return (
-      <Modal
-        onCancel={handleCancel}
-        onOk={() => formInstance.submit()}
-        confirmLoading={loading}
-        {...restModalProps}
-      >
+      <FormModal form={formInstance} serviceFn={serviceFn} {...restModalProps}>
         <FormGenerator
           form={formInstance}
           colProps={colProps}
           rowProps={rowProps}
-          onFinish={onFinish}
           formItemsConfig={formItemsConfig}
         />
-      </Modal>
+      </FormModal>
     );
   }, [formInstance, colProps, rowProps, formItemsConfig]);
 

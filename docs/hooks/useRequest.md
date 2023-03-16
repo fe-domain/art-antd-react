@@ -1,7 +1,6 @@
 ---
-nav:
-  title: useRequest
-  path: /hooks
+title: useRequest
+path: /hooks
 order: 1
 ---
 

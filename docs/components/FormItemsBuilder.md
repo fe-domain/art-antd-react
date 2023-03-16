@@ -1,7 +1,6 @@
 ---
-nav:
-  title: FormItemsBuilder
-  path: /components
+title: FormItemsBuilder
+path: /components
 order: 5
 ---
 

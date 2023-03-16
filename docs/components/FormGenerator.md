@@ -1,7 +1,6 @@
 ---
-nav:
-  title: FormGenerator
-  path: /components
+title: FormGenerator - 表单生成器
+path: /components
 order: 4
 ---
 

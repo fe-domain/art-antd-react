@@ -13,18 +13,20 @@ const GithubLinkItem = {
 export default defineConfig({
   outputPath: 'docs-dist',
   hash: true,
-  base: './docs',
+  base: '/art-antd-react/',
+  publicPath: '/art-antd-react/',
+  favicons: [
+    'https://raw.githubusercontent.com/oneQorg/art-antd-react/master/public/logo.ico',
+  ],
   resolve: {
     docDirs: ['docs'],
   },
   themeConfig: {
     name: 'ArtAntd',
     title: 'art-antd-react',
-    favicon: '/logo.ico',
-    logo: '/logo.png',
     base: '/art-antd-react/',
     publicPath: '/art-antd-react/',
-    outputPath: 'docs-dist',
+    logo: 'https://raw.githubusercontent.com/oneQorg/art-antd-react/master/public/logo.png',
     webpack5: {},
     dynamicImport: {},
     extraBabelPlugins: [

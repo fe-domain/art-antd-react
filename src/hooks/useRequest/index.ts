@@ -23,25 +23,29 @@ export const useRequest = <Res = any, Params = any>(
   const { lazy, defaulParams, onSuccess, onError, formaResult } = config || {};
 
   const lazyService = (params?: Params) => {
-    setLoading(true);
-    request(params)
-      .then((result) => {
-        setData(formaResult ? formaResult(result) : result);
+    return new Promise((resolve, reject) => {
+      setLoading(true);
 
-        if (onSuccess) {
-          onSuccess(result);
-        }
-      })
-      .catch((err) => {
-        setError(err);
-
-        if (onError) {
-          onError(err);
-        }
-      })
-      .finally(() => {
-        setLoading(false);
-      });
+      request(params)
+        .then((result) => {
+          const res = formaResult ? formaResult(result) : result;
+          setData(res);
+          resolve(res);
+          if (onSuccess) {
+            onSuccess(result);
+          }
+        })
+        .catch((err) => {
+          setError(err);
+          reject(error);
+          if (onError) {
+            onError(err);
+          }
+        })
+        .finally(() => {
+          setLoading(false);
+        });
+    });
   };
 
   useEffect(() => {

@@ -1,4 +1,4 @@
-import { Button, Form, message } from 'antd';
+import { Button, Form, message, Space } from 'antd';
 import {
   FormGenerator,
   FormItemConfig,
@@ -9,7 +9,7 @@ import React, { useState } from 'react';
 //  安裝了 art-antd-react 以后 antd 直接导出的 类型或组件 可以直接从 art-antd-react 中导出
 // import { FormItemConfig, RenderType, useFormModal, Button, message } from 'art-antd-react';
 
-const FormModalDemo1 = () => {
+const FormModalDemo2 = () => {
   const [visible, setVisible] = useState(false);
   const [form] = Form.useForm();
 
@@ -76,6 +76,7 @@ const FormModalDemo1 = () => {
   return (
     <>
       <Button
+        type="primary"
         onClick={() => {
           form.setFieldsValue({
             name: 'jakequc',
@@ -87,7 +88,7 @@ const FormModalDemo1 = () => {
         编辑信息
       </Button>
       <FormModal
-        open={visible} // 决定了是否出现弹框
+        visible={visible} // 决定了是否出现弹框
         title="编辑个人信息"
         form={form}
         serviceFn={() => {
@@ -113,6 +114,18 @@ const FormModalDemo1 = () => {
           message.success('取消编辑');
           setVisible(false);
         }}
+        footerRender={(props, defaultFooterTuple) => {
+          return (
+            <Space>
+              {[
+                ...defaultFooterTuple,
+                <Button key="ok" loading={props.loading}>
+                  ok
+                </Button>,
+              ]}
+            </Space>
+          );
+        }}
       >
         <FormGenerator
           form={form}
@@ -124,4 +137,4 @@ const FormModalDemo1 = () => {
   );
 };
 
-export default FormModalDemo1;
+export default FormModalDemo2;
