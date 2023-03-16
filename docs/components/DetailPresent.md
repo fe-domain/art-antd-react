@@ -1,7 +1,6 @@
 ---
-nav:
-  title: DetailPresent
-  path: /components
+title: DetailPresent
+path: /components
 order: 3
 ---
 
