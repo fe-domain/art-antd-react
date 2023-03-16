@@ -1,7 +1,6 @@
 ---
-nav:
-  title: ListTemplate
-  path: /components
+title: ListTemplate
+path: /components
 order: 2
 ---
 
