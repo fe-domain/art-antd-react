@@ -2,6 +2,11 @@
   "name": "art-antd-react",
   "version": "1.8.10",
   "description": "A library of components to help you develop web pages quickly",
+  "homepage": "https://oneqorg.github.io/art-antd-react/",
+  "bugs": {
+    "url": "https://github.com/oneQorg/art-antd-react/issues",
+    "email": "jakequc@163.com"
+  },
   "license": "MIT",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
