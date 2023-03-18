@@ -7,6 +7,10 @@
     "url": "https://gitee.com/quankehao/art-antd-react/issues",
     "email": "jakequc@163.com"
   },
+  "repository": {
+    "type": "gitee",
+    "url": "https://gitee.com/quankehao/art-antd-react"
+  },
   "license": "MIT",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",

@@ -3,10 +3,14 @@
 # dependencies
 /node_modules
 /npm-debug.log*
-/yarn-error.log
-/yarn.lock
 /package-lock.json
+/dist
+.dumi/tmp
+.dumi/tmp-test
+.dumi/tmp-production
 
+.DS_Store
+/docs-dist
 # production
 /es
 /docs-dist

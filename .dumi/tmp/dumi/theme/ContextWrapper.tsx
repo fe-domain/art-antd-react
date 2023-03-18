@@ -37,6 +37,10 @@ export default function DumiContextWrapper() {
             'A library of components to help you develop web pages quickly',
           version: '1.8.10',
           license: 'MIT',
+          repository: {
+            type: 'gitee',
+            url: 'https://gitee.com/quankehao/art-antd-react',
+          },
           authors: ['jakequc@163.com'],
         },
         entryExports,
