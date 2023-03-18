@@ -119,7 +119,14 @@ const FormModalDemo2 = () => {
             <Space>
               {[
                 ...defaultFooterTuple,
-                <Button key="ok" loading={props.loading}>
+                <Button
+                  key="ok"
+                  onClick={async () => {
+                    const v = await props?.submitFormValue();
+                    console.log('提交后请求返回的结果为', v);
+                  }}
+                  loading={props.loading}
+                >
                   ok
                 </Button>,
               ]}
