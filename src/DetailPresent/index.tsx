@@ -35,7 +35,7 @@ export const DetailPresent = <
   const labelKeys = useMemo(() => {
     const mapKeys = Object.keys(keyMapLabel || {});
 
-    return filterNil ? mapKeys.filter((k) => isNil(detail[k])) : mapKeys;
+    return filterNil ? mapKeys.filter((k) => !isNil(detail[k])) : mapKeys;
   }, [filterNil, keyMapLabel, detail]);
 
   return (
