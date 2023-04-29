@@ -1,11 +1,11 @@
 import { ColProps, Form, message, RowProps, TableProps } from 'antd';
 import { FormInstance } from 'antd/es/form/Form';
 import React, { useMemo, useState } from 'react';
-import { FormItemConfig } from '../../FormItemsBuilder';
-import { ListTemplate, ListTemplateProps } from '../../ListTemplate';
-import { OptionConfig, RequestService, useRequest } from '../useRequest';
+import { FormItemConfig } from '../FormItemsBuilder';
+import { ListTemplate, ListTemplateProps } from '../ListTemplate';
+import { OptionConfig, RequestService, useRequest } from './useRequest';
 
-export interface ConfigListPageParameter<Res, Param>
+export interface ConfigListPageProps<Res, Param>
   extends Omit<ListTemplateProps, 'searchBarProps'>,
     OptionConfig<Param, Res> {
   queryListService: RequestService<Param>;
@@ -48,7 +48,7 @@ export const useConfigListPage = <
   formaResult,
   queryListService,
   formatSubmitValue,
-}: ConfigListPageParameter<Res, Param>) => {
+}: ConfigListPageProps<Res, Param>) => {
   const [pageInfo, setPageInfo] = useState(PageInfoInit);
   const [form] = Form.useForm(searchForm);
 

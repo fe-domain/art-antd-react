@@ -2,7 +2,7 @@ import { Button, Form, FormInstance, message, Modal, ModalProps } from 'antd';
 import React, { useMemo } from 'react';
 import { RequestService, useRequest } from '../hooks/useRequest';
 
-interface FormModalConfig<Value, Res>
+export interface FormModalProps<Value, Res>
   extends Omit<ModalProps, 'onError' | 'onOk'> {
   serviceFn: RequestService<Value, Res>;
   formatSubmitValue?: (formValue: Value) => unknown;
@@ -11,7 +11,7 @@ interface FormModalConfig<Value, Res>
   onCancel?: () => void;
   // footerRender 根据 config 和 配置来重新配置 footer, 优先级比 footer 高
   footerRender?: (
-    config: FormModalConfig<Value, Res> & {
+    config: FormModalProps<Value, Res> & {
       loading?: boolean;
       lazyService: (values: Value) => any;
       submitFormValue: () => Promise<any>;
@@ -23,7 +23,7 @@ interface FormModalConfig<Value, Res>
 
 const isFunction = (arg: any) => typeof arg === 'function';
 
-export const FormModal = <Value, Res>(props: FormModalConfig<Value, Res>) => {
+export const FormModal = <Value, Res>(props: FormModalProps<Value, Res>) => {
   const {
     serviceFn,
     formatSubmitValue,

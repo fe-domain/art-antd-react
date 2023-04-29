@@ -1,6 +1,11 @@
-import { Button, message } from 'antd';
-import { FormItemConfig, RenderType, useFormModal } from 'art-antd-react';
-import React, { useState } from 'react';
+import {
+  Button,
+  FormItemConfig,
+  message,
+  RenderType,
+  useFormModal,
+} from 'art-antd-react';
+import { useState } from 'react';
 //  安裝了 art-antd-react 以后 antd 直接导出的 类型或组件 可以直接从 art-antd-react 中导出
 // import { FormItemConfig, RenderType, useFormModal, Button, message } from 'art-antd-react';
 

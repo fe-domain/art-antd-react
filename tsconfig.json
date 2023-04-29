@@ -4,13 +4,13 @@
     "declaration": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
-    "jsx": "react",
+    "jsx": "react-jsx",
     "baseUrl": "./",
     "paths": {
-      "@@/*": [".dumi/tmp/*"],
-      "art-antd-react": ["src"],
-      "art-antd-react/*": ["src/*", "*"]
-    }
+      "art-antd-react": ["./src/index.ts"],
+      "@@/*": [".dumi/tmp/*"]
+    },
+    "types": ["tsx", "ts"]
   },
   "include": [".dumi/**/*", ".dumirc.ts", "src/**/*"]
 }

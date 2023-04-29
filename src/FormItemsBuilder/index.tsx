@@ -28,7 +28,7 @@ import { RangePickerProps } from 'antd/lib/date-picker';
 import { SliderBaseProps } from 'antd/lib/slider';
 import React from 'react';
 
-type RenderRecord = {
+export type RenderRecord = {
   Input: 'Input';
   Select: 'Select';
   InputNumber: 'InputNumber';
@@ -78,7 +78,7 @@ export const RenderType: RenderRecord = {
 
 export type TRenderType = keyof RenderRecord;
 
-type FormItemChildProps =
+export type FormItemChildProps =
   | InputProps
   | InputNumberProps
   | CheckboxProps

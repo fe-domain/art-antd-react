@@ -16,20 +16,27 @@ export interface DetailPresentProps<
   >;
   // 当对应的 detail 的 key 的对应的 value 为空的时候的占位符
   placeholder?: React.ReactNode;
+  // 是否过滤掉 undefined 或者 null 的 label 显示
+  filterNil?: boolean;
 }
+
+export const isNil = (v: any) => v === undefined || v === null;
 
 export const DetailPresent = <
   D extends Record<string, any> = Record<string, any>,
 >({
-  detail,
+  detail = {} as D,
   placeholder,
   keyMapLabel,
   keyMapItemProps,
+  filterNil,
   ...descriptionProps
 }: DetailPresentProps<D>) => {
   const labelKeys = useMemo(() => {
-    return Object.keys(keyMapLabel || {});
-  }, []);
+    const mapKeys = Object.keys(keyMapLabel || {});
+
+    return filterNil ? mapKeys.filter((k) => isNil(detail[k])) : mapKeys;
+  }, [filterNil, keyMapLabel, detail]);
 
   return (
     <Descriptions {...descriptionProps}>

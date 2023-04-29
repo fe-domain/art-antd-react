@@ -1,11 +1,11 @@
 import { ColProps, Form, FormInstance, ModalProps, RowProps } from 'antd';
 import { FormModal } from 'art-antd-react/FormModal';
-import React, { useMemo } from 'react';
-import { FormGenerator } from '../../FormGenerator';
-import { FormItemConfig } from '../../FormItemsBuilder';
-import { RequestService } from '../useRequest';
+import { useMemo } from 'react';
+import { FormGenerator } from '../FormGenerator';
+import { FormItemConfig } from '../FormItemsBuilder';
+import { RequestService } from './useRequest';
 
-export interface FormModalConfig<Value, Res>
+export interface FormModalHookProps<Value, Res>
   extends Omit<ModalProps, 'onError' | 'onOk'> {
   form?: FormInstance;
   // 公共的 col 布局， 和 antd 的 Col API 相同
@@ -28,7 +28,7 @@ export const useFormModal = <Value, Res>({
   formItemsConfig,
   serviceFn,
   ...restModalProps
-}: FormModalConfig<Value, Res>) => {
+}: FormModalHookProps<Value, Res>) => {
   const [formInstance] = Form.useForm(form);
 
   // refactor

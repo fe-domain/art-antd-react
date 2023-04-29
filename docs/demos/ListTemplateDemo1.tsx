@@ -1,12 +1,14 @@
-import { Button, message, Space, Tag } from 'antd';
-import { ColumnsType } from 'antd/lib/table';
 import {
+  Button,
+  ColumnsType,
   FormItemConfig,
   ListTemplate,
+  message,
   RenderType,
+  Space,
+  Tag,
   useRequest,
 } from 'art-antd-react';
-import React from 'react';
 import { getData, MockData } from './mock';
 //  安裝了 art-antd-react 以后 antd 直接导出的 类型或组件 可以直接从 art-antd-react 中导出
 // import { FormItemConfig, ListTemplate, useRequest, RenderType, Button, message, Space, Tag } from 'art-antd-react';
@@ -93,10 +95,10 @@ const Demo1 = () => {
       return {
         ...rest,
         dataSource,
-      };
+      } as any;
     },
   });
-  const { dataSource, total } = data || {};
+  const { dataSource, total } = (data as any) || {};
   return (
     <ListTemplate
       // space 的配置

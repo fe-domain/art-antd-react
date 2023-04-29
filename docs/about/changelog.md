@@ -10,6 +10,17 @@ order: 2
 
 #### version 1.8.10
 
+- 不使用 `export * from xxx`, 因为这样的不友好
+- 升级 antd 版本到 5.x
+- `FormModal` 和 `useFormModal` 新增 `footerRender` props
+- `useRequest` 将 lazyService 的结果通过 使用 Promise 包裹 传出，这样 data 和 lazyService 调用后都可以得到 request 返回的结果啦
+- `DetailPresent` 新增 `filterNil` 属性，目的是为了过滤掉对应的 key 展示为空的情况
+- 新增
+  - `SendingBtn` 发送按钮组件
+  - `useSendingBtn` 发送组件 hook （函数组件中推荐使用）
+
+#### version 1.8.10
+
 - 解决上一版本 demo 时出现 `Uncaught TypeError: dispatcher.useId is not a function`
 - 升级 antd 版本到 5.x
 - `FormModal` 和 `useFormModal` 新增 `footerRender` props
