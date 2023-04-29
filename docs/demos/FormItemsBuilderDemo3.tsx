@@ -2,16 +2,16 @@ import {
   Button,
   Col,
   Form,
+  FormItemConfig,
+  FormItemsBuilder,
   Input,
+  RenderType,
   Row,
   SelectProps,
   Space,
   TimeRangePickerProps,
-} from 'antd';
-import { FormItemConfig, FormItemsBuilder, RenderType } from 'art-antd-react';
-import React from 'react';
-//  安裝了 art-antd-react 以后 antd 直接导出的 类型或组件 可以直接从 art-antd-react 中导出
-// import { FormItemsBuilder, FormItemConfig, RenderType, Button, Col, Form, Input, Row, SelectProps, Space, TimeRangePickerProps } from 'art-antd-react';
+} from 'art-antd-react';
+//  安裝了 art-antd-react 以后, antd 直接导出的 类型或组件 可以直接从 art-antd-react 中导出
 
 const Demo3 = () => {
   const [form] = Form.useForm();

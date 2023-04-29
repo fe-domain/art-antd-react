@@ -1,7 +1,14 @@
-import { Button, message, Space, Tag } from 'antd';
-import type { ColumnsType } from 'antd/lib/table';
-import { FormItemConfig, RenderType, useConfigListPage } from 'art-antd-react';
-import React, { useRef } from 'react';
+import {
+  Button,
+  ColumnsType,
+  FormItemConfig,
+  message,
+  RenderType,
+  Space,
+  Tag,
+  useConfigListPage,
+} from 'art-antd-react';
+import { useRef } from 'react';
 //  安裝了 art-antd-react 以后 antd 直接导出的 类型或组件 可以直接从 art-antd-react 中导出
 // import { FormItemConfig, RenderType, useConfigListPage, Button, message, Space, Tag } from 'art-antd-react';
 
