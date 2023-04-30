@@ -1,25 +1,25 @@
 import { defineConfig } from 'dumi';
 
 const GiteeRepositoryItem = {
-  title: 'gitee-rep',
+  title: 'gitee',
   link: 'https://gitee.com/quankehao/art-antd-react',
 };
 
 const GithubRepositoryItem = {
-  title: 'github-rep',
+  title: 'github',
   link: 'https://github.com/oneQorg/art-antd-react',
 };
 
-// 站点配置
-const GiteeSiteItem = {
-  title: 'githubSite',
-  link: 'https://oneqorg.github.io/art-antd-react',
-};
+// // 站点配置
+// const GiteeSiteItem = {
+//   title: 'githubSite',
+//   link: 'https://oneqorg.github.io/art-antd-react',
+// };
 
-const GithubSiteItem = {
-  title: 'giteeSite',
-  link: 'https://quankehao.gitee.io/art-antd-react',
-};
+// const GithubSiteItem = {
+//   title: 'giteeSite',
+//   link: 'https://quankehao.gitee.io/art-antd-react',
+// };
 
 export default defineConfig({
   outputPath: 'docs-dist',
@@ -62,8 +62,6 @@ export default defineConfig({
         { title: 'hooks', link: '/hooks/use-request' },
         GiteeRepositoryItem,
         GithubRepositoryItem,
-        GiteeSiteItem,
-        GithubSiteItem,
       ],
     },
     navs: [GiteeRepositoryItem, GithubRepositoryItem],

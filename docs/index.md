@@ -21,11 +21,15 @@ footer: Open-source MIT Licensed | Copyright jakequc 2022<br />Powered by [dumi]
 
 ## 🌈 Hello art-antd-react!
 
+[Gitee 站点](https://quankehao.gitee.io/art-antd-react) | [Github 站点](https://oneqorg.github.io/art-antd-react)
+
 ## 🍭 Target
 
 ### 基于 [Ant Design](https://ant-design.gitee.io/components/overview-cn/) 开发的配置化组件，旨在通过配置化开发、做更快更高效更快乐的做一个前端开发艺术家
 
 何时使用该组件库：
+
+> 当你想更快更高效的开发中后台 page 而又和我一样不喜欢 [@ant-design/pro-components](https://procomponents.ant.design/) 这个重型组件库的时候，推荐你使用 ArtAnd
 
 - 配置化开发表单
 - 配置化展示详情信息
