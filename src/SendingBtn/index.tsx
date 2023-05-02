@@ -28,11 +28,11 @@ export interface SendingBtnProps extends ButtonProps {
 }
 
 export interface SendingBtnRefProps {
-  isCounter: boolean;
-  remainderTime: number;
-  runCounter: () => void;
-  setRemainderTime: (time: number) => void;
-  setIsCounter: (counter: boolean) => void;
+  isCounter?: boolean;
+  remainderTime?: number;
+  runCounter?: () => void;
+  setRemainderTime?: (time: number) => void;
+  setIsCounter?: (counter: boolean) => void;
 }
 
 // 1s 等于 1000 ms
