@@ -2,7 +2,7 @@ import { Button, Form, FormInstance, message, Modal, ModalProps } from 'antd';
 import React, { useMemo } from 'react';
 import { RequestService, useRequest } from '../hooks/useRequest';
 
-export interface FormModalProps<Value, Res>
+export interface FormModalProps<Value = any, Res = any>
   extends Omit<ModalProps, 'onError' | 'onOk'> {
   serviceFn: RequestService<Value, Res>;
   formatSubmitValue?: (formValue: Value) => unknown;

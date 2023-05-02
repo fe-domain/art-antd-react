@@ -1,14 +1,25 @@
 import { defineConfig } from 'dumi';
 
-const GiteeLinkItem = {
+const GiteeRepositoryItem = {
   title: 'gitee',
   link: 'https://gitee.com/quankehao/art-antd-react',
 };
 
-const GithubLinkItem = {
-  title: 'gitHub',
+const GithubRepositoryItem = {
+  title: 'github',
   link: 'https://github.com/oneQorg/art-antd-react',
 };
+
+// // 站点配置
+// const GiteeSiteItem = {
+//   title: 'githubSite',
+//   link: 'https://oneqorg.github.io/art-antd-react',
+// };
+
+// const GithubSiteItem = {
+//   title: 'giteeSite',
+//   link: 'https://quankehao.gitee.io/art-antd-react',
+// };
 
 export default defineConfig({
   outputPath: 'docs-dist',
@@ -47,12 +58,12 @@ export default defineConfig({
     nav: {
       'zh-CN': [
         { title: 'about', link: '/about/quickstart' },
-        { title: 'components', link: '/components/form-modal' },
+        { title: 'components', link: '/components/sending-btn' },
         { title: 'hooks', link: '/hooks/use-request' },
-        GiteeLinkItem,
-        GithubLinkItem,
+        GiteeRepositoryItem,
+        GithubRepositoryItem,
       ],
     },
-    navs: [GiteeLinkItem, GithubLinkItem],
+    navs: [GiteeRepositoryItem, GithubRepositoryItem],
   },
 });

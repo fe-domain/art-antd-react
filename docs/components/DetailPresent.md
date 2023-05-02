@@ -20,15 +20,16 @@ order: 3
 
 ### 自定义某个项的 布局
 
-<code src="../demos/DetailPresentDemo2.tsx"  title="使用 keyMapItemProps 来映射某项布局"></code>
+<code src="../demos/DetailPresentDemo2.tsx"  title="使用 keyMapItemProps 来映射某项布局, 使用 filterNil 过滤没有值的 label"></code>
 
 ## API
 
 说明： 该组件是基于 antd 的 [Description](https://ant-design.gitee.io/components/descriptions-cn/#Descriptions) 来封装的，故其 API 都可以透传给 本组件的 props
 
-| 参数            | 说明                                                                                                                             | 类型                           | 默认值 |
-| --------------- | -------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ | ------ |
-| detail          | 要展示的详情对象                                                                                                                 | Record<string,any>             | -      |
-| keyMapLabel     | 根据 key 来映射 出 label，这个配置决定了显示的顺序                                                                               | Record<string,React.ReactNode> | -      |
-| keyMapItemProps | 映射 单独项的布局 value 的类型为 [DescriptionItemProps](https://ant-design.gitee.io/components/descriptions-cn/#DescriptionItem) | -                              | -      |
-| placeholder     | 空值的占位符                                                                                                                     | React.ReactNode                | -      |
+| 参数            | 说明                                                                                                                             | 类型                                                                                            | 默认值 |
+| --------------- | -------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ------ |
+| detail          | 要展示的详情对象                                                                                                                 | Record<string,any>                                                                              | -      |
+| keyMapLabel     | 根据 key 来映射 出 label，这个配置决定了显示的顺序                                                                               | Record<string,React.ReactNode>                                                                  | -      |
+| keyMapItemProps | 映射 单独项的布局 value 的类型为 [DescriptionItemProps](https://ant-design.gitee.io/components/descriptions-cn/#DescriptionItem) | [DescriptionItemProps](https://ant-design.gitee.io/components/descriptions-cn/#DescriptionItem) | -      |
+| placeholder     | 空值的占位符                                                                                                                     | React.ReactNode                                                                                 | -      |
+| filterNil       | 当设置为 `true` 的时候 不会展示 `undefined` 或 `null` 的 label 和对应的值,优先级高于 `placeholder`                               | boolean                                                                                         | -      |
