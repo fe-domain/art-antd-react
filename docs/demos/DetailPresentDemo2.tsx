@@ -34,7 +34,7 @@ const Demo1 = () => {
   return (
     <Space direction="vertical" size={52}>
       <Switch
-        value={filterNil}
+        checked={filterNil}
         checkedChildren="开启 filterNil"
         unCheckedChildren="关闭 filterNil"
         onChange={(v) => setFilterNil(v)}
