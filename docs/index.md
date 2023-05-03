@@ -21,7 +21,7 @@ footer: Open-source MIT Licensed | Copyright jakequc 2022<br />Powered by [dumi]
 
 ## 🌈 Hello art-antd-react!
 
-[Github 站点](https://fe-domain.github.io/art-antd-react/) | [Gitee 站点](https://gitee.com/fedomain/art-antd-react/pages)
+[Github 站点](https://fe-domain.github.io/art-antd-react/) | [Gitee 站点](https://fedomain.gitee.io/art-antd-react)
 
 ## 🍭 Target
 
