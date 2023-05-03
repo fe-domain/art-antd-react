@@ -55,7 +55,7 @@ import "art-antd-react/dist/esm/styles/defaultAntdCss.css" # 可选
 
 ## ⚡ 反馈
 
-非常欢迎你的意见，你可以通过以下方式
+非常欢迎你的意见与反馈，你可以通过以下方式
 
 - 通过 [Issue](https://github.com/oneQorg/art-antd-react/issues) 报告 bug 或进行咨询(同理如果遇到了问题也可以直接看看别人是否也遇到了呢)。
 - 添加微信 jakequc 直接反馈问题
