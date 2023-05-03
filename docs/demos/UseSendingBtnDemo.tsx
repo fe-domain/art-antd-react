@@ -3,10 +3,10 @@ import { message, useSendingBtn } from 'art-antd-react';
 import { useState } from 'react';
 
 const UseSendingBtnDemo = () => {
-  const [loadig, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const { SendingBtn, runCounter } = useSendingBtn({
-    loadig,
+    loading,
     onClick: sendCaptcha,
     totalDisableTime: 23,
     immediate: false,
@@ -17,7 +17,7 @@ const UseSendingBtnDemo = () => {
   function sendCaptcha() {
     setLoading(true);
     setTimeout(() => {
-      runCounter();
+      runCounter?.();
       message.success(`发送的验证码为: ${Math.round(Math.random() * 10000)}`);
       setLoading(false);
     }, 3000);

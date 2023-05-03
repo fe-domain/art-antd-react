@@ -36,15 +36,15 @@
 
 Gitee：
 
-- [art-antd-react gitee 官网](https://quankehao.gitee.io/art-antd-react) 国内的访问此链接较快(可能存在滞后性)
+- [art-antd-react gitee 官网](https://fedomain.gitee.io/art-antd-react) 国内的访问此链接较快(可能存在滞后性)
 
-- [art-antd-react repository 地址](https://gitee.com/quankehao/art-antd-react/pages)
+- [art-antd-react repository 地址](https://gitee.com/fedomain/art-antd-react)
 
 github:
 
-- [art-antd-react GitHub 官网](https://oneqorg.github.io/art-antd-react/)
+- [art-antd-react GitHub 官网](https://fe-domain.github.io/art-antd-react/)
 
-- [art-antd-react GitHub repository 地址](https://github.com/oneQorg/art-antd-react)
+- [art-antd-react GitHub repository 地址](https://github.com/fe-domain/art-antd-react)
 
 ### Getting Started
 

@@ -1,4 +1,4 @@
-import { DetailPresent, Space, Switch } from 'art-antd-react';
+import { Card, DetailPresent, Space, Switch } from 'art-antd-react';
 import { useState } from 'react';
 
 const Demo1 = () => {
@@ -32,44 +32,46 @@ const Demo1 = () => {
   };
 
   return (
-    <Space direction="vertical" size={52}>
-      <Switch
-        checked={filterNil}
-        checkedChildren="开启 filterNil"
-        unCheckedChildren="关闭 filterNil"
-        onChange={(v) => setFilterNil(v)}
-      />
-      <DetailPresent<typeof responseData>
-        title="谋圣信息"
-        filterNil={filterNil}
-        detail={{
-          ...responseData,
-          friend: responseData.friend.user,
-          hobby: responseData.hobby.join('、'),
+    <Card style={{ margin: 16 }}>
+      <Space direction="vertical" size={52}>
+        <Switch
+          checked={filterNil}
+          checkedChildren="开启 filterNil"
+          unCheckedChildren="关闭 filterNil"
+          onChange={(v) => setFilterNil(v)}
+        />
+        <DetailPresent<typeof responseData>
+          title="谋圣信息"
+          filterNil={filterNil}
+          detail={{
+            ...responseData,
+            friend: responseData.friend.user,
+            hobby: responseData.hobby.join('、'),
 
-          sketch: (
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://baike.baidu.com/item/%E5%BC%A0%E8%89%AF/6658?fr=aladdin"
-            >
-              {responseData.sketch}
-            </a>
-          ),
-        }}
-        // 值为空的时候的占位符
-        placeholder="-"
-        keyMapLabel={keyMapLabel}
-        // 自定义每一项单独的配置
-        keyMapItemProps={{
-          sketch: {
-            labelStyle: { color: '#f00' },
-            // 独占3列
-            span: 3,
-          },
-        }}
-      />
-    </Space>
+            sketch: (
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://baike.baidu.com/item/%E5%BC%A0%E8%89%AF/6658?fr=aladdin"
+              >
+                {responseData.sketch}
+              </a>
+            ),
+          }}
+          // 值为空的时候的占位符
+          placeholder="-"
+          keyMapLabel={keyMapLabel}
+          // 自定义每一项单独的配置
+          keyMapItemProps={{
+            sketch: {
+              labelStyle: { color: '#f00' },
+              // 独占3列
+              span: 3,
+            },
+          }}
+        />
+      </Space>
+    </Card>
   );
 };
 
