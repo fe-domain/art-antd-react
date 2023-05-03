@@ -2,12 +2,12 @@ import { defineConfig } from 'dumi';
 
 const GiteeRepositoryItem = {
   title: 'gitee',
-  link: 'https://gitee.com/quankehao/art-antd-react',
+  link: 'https://gitee.com/fedomain/art-antd-react',
 };
 
 const GithubRepositoryItem = {
   title: 'github',
-  link: 'https://github.com/oneQorg/art-antd-react',
+  link: 'https://github.com/fe-domain/art-antd-react',
 };
 
 // // 站点配置

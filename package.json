@@ -1,11 +1,11 @@
 {
   "name": "art-antd-react",
-  "version": "1.8.13",
+  "version": "1.8.15",
   "private": false,
   "description": "A library of components to help you develop web pages quickly",
-  "homepage": "https://oneqorg.github.io/art-antd-react/",
+  "homepage": "https://fe-domain.github.io/art-antd-react/",
   "bugs": {
-    "url": "https://github.com/oneQorg/art-antd-react/issues",
+    "url": "https://github.com/fe-domain/art-antd-react/issues",
     "email": "jakequc@163.com"
   },
   "keywords": [
@@ -17,7 +17,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/oneQorg/art-antd-react"
+    "url": "https://github.com/fe-domain/art-antd-react"
   },
   "license": "MIT",
   "module": "dist/index.js",
