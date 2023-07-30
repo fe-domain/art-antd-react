@@ -65,7 +65,7 @@ FormItemsBuilder 的目的是使用配置化的思想来帮助我们快速的生
 ### 基本使用
 
 ```tsx
-// 这些组件或者 Props API 也可以从 antd 或者 art-antd-react 中导出
+// 这些组件或者 Props API 也可以从 antd 或者 art-antd-react 中导出 *
 // import {
 //   Button,
 //   Col,
